@@ -1,0 +1,1001 @@
+#https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings
+id,date_account_created,timestamp_first_active,date_first_booking,gender,age,signup_method,signup_flow,language,affiliate_channel,affiliate_provider,first_affiliate_tracked,signup_app,first_device_type,first_browser,country_destination
+gxn3p5htnn,2010-06-28,20090319043255,,-unknown-,,facebook,0,en,direct,direct,untracked,Web,Mac Desktop,Chrome,NDF
+820tgsjxq7,2011-05-25,20090523174809,,MALE,38.0,facebook,0,en,seo,google,untracked,Web,Mac Desktop,Chrome,NDF
+4ft3gnwmtx,2010-09-28,20090609231247,2010-08-02,FEMALE,56.0,basic,3,en,direct,direct,untracked,Web,Windows Desktop,IE,US
+bjjt8pjhuk,2011-12-05,20091031060129,2012-09-08,FEMALE,42.0,facebook,0,en,direct,direct,untracked,Web,Mac Desktop,Firefox,other
+87mebub9p4,2010-09-14,20091208061105,2010-02-18,-unknown-,41.0,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+osr2jwljor,2010-01-01,20100101215619,2010-01-02,-unknown-,,basic,0,en,other,other,omg,Web,Mac Desktop,Chrome,US
+lsw9q7uk0j,2010-01-02,20100102012558,2010-01-05,FEMALE,46.0,basic,0,en,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+0d01nltbrs,2010-01-03,20100103191905,2010-01-13,FEMALE,47.0,basic,0,en,direct,direct,omg,Web,Mac Desktop,Safari,US
+a1vcnhxeij,2010-01-04,20100104004211,2010-07-29,FEMALE,50.0,basic,0,en,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+6uh8zyj2gn,2010-01-04,20100104023758,2010-01-04,-unknown-,46.0,basic,0,en,other,craigslist,omg,Web,Mac Desktop,Firefox,US
+yuuqmid2rp,2010-01-04,20100104194251,2010-01-06,FEMALE,36.0,basic,0,en,other,craigslist,untracked,Web,Mac Desktop,Firefox,US
+om1ss59ys8,2010-01-05,20100105051812,,FEMALE,47.0,basic,0,en,other,craigslist,untracked,Web,iPhone,-unknown-,NDF
+k6np330cm1,2010-01-05,20100105060859,2010-01-18,-unknown-,,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,FR
+dy3rgx56cu,2010-01-05,20100105083259,,FEMALE,37.0,basic,0,en,other,craigslist,linked,Web,Mac Desktop,Firefox,NDF
+ju3h98ch3w,2010-01-07,20100107055820,,FEMALE,36.0,basic,0,en,other,craigslist,untracked,Web,iPhone,Mobile Safari,NDF
+v4d5rl22px,2010-01-07,20100107204555,2010-01-08,FEMALE,33.0,basic,0,en,direct,direct,untracked,Web,Windows Desktop,Chrome,CA
+2dwbwkx056,2010-01-07,20100107215125,,-unknown-,,basic,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+frhre329au,2010-01-07,20100107224625,2010-01-09,-unknown-,31.0,basic,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+cxlg85pg1r,2010-01-08,20100108015641,,-unknown-,,basic,0,en,seo,facebook,,Web,Other/Unknown,-unknown-,NDF
+gdka1q5ktd,2010-01-10,20100110010817,2010-01-10,FEMALE,29.0,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Chrome,FR
+qdubonn3uk,2010-01-10,20100110152120,2010-01-18,-unknown-,,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+qsibmuz9sx,2010-01-10,20100110220941,2010-01-11,MALE,30.0,basic,0,en,direct,direct,linked,Web,Mac Desktop,Chrome,US
+80f7dwscrn,2010-01-11,20100111031438,2010-01-11,-unknown-,40.0,basic,0,en,seo,google,untracked,Web,iPhone,-unknown-,US
+jha93x042q,2010-01-11,20100111224015,,-unknown-,,basic,0,en,other,craigslist,untracked,Web,Mac Desktop,Safari,NDF
+7i49vnuav6,2010-01-11,20100111230808,,FEMALE,40.0,basic,0,en,seo,google,untracked,Web,Mac Desktop,Firefox,NDF
+al8bcetz0g,2010-01-12,20100112131444,2010-01-15,FEMALE,26.0,basic,0,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,FR
+bjg0m5otl3,2010-01-12,20100112155420,,-unknown-,,basic,0,en,other,other,untracked,Web,Other/Unknown,-unknown-,NDF
+hfrl5gle36,2010-01-12,20100112205949,2010-01-22,FEMALE,32.0,basic,0,en,other,craigslist,untracked,Web,Desktop (Other),Chrome,US
+tp6x3md0n4,2010-01-13,20100113044650,2010-01-13,-unknown-,35.0,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,FR
+hql77nu2lk,2010-01-13,20100113064333,2010-01-19,-unknown-,37.0,basic,0,en,direct,direct,untracked,Web,Android Tablet,-unknown-,US
+cheova4spt,2010-01-14,20100114025257,2010-01-24,-unknown-,42.0,basic,0,en,other,craigslist,untracked,Web,Mac Desktop,Firefox,FR
+pggg2sj27u,2010-01-14,20100114060757,,MALE,31.0,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+mo2v5h3nti,2010-01-14,20100114084926,,-unknown-,31.0,basic,0,en,seo,google,untracked,Web,Other/Unknown,-unknown-,NDF
+qthj88nnc7,2010-01-14,20100114175209,,MALE,29.0,basic,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+x9gnxoun57,2010-01-15,20100115055053,,MALE,59.0,basic,0,en,direct,direct,untracked,Web,Windows Desktop,Chrome,NDF
+ugy4obax11,2010-01-15,20100115082711,,-unknown-,49.0,basic,0,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,NDF
+7my0vrljxc,2010-01-15,20100115221929,2010-01-15,FEMALE,31.0,basic,0,en,direct,direct,linked,Web,Mac Desktop,Safari,US
+ul0b29nhr6,2010-01-15,20100115231651,,MALE,30.0,basic,0,en,other,craigslist,untracked,Web,Windows Desktop,Chrome,NDF
+7yzz3iv0ji,2010-01-15,20100115234132,,-unknown-,,basic,0,en,sem-non-brand,other,omg,Web,Windows Desktop,Firefox,NDF
+myunxar49t,2010-01-16,20100116154942,,FEMALE,35.0,basic,0,en,other,craigslist,untracked,Web,Mac Desktop,Safari,NDF
+jpne62dhz8,2010-01-16,20100116215943,,MALE,26.0,basic,0,en,other,craigslist,linked,Web,Windows Desktop,Firefox,NDF
+k15j7mbny0,2010-01-19,20100119013616,2010-01-21,FEMALE,30.0,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+2981o5kr7b,2010-01-21,20100121070939,,FEMALE,29.0,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+69xzq1jxkq,2010-01-21,20100121183725,,-unknown-,,basic,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+g3z67e37mb,2010-12-01,20100123090523,2010-12-03,-unknown-,,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,GB
+g1q6caq452,2010-01-23,20100123201540,2010-01-27,FEMALE,44.0,basic,0,en,other,craigslist,untracked,Web,Windows Desktop,IE,US
+f6mzhb4wbc,2010-01-24,20100124002335,2010-02-25,-unknown-,,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Safari,ES
+ngai8kt2yi,2010-01-24,20100124020049,2010-01-24,-unknown-,,basic,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+2cji4lpjr3,2010-01-24,20100124083507,,-unknown-,,basic,0,en,other,craigslist,untracked,Web,Windows Desktop,IE,NDF
+byozd991xf,2010-01-24,20100124232938,2010-01-25,-unknown-,34.0,basic,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+22r42sgc0a,2010-01-25,20100125184230,,-unknown-,30.0,basic,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+rcx09dn2je,2010-01-25,20100125203143,2010-01-26,-unknown-,,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+ae59m0iqsx,2010-01-25,20100125232246,2010-01-26,-unknown-,33.0,basic,0,en,other,craigslist,untracked,Web,iPad,Mobile Safari,US
+jtm5s5dhwx,2010-01-26,20100126002245,,MALE,28.0,basic,0,en,other,craigslist,linked,Web,Windows Desktop,Chrome,NDF
+efabqzuxmf,2010-01-26,20100126192045,2010-01-27,-unknown-,44.0,basic,0,en,other,craigslist,untracked,Web,Mac Desktop,Firefox,US
+emg8edpcpm,2010-01-26,20100126233019,2010-07-30,-unknown-,19.0,basic,0,en,direct,direct,omg,Web,iPad,Mobile Safari,US
+bgel0c0qic,2010-01-27,20100127031620,,FEMALE,53.0,basic,0,en,other,craigslist,linked,Web,Android Tablet,Chrome,NDF
+ehcdcpkn8y,2010-01-27,20100127083836,2010-01-28,-unknown-,,basic,0,en,direct,direct,untracked,Web,Android Tablet,Chrome,CA
+fp6ndcm5ak,2010-01-27,20100127232016,2010-01-27,MALE,52.0,basic,0,en,direct,direct,untracked,Web,Windows Desktop,Firefox,US
+rwa710uoxj,2010-01-28,20100128100127,,-unknown-,,basic,0,en,other,craigslist,untracked,Web,Windows Desktop,Chrome,NDF
+p968flw686,2010-01-29,20100129032157,,-unknown-,,basic,0,en,direct,direct,untracked,Web,iPhone,Mobile Safari,NDF
+b2iuaury7k,2010-01-29,20100129093908,,MALE,39.0,basic,0,en,other,craigslist,untracked,Web,iPhone,Mobile Safari,NDF
+5dp8dxiayg,2010-01-29,20100129173619,,-unknown-,,basic,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+ranh94tmin,2010-01-29,20100129182105,2010-01-29,-unknown-,,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,CA
+0xvbruzuzz,2010-01-30,20100130045749,2010-01-31,MALE,35.0,basic,0,en,direct,direct,untracked,Web,Windows Desktop,IE,CA
+wtwg1l6pir,2010-01-30,20100130161608,,FEMALE,40.0,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Safari,NDF
+lfwwfmbi0g,2010-01-31,20100131003213,,-unknown-,,basic,0,en,direct,direct,linked,Web,Windows Desktop,Chrome,NDF
+mz47bohqc8,2010-02-01,20100201021621,2010-02-02,-unknown-,,basic,0,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,US
+nvti2htxna,2010-02-01,20100201061326,,-unknown-,,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Chrome,NDF
+o47imoy58k,2010-02-01,20100201224759,,-unknown-,,basic,0,en,seo,google,omg,Web,Mac Desktop,Safari,NDF
+b9gu8uoxxw,2010-02-02,20100202050231,2010-02-02,-unknown-,,basic,0,en,other,other,,Web,Other/Unknown,-unknown-,US
+svhon5c3wz,2010-02-02,20100202085002,,FEMALE,31.0,basic,0,en,seo,google,linked,Web,Mac Desktop,Safari,NDF
+6yjtxd174z,2010-02-02,20100202170603,,-unknown-,29.0,basic,0,en,other,craigslist,omg,Web,Mac Desktop,Safari,NDF
+61rgez44q4,2010-02-02,20100202180421,,-unknown-,,basic,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+h53mz152m4,2010-02-02,20100202223117,2010-02-09,FEMALE,57.0,basic,0,en,other,craigslist,omg,Web,Windows Desktop,Firefox,FR
+b9pzliufcj,2010-02-03,20100203000944,2010-02-04,FEMALE,30.0,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+h2gn4f9oqa,2010-02-03,20100203225854,2010-08-12,-unknown-,49.0,basic,0,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,US
+mjkyx3a64l,2010-02-04,20100204005644,,FEMALE,37.0,basic,0,en,other,craigslist,omg,Web,Mac Desktop,Safari,NDF
+jf5oxeb233,2010-02-04,20100204180032,2010-03-20,-unknown-,,basic,0,en,direct,direct,untracked,Web,iPhone,-unknown-,GB
+3bm7fn465l,2010-02-06,20100206012446,,-unknown-,26.0,basic,0,en,other,craigslist,tracked-other,Web,iPhone,Mobile Safari,NDF
+jzw5p68a5u,2010-02-06,20100206070403,2010-02-06,-unknown-,,basic,3,en,other,other,,Web,Other/Unknown,-unknown-,other
+rxdkzkowt2,2010-02-06,20100206072233,2010-02-10,FEMALE,36.0,basic,2,en,other,craigslist,untracked,Web,iPhone,-unknown-,US
+odtqrxp6d1,2010-02-06,20100206155410,,-unknown-,,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Chrome,NDF
+yzjoqp3401,2010-02-06,20100206163608,,-unknown-,,basic,2,en,other,craigslist,linked,Web,Mac Desktop,Chrome,NDF
+prqnudhgdx,2010-02-07,20100207014229,2010-02-07,FEMALE,32.0,basic,0,en,other,craigslist,linked,Web,Windows Desktop,Chrome,US
+6qx6xl5eho,2010-02-07,20100207015207,2010-06-01,MALE,33.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+563m2oiat7,2010-02-08,20100208191612,2010-02-11,FEMALE,46.0,facebook,2,en,other,craigslist,untracked,Web,Windows Desktop,IE,US
+wqj8o7gv3y,2010-02-08,20100208214250,2010-02-26,FEMALE,40.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Firefox,IT
+57569t1rgg,2010-02-09,20100209014007,,MALE,25.0,facebook,2,en,other,craigslist,linked,Web,Mac Desktop,Chrome,NDF
+a6aoihcf3r,2010-02-09,20100209062147,,MALE,25.0,facebook,2,en,other,other,omg,Web,Mac Desktop,Chrome,NDF
+1o91tbwhmt,2010-02-09,20100209064317,2010-02-20,-unknown-,54.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Safari,FR
+oc138x4t2c,2010-02-09,20100209070009,2010-02-10,-unknown-,32.0,facebook,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+u5otukcj1c,2010-02-10,20100210024029,2010-03-19,-unknown-,,basic,3,en,other,craigslist,untracked,Web,Mac Desktop,Safari,FR
+1qglty8tmd,2010-02-10,20100210045352,2010-08-25,-unknown-,28.0,basic,2,en,seo,google,linked,Web,Windows Desktop,Chrome,US
+so9lxma3fv,2010-02-10,20100210050927,2010-02-12,FEMALE,57.0,basic,2,en,other,craigslist,tracked-other,Web,Mac Desktop,Firefox,US
+6u9s9pbr5r,2010-02-10,20100210082803,2010-02-13,FEMALE,47.0,basic,3,en,other,craigslist,linked,Web,Windows Desktop,IE,US
+4ktx9s53w5,2010-02-10,20100210231137,2010-07-16,MALE,34.0,basic,0,en,direct,direct,linked,Web,Windows Desktop,Chrome,US
+ieu21joskb,2010-02-11,20100211030330,2010-02-13,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+82y7pq62oj,2010-02-11,20100211100737,,-unknown-,35.0,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+25pgufjup8,2010-02-11,20100211121538,,-unknown-,32.0,basic,2,en,sem-non-brand,other,untracked,Web,Windows Desktop,Chrome,NDF
+oqnzmpmt60,2010-02-12,20100212030946,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+vk9oo8i6ik,2010-02-12,20100212061754,,-unknown-,34.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,NDF
+qj9ttjt9ch,2010-02-12,20100212205013,2010-02-21,OTHER,40.0,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Chrome,ES
+hjzm74mnt6,2010-02-13,20100213165415,,-unknown-,,basic,3,en,other,craigslist,untracked,Web,Mac Desktop,Firefox,NDF
+uzlk5vzgh4,2010-02-13,20100213194447,2010-02-13,-unknown-,,basic,2,en,direct,direct,untracked,Web,Windows Desktop,Chrome,US
+dgatsm5ocq,2010-02-13,20100213235215,2010-03-22,FEMALE,69.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Firefox,US
+nvsx44fs1w,2010-02-14,20100214021823,,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+2c543qkuic,2010-02-15,20100215005131,2010-02-15,FEMALE,30.0,basic,3,en,direct,direct,untracked,Web,Windows Desktop,Chrome,FR
+y8r36zf535,2010-02-15,20100215025628,,FEMALE,42.0,facebook,2,en,direct,direct,linked,Web,Windows Desktop,IE,NDF
+9pdsmrcz7g,2010-02-15,20100215072653,,FEMALE,63.0,basic,2,en,other,craigslist,untracked,Web,iPad,-unknown-,NDF
+sdzl0mr9us,2010-02-15,20100215191001,2010-02-16,-unknown-,,facebook,2,en,sem-non-brand,other,untracked,Web,Windows Desktop,Chrome,CA
+m1p6kkn8l1,2010-02-15,20100215224501,2010-12-12,-unknown-,33.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+z1smu76iek,2010-02-16,20100216024630,2010-02-16,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+mdhde4y8ak,2010-02-16,20100216070141,2010-02-16,-unknown-,,basic,3,en,direct,direct,tracked-other,Web,iPad,Mobile Safari,US
+umemmlvxmg,2010-02-16,20100216101113,,MALE,44.0,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+d2t14mx6bc,2010-02-16,20100216114511,,-unknown-,,basic,0,en,sem-non-brand,other,,Web,Other/Unknown,-unknown-,NDF
+xhnjctsnee,2010-02-16,20100216172532,,FEMALE,26.0,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+vlmrt8nr8q,2010-02-16,20100216221740,2010-02-21,FEMALE,29.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,FR
+0sjhzy6z9q,2010-02-17,20100217012630,2010-02-17,FEMALE,43.0,basic,2,en,other,craigslist,linked,Web,Windows Desktop,Chrome,US
+yvgxw5nrpd,2010-02-17,20100217044719,,-unknown-,30.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+swrvyedlsp,2010-05-30,20100218004109,2010-03-17,FEMALE,,facebook,0,en,direct,direct,omg,Web,Mac Desktop,Safari,US
+tt4tf7arx9,2010-02-18,20100218044803,2010-02-18,-unknown-,36.0,basic,3,en,direct,direct,linked,Web,Mac Desktop,Safari,US
+w1e4j1wnvt,2010-02-18,20100218202504,,-unknown-,26.0,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+w4hggrfyox,2010-02-19,20100219031018,,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+kbix4dw5bg,2010-02-19,20100219042307,2010-02-21,FEMALE,33.0,facebook,0,en,other,craigslist,untracked,Web,Windows Desktop,Firefox,US
+l7p5m5g8oo,2010-02-19,20100219122026,,FEMALE,42.0,facebook,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,NDF
+hsa9brefci,2010-02-19,20100219152309,,-unknown-,,basic,2,en,other,craigslist,untracked,Web,Windows Desktop,Firefox,NDF
+apdl57gb6g,2010-02-20,20100220002936,,FEMALE,36.0,facebook,2,en,other,craigslist,omg,Web,iPad,Mobile Safari,NDF
+y7yglrqj4g,2010-02-20,20100220015828,2010-02-28,MALE,39.0,basic,2,en,seo,google,omg,Web,Mac Desktop,Chrome,US
+ofwq9iunbv,2010-02-20,20100220032434,2011-02-11,-unknown-,,basic,2,en,direct,direct,linked,Web,Windows Desktop,Chrome,other
+kzbgs46ka1,2010-02-21,20100221171628,2010-06-28,-unknown-,47.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+jqyog5updf,2010-02-21,20100221184205,2010-02-22,FEMALE,52.0,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Firefox,IT
+fxtlskaz1n,2010-02-21,20100221195355,,-unknown-,59.0,basic,2,en,sem-non-brand,other,,Web,Other/Unknown,-unknown-,NDF
+f1q44ej2ve,2010-02-22,20100222003812,,-unknown-,53.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+woz3bp8egc,2010-02-22,20100222083900,2010-02-22,-unknown-,,basic,0,en,seo,google,omg,Web,Mac Desktop,Firefox,US
+2bvnlou71p,2010-02-22,20100222101428,2010-03-04,-unknown-,25.0,basic,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+ekjvs6zgq2,2010-02-22,20100222170236,,-unknown-,,basic,2,en,other,craigslist,omg,Web,Windows Desktop,Chrome,NDF
+p2j15lz8ge,2010-02-22,20100222220333,2010-02-23,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+lz2dlc2ap4,2010-02-23,20100223005103,,MALE,55.0,basic,2,en,direct,direct,untracked,Web,Android Phone,Chrome Mobile,NDF
+lts9qawqo2,2010-02-23,20100223022052,,-unknown-,,basic,2,en,direct,direct,omg,Web,Windows Desktop,IE,NDF
+e5ox4vixyl,2010-02-23,20100223030730,,-unknown-,,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,NDF
+vol34s7upr,2010-02-23,20100223234746,2010-02-25,MALE,36.0,facebook,3,en,sem-non-brand,other,untracked,Web,Windows Desktop,Chrome,CA
+xx5xwvpmyj,2010-02-24,20100224005533,2010-02-24,-unknown-,,basic,3,en,direct,direct,linked,Web,Mac Desktop,Firefox,GB
+xsdy92xq16,2010-02-24,20100224015125,,-unknown-,35.0,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+mc6ihnidpc,2010-02-24,20100224032305,2010-02-25,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+qmg77g7lge,2010-02-24,20100224041433,2010-03-08,-unknown-,65.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+y2wks1ljcu,2010-02-24,20100224153808,2010-02-24,FEMALE,33.0,basic,3,en,seo,google,linked,Web,Mac Desktop,Safari,GB
+mcdh2s9owp,2010-02-24,20100224165748,2010-02-24,MALE,38.0,facebook,3,en,sem-non-brand,other,untracked,Web,Mac Desktop,Safari,US
+ese54wmkcb,2010-02-24,20100224173448,2010-03-27,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+nf307k7ewi,2010-02-24,20100224204915,2010-02-28,-unknown-,41.0,basic,2,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,FR
+29ijaxrl2y,2010-02-25,20100225042921,,FEMALE,29.0,basic,2,en,direct,direct,untracked,Web,Windows Desktop,Chrome,NDF
+jad3mbqepi,2010-02-25,20100225060342,2010-02-26,-unknown-,,basic,3,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,US
+hl3t7qzrdu,2010-02-25,20100225092657,2010-02-26,-unknown-,32.0,basic,3,en,direct,direct,untracked,Web,iPhone,Mobile Safari,US
+4lb9khiwg2,2010-02-25,20100225190715,,-unknown-,,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Chrome,NDF
+fyh4atoj1y,2010-02-26,20100226192639,2010-02-27,-unknown-,28.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+o9sog26g9x,2010-02-26,20100226193936,2010-03-12,FEMALE,46.0,basic,0,en,content,google,linked,Web,Mac Desktop,Firefox,US
+lzjp8xkt44,2010-02-26,20100226230412,,-unknown-,35.0,basic,2,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,NDF
+ask4eceyyh,2010-02-27,20100227013342,,FEMALE,35.0,facebook,2,en,other,craigslist,linked,Web,Mac Desktop,Firefox,NDF
+md46o2l0pe,2010-02-27,20100227015032,,-unknown-,34.0,basic,3,en,direct,direct,linked,Web,Mac Desktop,Safari,NDF
+dstzfld8qk,2010-02-27,20100227023948,2010-02-28,FEMALE,63.0,facebook,2,en,sem-non-brand,other,linked,Web,Windows Desktop,Firefox,US
+2opewo93m2,2010-02-27,20100227080838,,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+jcnhbybq4h,2010-02-27,20100227221046,2010-03-01,-unknown-,,basic,3,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,FR
+c0unmqaa5y,2010-02-27,20100227232445,2010-03-01,-unknown-,,basic,3,en,direct,direct,untracked,Web,Windows Desktop,Chrome,US
+1k5xq0yn5k,2010-02-28,20100228003949,,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+027hmmfefk,2010-02-28,20100228060014,,MALE,58.0,facebook,2,en,direct,direct,linked,Web,Windows Desktop,Firefox,NDF
+7a8k3t3zd7,2010-02-28,20100228061523,2010-03-02,-unknown-,57.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Safari,US
+3hvsja1oo5,2010-02-28,20100228123713,,-unknown-,61.0,facebook,2,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,NDF
+6avz9lrvzq,2010-02-28,20100228174716,,-unknown-,,basic,2,en,other,craigslist,untracked,Web,iPhone,-unknown-,NDF
+sgcfiqz6o8,2010-02-28,20100228224352,,FEMALE,,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,NDF
+tlvnjwjdam,2010-02-28,20100228235511,,-unknown-,,facebook,3,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,NDF
+mkzfek178i,2010-03-01,20100301050024,,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+5ml3i1o90h,2010-03-01,20100301063140,2010-03-03,FEMALE,35.0,basic,2,en,other,craigslist,omg,Web,Mac Desktop,Chrome,US
+1a9khjwzuh,2010-03-01,20100301064134,2010-03-02,-unknown-,,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+f5accvka0y,2010-03-01,20100301201700,2010-03-03,MALE,31.0,facebook,0,en,direct,direct,,Web,Other/Unknown,-unknown-,IT
+mswwy65q4o,2010-03-01,20100301213409,,-unknown-,36.0,basic,2,en,other,craigslist,omg,Web,Windows Desktop,Firefox,NDF
+yyikx9ztzu,2010-03-02,20100302040703,2010-03-02,-unknown-,,basic,3,en,sem-non-brand,other,untracked,Web,Mac Desktop,Safari,US
+rzh9fet0aj,2010-03-02,20100302044456,,-unknown-,,basic,2,en,other,craigslist,untracked,Web,iPad,Mobile Safari,NDF
+wgyw2nwafd,2010-03-02,20100302051209,,-unknown-,,basic,3,en,content,google,,Web,Other/Unknown,-unknown-,NDF
+to2hnhh1bc,2010-03-02,20100302221355,2010-03-05,-unknown-,18.0,basic,2,en,direct,direct,untracked,Web,iPad,Mobile Safari,US
+k9zs5iak6w,2010-03-03,20100303020604,2010-03-03,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+fdznpbty8y,2010-03-03,20100303075528,,-unknown-,,basic,2,en,other,craigslist,untracked,Web,iPad,Mobile Safari,NDF
+ju7u7y9bo1,2010-03-03,20100303095409,2010-03-03,MALE,35.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,US
+zpfucx0ipa,2010-03-03,20100303230351,2010-03-06,MALE,36.0,basic,3,en,direct,direct,untracked,Web,Windows Desktop,Chrome,US
+skrth14l98,2010-03-04,20100304210151,,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+23czs745fi,2010-03-04,20100304212200,2010-03-05,FEMALE,37.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+ylb45ot5by,2010-03-05,20100305020220,,MALE,35.0,basic,3,en,sem-non-brand,other,omg,Web,Mac Desktop,Safari,NDF
+r0kg0xtwpf,2010-03-05,20100305032323,,-unknown-,,basic,0,en,sem-non-brand,google,linked,Web,iPad,Mobile Safari,NDF
+3rcltoc165,2010-03-05,20100305095130,2010-03-08,-unknown-,42.0,basic,2,en,direct,direct,linked,Web,Windows Desktop,Chrome,US
+3tyrowqzr9,2010-03-05,20100305142110,2010-04-18,-unknown-,,basic,2,en,seo,google,linked,Web,Mac Desktop,Firefox,ES
+1plg7bk21b,2010-03-06,20100306004220,2010-03-15,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+z2m5ub0h0h,2010-03-06,20100306013801,,FEMALE,33.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,NDF
+b9gk1av7rt,2010-03-06,20100306035725,2010-03-07,-unknown-,,basic,0,en,content,google,,Web,Other/Unknown,-unknown-,US
+1r5wy9nxcs,2010-03-06,20100306140655,2010-03-10,-unknown-,,basic,0,fr,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+3qsa4lo7eg,2010-03-06,20100306184019,2010-03-08,FEMALE,5.0,basic,3,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,FR
+tpu2qt3yzw,2010-03-07,20100307011251,2010-03-08,-unknown-,,basic,3,en,direct,direct,untracked,Web,iPad,Mobile Safari,other
+fjs54jvq2s,2010-03-07,20100307174009,2010-03-12,-unknown-,18.0,basic,2,en,direct,direct,untracked,Web,Windows Desktop,Chrome,US
+v31grxlt55,2010-03-07,20100307175723,2010-03-07,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+jtmmh6dtq9,2010-03-08,20100308005959,2010-03-22,-unknown-,33.0,basic,2,en,other,craigslist,linked,Web,Mac Desktop,Safari,FR
+164t1ruisy,2010-03-08,20100308013710,,FEMALE,,basic,0,en,other,craigslist,untracked,Web,iPad,Mobile Safari,NDF
+nhusfpisf6,2010-03-08,20100308073727,2010-04-15,-unknown-,,basic,3,en,content,google,,Web,Other/Unknown,-unknown-,US
+619ffwnpjz,2010-03-08,20100308175421,,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+gwtsd4te19,2010-03-08,20100308182916,2010-03-08,MALE,33.0,basic,0,en,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+jju39diyiu,2010-03-08,20100308231139,,-unknown-,27.0,basic,0,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,NDF
+i4edhlimed,2010-03-16,20100309080650,2010-04-06,FEMALE,44.0,basic,0,en,seo,google,untracked,Web,Mac Desktop,Safari,US
+efo7y4w42u,2010-03-09,20100309180306,,FEMALE,44.0,facebook,2,en,other,craigslist,omg,Web,Desktop (Other),Firefox,NDF
+lt2lcjrbbt,2010-03-10,20100310004816,,-unknown-,53.0,basic,2,en,direct,direct,untracked,Web,Windows Desktop,Firefox,NDF
+z4gv6bmyy7,2010-03-10,20100310042648,2010-03-10,FEMALE,35.0,basic,3,en,seo,google,untracked,Web,Mac Desktop,Chrome,US
+qvfgjugm8a,2010-03-10,20100310071010,,-unknown-,,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+vnlfsfrxzy,2010-03-10,20100310091104,2010-03-22,-unknown-,47.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+jdy1ic9k4m,2010-03-10,20100310182903,2010-03-10,-unknown-,40.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Safari,US
+mkcaeq27iw,2010-03-10,20100310224626,2010-03-12,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,other
+8c58dglkjc,2010-03-10,20100310230232,,FEMALE,30.0,basic,0,en,seo,google,untracked,Web,Mac Desktop,Firefox,NDF
+fmss7nq5uh,2010-03-11,20100311011435,2010-03-14,FEMALE,39.0,basic,2,en,other,craigslist,linked,Web,Mac Desktop,Firefox,US
+l6b51zsk0b,2010-03-11,20100311021035,2010-03-11,FEMALE,45.0,basic,3,en,seo,facebook,omg,Web,Mac Desktop,Safari,US
+8q89zox0nj,2010-03-11,20100311043816,,-unknown-,54.0,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+sxx8m55bq3,2010-03-11,20100311052758,2010-03-13,MALE,25.0,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Chrome,FR
+azq8nubqpb,2010-03-11,20100311070036,,FEMALE,38.0,facebook,2,en,direct,direct,linked,Web,Windows Desktop,Chrome,NDF
+1sfwm3r6ax,2010-03-11,20100311161324,,FEMALE,47.0,facebook,2,en,sem-non-brand,google,linked,Web,Windows Desktop,IE,NDF
+9pthv2dj2u,2010-03-12,20100312040441,2010-03-12,FEMALE,57.0,basic,3,en,content,google,untracked,Web,Mac Desktop,Chrome,US
+lto34vewef,2010-03-12,20100312062623,,MALE,32.0,facebook,3,en,direct,direct,untracked,Web,Mac Desktop,Chrome,NDF
+i40huwxnxj,2010-03-12,20100312185849,2010-03-19,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+c7mtjqq27g,2010-03-13,20100313015234,,-unknown-,,basic,2,en,sem-non-brand,google,linked,Web,Windows Desktop,Chrome,NDF
+08zribz6lb,2010-03-13,20100313022942,2010-03-19,-unknown-,43.0,basic,2,en,content,google,untracked,Web,iPad,Mobile Safari,US
+0484tgzedi,2010-03-13,20100313200337,,-unknown-,33.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+rqt4fs7tgv,2010-03-13,20100313230712,2010-03-14,MALE,60.0,facebook,2,en,direct,direct,untracked,Web,Mac Desktop,RockMelt,US
+39zddogscp,2010-03-13,20100313234637,2010-03-15,FEMALE,29.0,basic,0,en,seo,other,tracked-other,Web,Mac Desktop,Chrome,US
+qajtbc9sxo,2010-03-14,20100314042534,,-unknown-,,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+0yb3medm94,2010-03-14,20100314181203,2010-03-14,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+o2vi06sgkj,2010-03-14,20100314195014,2010-03-15,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+dey77qlhmz,2010-03-14,20100314195236,2010-03-15,-unknown-,,basic,3,en,seo,facebook,linked,Web,Mac Desktop,Firefox,US
+ezkyrpdeo8,2010-03-14,20100314195925,2010-03-15,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+pyce1jzuzo,2010-03-14,20100314205747,2010-03-29,FEMALE,32.0,basic,0,en,seo,google,untracked,Web,Windows Desktop,Chrome,US
+kd3gfwe476,2010-03-14,20100314212621,2010-03-17,-unknown-,,basic,3,en,direct,direct,tracked-other,Web,Mac Desktop,Chrome,FR
+nddgfoqsmc,2010-03-14,20100314221037,2010-03-15,MALE,43.0,facebook,3,en,seo,google,untracked,Web,Desktop (Other),Chromium,US
+lq0fec8hfd,2010-03-15,20100315002320,2010-03-16,FEMALE,30.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+2fauin9rez,2010-03-15,20100315010643,2010-03-15,FEMALE,29.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Safari,US
+714s9sj8rc,2010-03-15,20100315012420,,-unknown-,,basic,2,en,seo,google,omg,Web,iPad,Mobile Safari,NDF
+zfcvq4vj94,2010-03-15,20100315042100,2010-04-20,FEMALE,42.0,basic,0,en,direct,direct,linked,Web,Mac Desktop,Firefox,US
+bwzhjps811,2010-03-15,20100315090142,2010-03-16,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+208xgc8449,2010-03-15,20100315171609,,-unknown-,,basic,3,en,seo,google,,Web,Other/Unknown,-unknown-,NDF
+8kjcxgk0sl,2010-03-15,20100315194123,2010-04-12,-unknown-,34.0,basic,0,en,other,craigslist,linked,Web,Mac Desktop,Chrome,US
+0p94c49eoo,2010-03-15,20100315200002,2010-03-16,-unknown-,19.0,basic,0,en,direct,direct,linked,Web,Mac Desktop,Firefox,US
+8nwchwpq2o,2010-03-15,20100315225007,2010-03-15,-unknown-,,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+y9lkqvfv1r,2010-03-16,20100316025002,2010-03-19,-unknown-,32.0,basic,2,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,US
+3d0bcb2nvb,2010-03-16,20100316045033,,-unknown-,,basic,3,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,NDF
+oumij0583h,2010-03-16,20100316070751,,-unknown-,,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+8hou630j7f,2010-03-16,20100316161432,2010-03-16,-unknown-,32.0,basic,3,en,direct,direct,linked,Web,Mac Desktop,Chrome,US
+dl6lf5iqw8,2010-03-16,20100316163519,2010-03-17,FEMALE,30.0,facebook,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+r3i72eb2ae,2010-03-16,20100316175605,2010-03-29,MALE,44.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Chrome,US
+meodytp38t,2010-03-16,20100316175833,,-unknown-,,basic,2,en,direct,direct,omg,Web,Mac Desktop,Chrome,NDF
+hl1931pqo3,2010-03-16,20100316201714,,-unknown-,47.0,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+2x8pnntq9x,2010-03-18,20100318135813,2010-03-19,-unknown-,,basic,3,en,other,craigslist,omg,Web,Windows Desktop,IE,FR
+7q4lkd34g7,2010-03-18,20100318164735,2010-05-21,-unknown-,,basic,2,en,direct,direct,linked,Web,Windows Desktop,Chrome,US
+xoq994nhd4,2010-03-18,20100318170212,2010-03-18,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+bsb3iicgiy,2010-03-18,20100318174424,,-unknown-,,facebook,3,en,seo,google,,Web,Other/Unknown,-unknown-,NDF
+6wdr9zaflp,2010-03-18,20100318175035,2010-03-19,MALE,48.0,basic,1,en,direct,direct,linked,Web,Windows Desktop,Chrome,US
+cjntios911,2010-03-18,20100318193409,,FEMALE,42.0,facebook,2,en,other,craigslist,linked,Web,Mac Desktop,Safari,NDF
+3aedeciszj,2010-03-18,20100318210130,,FEMALE,59.0,facebook,2,en,direct,direct,product,Web,Windows Desktop,IE,NDF
+4hq0083zi1,2010-03-18,20100318223840,,-unknown-,,basic,2,en,seo,google,untracked,Web,Mac Desktop,Firefox,NDF
+myo86rnosj,2010-03-18,20100318224715,2010-03-20,MALE,32.0,facebook,3,en,direct,direct,linked,Web,Mac Desktop,Chrome,US
+9qhkkxurzt,2010-03-18,20100318225240,,FEMALE,32.0,basic,2,en,other,craigslist,linked,Web,Mac Desktop,Firefox,NDF
+gzlqc7mz1o,2010-03-19,20100319011200,2010-03-26,-unknown-,,basic,3,en,seo,google,,Web,Other/Unknown,-unknown-,US
+ilzqevkiv6,2010-03-19,20100319030022,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+9nf2vrjee0,2010-03-19,20100319032110,2010-03-19,MALE,51.0,basic,2,en,other,craigslist,linked,Web,Windows Desktop,Firefox,US
+fn9i5v97zr,2010-03-19,20100319033640,2010-03-25,MALE,45.0,basic,2,en,seo,google,linked,Web,Mac Desktop,Chrome,US
+7wp59ymyfg,2010-03-19,20100319055628,,-unknown-,,basic,2,en,sem-non-brand,other,,Web,Other/Unknown,-unknown-,NDF
+1rk8pr9sd0,2010-03-19,20100319065543,2010-03-28,-unknown-,,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+7xhksd1tuv,2010-03-19,20100319172306,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+p7zoovvqb3,2010-03-19,20100319180353,2010-03-21,-unknown-,52.0,basic,3,en,content,google,omg,Web,iPad,Mobile Safari,US
+sab3gx63z4,2010-03-19,20100319210815,2010-03-19,-unknown-,,basic,3,en,seo,google,,Web,Other/Unknown,-unknown-,US
+z2mejhxhvf,2010-03-19,20100319214444,2010-04-10,-unknown-,47.0,basic,2,en,seo,facebook,untracked,Web,Windows Desktop,IE,US
+m1trxudwtq,2010-03-19,20100319234728,2010-03-25,-unknown-,,basic,0,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,US
+ewt2zkfelb,2010-03-20,20100320030109,2010-03-20,-unknown-,,basic,2,en,sem-non-brand,google,linked,Web,Windows Desktop,Chrome,US
+dc9z0c9qyh,2010-03-20,20100320032604,2010-03-23,-unknown-,38.0,basic,0,en,other,craigslist,untracked,Web,Mac Desktop,Safari,FR
+96nftukfqo,2010-03-20,20100320055904,,-unknown-,,basic,2,en,sem-non-brand,google,untracked,Web,Mac Desktop,Safari,NDF
+mbjxmbwngx,2010-03-20,20100320080054,2011-03-06,MALE,36.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+ri0rdw8dv0,2010-03-20,20100320145409,,FEMALE,46.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,NDF
+6bbegns0g8,2010-03-20,20100320174422,2010-03-21,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,CA
+lb8siilz9t,2010-03-20,20100320182357,,-unknown-,,basic,2,en,seo,google,,Web,Other/Unknown,-unknown-,NDF
+v824vqs9tn,2010-03-20,20100320214613,,MALE,51.0,basic,2,en,content,google,linked,Web,Windows Desktop,IE,NDF
+y3u5ul6zdb,2010-03-21,20100321005957,2010-03-21,-unknown-,,basic,3,en,other,craigslist,untracked,Web,Windows Desktop,Firefox,US
+7mybd8yxvf,2010-03-21,20100321062656,,MALE,31.0,basic,2,de,other,craigslist,untracked,Web,iPhone,-unknown-,NDF
+at8f5d4fme,2010-03-22,20100322052428,,-unknown-,,basic,3,en,direct,direct,untracked,Web,iPad,-unknown-,NDF
+jy29mjfc0u,2010-03-22,20100322062044,2010-03-22,-unknown-,,basic,0,en,seo,google,omg,Web,iPad,Mobile Safari,US
+vmbq6kd8rf,2010-03-22,20100322062132,2010-03-22,FEMALE,57.0,basic,2,en,other,craigslist,omg,Web,Mac Desktop,Firefox,US
+g0oohacz1k,2010-03-22,20100322120147,,-unknown-,,basic,3,en,direct,direct,untracked,Web,iPad,Mobile Safari,NDF
+ywtl725uub,2010-03-22,20100322174413,2010-03-22,-unknown-,,basic,3,en,content,google,,Web,Other/Unknown,-unknown-,US
+9tgxi1o1ci,2010-03-23,20100323031035,,-unknown-,,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+nqjv3udkar,2010-03-23,20100323040341,2010-12-11,FEMALE,,basic,0,en,other,craigslist,untracked,Web,Windows Desktop,Chrome,PT
+5e6lo2i2m9,2010-03-23,20100323062538,2010-04-09,FEMALE,31.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,other
+hd8n2vcnh7,2010-03-23,20100323071331,2010-03-24,MALE,39.0,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+gblq4gziw0,2010-03-23,20100323154317,2010-03-25,-unknown-,,basic,2,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,US
+obnyc7z50d,2010-03-23,20100323234947,2010-03-24,FEMALE,61.0,facebook,3,en,sem-non-brand,google,tracked-other,Web,Mac Desktop,Safari,US
+8nt3tn9rxz,2010-03-24,20100324141421,2010-04-02,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+f6dszs8xce,2010-03-24,20100324145622,2010-03-25,MALE,64.0,basic,2,en,seo,google,untracked,Web,Windows Desktop,IE,US
+i8q93p96t0,2010-03-24,20100324175008,2010-03-24,MALE,35.0,facebook,2,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,US
+fdgpbt5byi,2010-03-25,20100325001919,2010-03-26,-unknown-,,basic,3,en,direct,direct,linked,Web,Mac Desktop,Chrome,US
+qz64wbav5b,2010-03-25,20100325021355,2010-03-25,-unknown-,,basic,3,en,other,craigslist,untracked,Web,Windows Desktop,IE,US
+67jmnw0euc,2010-03-25,20100325032139,2010-03-26,-unknown-,39.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+mxnhvrr67n,2010-03-25,20100325040929,2010-03-25,-unknown-,,facebook,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+47wdhtdini,2010-03-25,20100325170047,,-unknown-,72.0,basic,0,en,content,google,,Web,Other/Unknown,-unknown-,NDF
+uhbkw5exeg,2010-03-25,20100325204434,2010-04-17,MALE,70.0,facebook,2,en,direct,direct,tracked-other,Web,Mac Desktop,Chrome,US
+iu07374sr5,2010-03-25,20100325204508,2010-03-26,-unknown-,,basic,2,en,sem-non-brand,google,untracked,Web,iPhone,-unknown-,US
+fi5x88il0t,2010-03-25,20100325204754,2010-04-12,-unknown-,,basic,0,en,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+1ok8je1zsw,2010-03-25,20100325230244,,FEMALE,45.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Safari,NDF
+97oxlyiw48,2010-03-26,20100326013107,2010-03-26,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+36m2hgioax,2010-03-26,20100326160644,,-unknown-,42.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,NDF
+10b1mb478j,2010-03-26,20100326174024,2010-07-24,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+1lyrkm20j5,2010-03-26,20100326181410,2010-03-31,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,FR
+pn4dcb27fv,2010-03-26,20100326201453,2010-04-02,FEMALE,28.0,basic,3,en,other,craigslist,omg,Web,Windows Desktop,IE,US
+09i58csdl3,2010-03-27,20100327013341,2010-08-13,MALE,52.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+f4ykjobwro,2010-03-27,20100327020631,,MALE,37.0,facebook,3,en,other,craigslist,tracked-other,Web,Windows Desktop,Chrome,NDF
+t93kik6s88,2010-03-27,20100327195358,2010-03-27,-unknown-,,facebook,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+m0d85egjx6,2010-03-27,20100327202503,2010-03-27,-unknown-,29.0,basic,3,en,seo,google,linked,Web,Mac Desktop,Chrome,US
+kw7qyvlhsq,2010-03-28,20100328031851,2010-03-28,MALE,70.0,facebook,3,en,other,craigslist,untracked,Web,Windows Desktop,Chrome,US
+bdktvycjki,2010-03-28,20100328234708,,-unknown-,,basic,3,en,content,google,,Web,Other/Unknown,-unknown-,NDF
+bbel7f8v5r,2010-03-29,20100329171817,2010-03-29,FEMALE,67.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+lfyel5e7ld,2010-03-29,20100329185137,2010-03-29,MALE,46.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Chrome,US
+9wcp534m13,2010-03-29,20100329202654,2010-04-02,-unknown-,,basic,3,en,content,google,,Web,Other/Unknown,-unknown-,FR
+92exeluf1d,2010-03-29,20100329223050,,-unknown-,,basic,2,en,direct,direct,untracked,Web,Windows Desktop,Firefox,NDF
+6bapkl8rkt,2010-03-29,20100329230037,2010-03-30,-unknown-,38.0,basic,3,en,seo,google,untracked,Web,Mac Desktop,Chrome,US
+uy9u2w4o04,2010-03-30,20100330033437,,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+frz8tywqin,2010-03-30,20100330042604,,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+atuisqv42a,2010-03-30,20100330163642,2010-03-31,FEMALE,55.0,basic,2,en,sem-non-brand,google,untracked,Web,Mac Desktop,Firefox,US
+8xecy1uwy0,2010-03-30,20100330183707,2010-03-31,FEMALE,30.0,basic,3,en,direct,direct,linked,Web,Mac Desktop,Chrome,US
+1i36cmzttm,2010-03-30,20100330212752,2010-04-03,-unknown-,,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+53ty7sndm5,2010-03-30,20100330235931,,-unknown-,,basic,2,en,direct,direct,linked,Web,Windows Desktop,Chrome,NDF
+p8caxb7wj5,2010-03-31,20100331040948,2010-04-02,-unknown-,37.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Firefox,US
+uhlqaqbtxm,2010-03-31,20100331043320,2010-03-31,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+rhuyrip1sb,2010-03-31,20100331054402,2010-04-01,-unknown-,,facebook,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+pb7creckcc,2010-03-31,20100331190850,,-unknown-,43.0,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+rgar4wqpgc,2010-03-31,20100331211054,,-unknown-,,basic,2,en,other,craigslist,linked,Web,Mac Desktop,Safari,NDF
+usbnr61ory,2010-03-31,20100331232213,,-unknown-,,facebook,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+wpkieepqt7,2010-04-01,20100401004544,2010-04-01,MALE,52.0,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+z5mabkahby,2010-04-02,20100402024410,,MALE,,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,NDF
+jfgktypdka,2010-04-02,20100402030557,,FEMALE,42.0,facebook,2,en,direct,direct,linked,Web,Windows Desktop,Chrome,NDF
+z26yexgsfv,2010-04-02,20100402153008,2010-06-21,-unknown-,31.0,basic,2,en,direct,direct,untracked,Web,Windows Desktop,Chrome,ES
+yct13ahh0a,2010-04-02,20100402155100,,FEMALE,18.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Firefox,NDF
+sy3gvih73c,2010-04-02,20100402204119,2010-04-04,FEMALE,31.0,basic,0,en,seo,google,untracked,Web,Mac Desktop,Chrome,US
+80u3akmo1j,2010-04-02,20100402220635,,-unknown-,34.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+1gh5kbpxx7,2010-04-03,20100403004226,,-unknown-,32.0,basic,2,en,other,craigslist,tracked-other,Web,Mac Desktop,Safari,NDF
+hpjm8vv5w9,2010-04-03,20100403013945,2010-04-07,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+fx525648ad,2010-04-03,20100403020021,2010-04-03,-unknown-,,basic,3,en,seo,google,omg,Web,Mac Desktop,Firefox,US
+cge4ibk0nz,2010-04-03,20100403082609,2010-04-07,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+2ryibplmo9,2010-04-03,20100403143249,2010-04-05,FEMALE,41.0,basic,3,en,sem-non-brand,google,tracked-other,Web,Mac Desktop,Safari,US
+s55gicqg1d,2010-04-03,20100403173904,2010-04-03,MALE,29.0,basic,3,en,direct,direct,tracked-other,Web,Mac Desktop,Safari,US
+n10moy4054,2010-04-04,20100404030108,2010-04-06,FEMALE,34.0,basic,3,en,other,craigslist,linked,Web,Mac Desktop,Safari,US
+zte1gzuphx,2010-04-04,20100404072309,2010-04-05,-unknown-,,basic,2,en,content,google,,Web,Other/Unknown,-unknown-,US
+0gv72o0m8o,2010-04-04,20100404171719,2010-04-05,FEMALE,54.0,basic,3,en,direct,direct,omg,Web,Android Phone,Android Browser,US
+me2vytofro,2010-04-04,20100404174347,2010-04-04,-unknown-,,facebook,3,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+nnldd2w28q,2010-04-04,20100404233053,2010-04-12,-unknown-,,basic,2,en,content,google,,Web,Other/Unknown,-unknown-,US
+0i6m4ygzeb,2010-04-05,20100405003932,,MALE,34.0,facebook,3,en,sem-non-brand,google,omg,Web,Windows Desktop,Chrome,NDF
+rv3w9q6wzl,2010-04-05,20100405012312,,MALE,70.0,facebook,2,en,sem-non-brand,google,linked,Web,Mac Desktop,Safari,NDF
+j5olegcqzr,2010-04-05,20100405015850,,FEMALE,60.0,basic,2,en,sem-non-brand,google,tracked-other,Web,Windows Desktop,Firefox,NDF
+m0u1y22mre,2010-04-05,20100405020822,2010-04-05,FEMALE,65.0,basic,0,en,seo,google,untracked,Web,Windows Desktop,Firefox,US
+oyrfachjsf,2010-04-05,20100405045138,2010-04-05,-unknown-,31.0,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,ES
+1cpcw88ypa,2010-04-05,20100405085939,,-unknown-,30.0,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+adq42kzmnv,2010-12-23,20100405153524,2010-04-06,MALE,38.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+e1bkqw67zo,2010-04-05,20100405155024,2010-04-05,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+cb67o81bup,2010-04-05,20100405163207,2010-05-05,FEMALE,65.0,basic,2,en,content,google,untracked,Web,Mac Desktop,Safari,US
+a74it7h6o1,2010-04-05,20100405174013,2010-04-17,FEMALE,44.0,basic,2,en,seo,google,linked,Web,Mac Desktop,Safari,US
+cjcqs9f904,2010-04-05,20100405201119,2010-04-09,-unknown-,,basic,2,en,content,google,linked,Web,iPad,Mobile Safari,US
+apth1cyrgl,2010-04-05,20100405203057,2010-04-06,-unknown-,,basic,3,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,US
+647fpnusac,2010-04-05,20100405210650,,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+v9628gglmi,2010-04-05,20100405215519,,-unknown-,36.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+176898y1ju,2011-03-28,20100406190210,2010-04-15,FEMALE,44.0,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+n2kxg9xffy,2010-04-06,20100406195128,,-unknown-,,basic,2,en,other,craigslist,linked,Web,iPad,Mobile Safari,NDF
+u3sw0dbupz,2010-04-06,20100406203411,2010-04-09,MALE,37.0,facebook,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+lyu3tx63vx,2010-04-06,20100406203920,2010-04-06,-unknown-,,basic,2,en,other,craigslist,untracked,Web,Windows Desktop,IE,US
+z70euzgxrv,2010-04-06,20100406223554,2010-04-08,FEMALE,73.0,basic,0,en,other,craigslist,omg,Web,Mac Desktop,Safari,US
+9rvxxfbmf8,2010-04-07,20100407000618,,-unknown-,,basic,2,en,sem-non-brand,google,omg,Web,Mac Desktop,Safari,NDF
+v83s1e555y,2010-04-07,20100407013149,2010-04-12,-unknown-,,basic,2,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,US
+erqi1ztcv4,2010-04-07,20100407065924,,-unknown-,,facebook,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+xv3dlvcdnz,2010-04-07,20100407075054,,MALE,,basic,2,en,direct,direct,untracked,Web,iPhone,-unknown-,NDF
+qzw989n1z2,2010-04-07,20100407180517,,-unknown-,,basic,2,en,seo,google,linked,Web,Mac Desktop,Chrome,NDF
+v0b0h65de8,2010-04-07,20100407202952,,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+vll4sdis1q,2010-04-08,20100408190802,,-unknown-,31.0,basic,3,en,other,craigslist,untracked,Web,Windows Desktop,IE,NDF
+la3wo57cq4,2010-04-08,20100408231412,,-unknown-,,basic,2,en,direct,direct,omg,Web,Mac Desktop,Safari,NDF
+6kdpl50r8l,2010-04-09,20100409023423,,-unknown-,,basic,2,en,direct,direct,linked,Web,iPad,Mobile Safari,NDF
+cw6xwveh1f,2010-04-09,20100409065544,,FEMALE,45.0,basic,3,en,content,google,untracked,Web,Windows Desktop,IE,NDF
+np09txpplp,2010-04-09,20100409081856,2010-04-10,-unknown-,38.0,basic,3,en,direct,direct,linked,Web,Mac Desktop,Chrome,US
+haeluzt89n,2010-04-09,20100409171739,,MALE,37.0,basic,3,en,seo,google,untracked,Web,Mac Desktop,Safari,NDF
+5pwj8gboju,2010-04-09,20100409191000,2010-04-18,-unknown-,,basic,2,en,seo,google,,Web,Other/Unknown,-unknown-,US
+z6t6a4clp2,2010-04-09,20100409200600,2010-04-13,FEMALE,29.0,basic,2,en,other,craigslist,linked,Web,Mac Desktop,Safari,US
+gh9wwbnxoy,2010-04-10,20100410014103,2010-04-10,MALE,36.0,basic,3,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,US
+idh2rya32p,2010-04-10,20100410041530,2010-04-10,-unknown-,,basic,3,en,seo,google,omg,Web,Mac Desktop,Chrome,US
+zw2u1zac9z,2010-04-10,20100410043149,2010-04-11,-unknown-,30.0,facebook,3,en,direct,direct,untracked,Web,iPad,Mobile Safari,US
+bc2qzhoy7n,2010-04-10,20100410222756,2010-09-20,-unknown-,,basic,3,en,other,craigslist,untracked,Web,Windows Desktop,Chrome,US
+v2x0ms9c62,2010-04-11,20100411065602,2010-04-13,-unknown-,2014.0,basic,3,en,other,craigslist,untracked,Web,Windows Desktop,Firefox,FR
+y1xso904sm,2010-04-12,20100412054834,,-unknown-,35.0,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+qfhtg8plvx,2010-04-12,20100412064942,2010-04-13,FEMALE,36.0,facebook,3,en,other,craigslist,tracked-other,Web,Mac Desktop,Chrome,FR
+yqmymjiy9t,2010-04-12,20100412113934,,-unknown-,,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,NDF
+5ig7sf3sqk,2010-04-12,20100412143624,2010-04-13,-unknown-,,basic,2,en,sem-non-brand,google,untracked,Web,Windows Desktop,Firefox,US
+rohhbyxj69,2010-04-12,20100412150155,2010-04-12,FEMALE,32.0,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+s1jz5dqklw,2010-04-12,20100412180225,2010-04-19,-unknown-,,basic,3,en,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+ianaom1z9s,2010-04-12,20100412185846,2010-04-12,FEMALE,36.0,facebook,3,en,other,craigslist,linked,Web,Mac Desktop,Safari,US
+iim5mrjd40,2010-04-12,20100412190953,,-unknown-,,basic,3,en,other,craigslist,untracked,Web,Windows Desktop,Chrome,NDF
+e9nw7mg582,2010-04-12,20100412203646,,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+9ouah6tc30,2010-04-12,20100412231534,2010-04-12,FEMALE,104.0,facebook,3,en,other,craigslist,linked,Web,iPhone,Mobile Safari,FR
+uglnad82h8,2010-04-13,20100413013216,2010-04-23,FEMALE,33.0,facebook,0,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+0xwoje4363,2010-04-13,20100413075154,,-unknown-,33.0,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+wostjau9h3,2010-04-13,20100413151911,2010-05-07,MALE,54.0,facebook,2,en,sem-non-brand,google,linked,Web,iPad,Mobile Safari,CA
+ufs6oygaz7,2010-04-13,20100413154022,,-unknown-,,basic,2,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,NDF
+99j6gpdgs6,2010-04-13,20100413162556,2010-04-18,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+vnkzdd3z0q,2010-04-13,20100413173547,,FEMALE,35.0,facebook,2,en,direct,direct,untracked,Web,Windows Desktop,Chrome,NDF
+6wyshxlfix,2010-04-13,20100413210005,2011-02-10,MALE,31.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+ffed9prc6k,2010-04-13,20100413213202,,FEMALE,64.0,basic,3,en,content,google,omg,Web,Mac Desktop,Safari,NDF
+8yty8d7o3x,2010-04-14,20100414162123,2010-04-15,FEMALE,37.0,basic,2,en,other,craigslist,untracked,Web,Android Phone,-unknown-,US
+j3m8l31ism,2010-04-14,20100414203439,,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+9a7rl231jg,2010-04-14,20100414213308,,-unknown-,49.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+mb04lox8tt,2010-11-16,20100414214144,2011-05-04,FEMALE,31.0,basic,0,en,direct,direct,untracked,Web,Windows Desktop,Firefox,US
+bhocvr48f9,2010-04-14,20100414223037,,FEMALE,28.0,basic,2,en,other,craigslist,linked,Web,Android Phone,Chrome Mobile,NDF
+bxj29lm4zb,2010-04-14,20100414235749,2010-04-15,-unknown-,28.0,basic,3,en,content,google,untracked,Web,Mac Desktop,Safari,US
+jgg07z5gyt,2010-04-15,20100415005417,2010-04-15,FEMALE,42.0,basic,0,en,direct,direct,untracked,Web,Windows Desktop,IE,US
+djjnabz7ki,2010-04-15,20100415015059,,MALE,30.0,facebook,3,en,direct,direct,untracked,Web,Android Phone,-unknown-,NDF
+xgigh8y06s,2010-04-15,20100415024451,2010-04-15,-unknown-,34.0,basic,3,en,sem-non-brand,other,untracked,Web,Windows Desktop,Chrome,US
+0oib3cn172,2010-04-15,20100415225551,,FEMALE,36.0,facebook,3,en,other,craigslist,omg,Web,Mac Desktop,Safari,NDF
+21l3vhg15l,2010-04-16,20100416003714,,-unknown-,,basic,2,en,direct,direct,linked,Web,Mac Desktop,Chrome,NDF
+z7cno44fg0,2010-04-16,20100416024250,,-unknown-,,facebook,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+4lsqq3foce,2010-04-17,20100417012243,,-unknown-,55.0,basic,3,en,content,google,linked,Web,Mac Desktop,Firefox,NDF
+3mxn0ciqmb,2010-04-17,20100417133255,2010-04-23,-unknown-,50.0,basic,3,en,sem-non-brand,google,omg,Web,Windows Desktop,Firefox,US
+h4pado3m8m,2010-04-17,20100417155409,2010-04-17,-unknown-,73.0,basic,2,en,content,google,,Web,Other/Unknown,-unknown-,US
+oamfblpxdy,2014-01-15,20100417172659,2014-01-15,OTHER,45.0,basic,24,en,direct,direct,untracked,Moweb,iPhone,Mobile Safari,US
+kc0kexyyes,2010-04-17,20100417221018,2010-04-18,FEMALE,37.0,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+qkzbnh2uny,2010-04-17,20100417230030,,-unknown-,,basic,3,en,direct,direct,untracked,Web,Windows Desktop,Chrome,NDF
+vkv5ov9x1l,2010-04-18,20100418004920,,-unknown-,,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+tf2sy2r28y,2010-04-18,20100418033424,,-unknown-,60.0,basic,2,en,sem-non-brand,other,untracked,Web,Windows Desktop,Chrome,NDF
+lnd79ajx1i,2010-04-18,20100418044545,2010-05-10,FEMALE,46.0,facebook,2,en,sem-non-brand,google,untracked,Web,Mac Desktop,Safari,US
+o13k6i7n0z,2010-04-18,20100418210219,2010-04-19,-unknown-,,basic,2,en,sem-non-brand,google,omg,Web,Mac Desktop,Firefox,CA
+3gcqiap1cm,2010-04-19,20100419010323,,-unknown-,,basic,3,en,other,craigslist,untracked,Web,Android Tablet,Chrome,NDF
+yaokln14ut,2010-04-19,20100419053432,2010-10-11,-unknown-,39.0,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+sme5hcsupv,2010-04-19,20100419165031,,FEMALE,59.0,facebook,2,en,content,google,omg,Web,Mac Desktop,Chrome,NDF
+2h2ekzkxdh,2010-04-20,20100420021049,2010-05-07,-unknown-,,basic,2,en,direct,direct,product,Web,iPhone,Mobile Safari,ES
+mz965qmz08,2010-04-20,20100420043823,2010-04-22,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,ES
+1w0zewm9b4,2010-04-20,20100420200752,2010-04-20,FEMALE,28.0,basic,3,en,seo,google,untracked,Web,Mac Desktop,Firefox,US
+m3p9a0nu6u,2010-04-21,20100421011546,2010-04-22,-unknown-,,basic,0,en,other,craigslist,untracked,Web,Windows Desktop,Firefox,US
+fpvykf1vam,2010-04-21,20100421015334,,-unknown-,,basic,3,en,direct,direct,linked,Web,Mac Desktop,Safari,NDF
+lknxzku6sv,2010-04-21,20100421020344,2010-04-24,-unknown-,,facebook,2,en,other,craigslist,linked,Web,Mac Desktop,Safari,US
+e3jegi95l4,2010-04-21,20100421051835,2011-04-04,FEMALE,,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,GB
+i519ro1yxs,2010-04-21,20100421053010,2010-04-22,FEMALE,35.0,facebook,2,en,other,craigslist,linked,Web,Windows Desktop,Chrome,US
+m1s2bgq45a,2010-04-21,20100421152555,2010-04-22,-unknown-,,basic,0,en,other,craigslist,tracked-other,Web,Mac Desktop,Safari,US
+tacbwpb64u,2010-04-21,20100421205041,,-unknown-,29.0,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+qertqulx4t,2010-04-22,20100422080140,2010-04-22,FEMALE,19.0,facebook,3,en,sem-non-brand,google,untracked,Web,Windows Desktop,Firefox,US
+j40wafaogx,2010-04-22,20100422182838,,-unknown-,,basic,2,en,sem-non-brand,vast,untracked,Web,iPhone,-unknown-,NDF
+wmzgv64k9e,2010-04-22,20100422183216,,-unknown-,38.0,basic,2,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,NDF
+mi363ujdbk,2010-04-22,20100422193018,,-unknown-,41.0,basic,2,en,sem-non-brand,vast,linked,Web,iPad,Mobile Safari,NDF
+njtt62xtq8,2010-04-22,20100422201254,,FEMALE,31.0,basic,2,en,other,other,tracked-other,Web,iPhone,Mobile Safari,NDF
+j1cseb69ch,2010-04-22,20100422233214,2010-04-23,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+tfy9x1q2r1,2010-04-23,20100423061130,,-unknown-,,basic,2,en,direct,direct,untracked,Web,iPhone,Mobile Safari,NDF
+paa7y16nd9,2010-04-23,20100423154843,,-unknown-,,basic,2,en,seo,google,untracked,Web,Mac Desktop,Safari,NDF
+61kob9coeg,2010-04-23,20100423195259,2010-06-12,FEMALE,38.0,basic,2,en,sem-non-brand,vast,untracked,Web,Windows Desktop,Chrome,US
+xediqv77b0,2010-04-23,20100423212037,2010-10-05,-unknown-,65.0,basic,2,en,seo,google,tracked-other,Web,Windows Desktop,IE,US
+tmkmmrthnb,2010-04-24,20100424031530,2010-04-24,-unknown-,32.0,basic,3,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,US
+dbjktqkfk6,2010-04-25,20100425013425,2010-04-28,FEMALE,31.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+4glt2a6ck3,2010-04-25,20100425021418,,FEMALE,31.0,basic,2,en,seo,google,untracked,Web,Windows Desktop,Chrome,NDF
+qpod5q0k1e,2010-04-25,20100425162610,,-unknown-,,basic,2,en,other,craigslist,untracked,Web,Windows Desktop,Chrome,NDF
+nldvcnd6kr,2010-04-25,20100425190955,2010-04-29,MALE,,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+0jkdqwdq3y,2010-04-25,20100425191505,2010-04-28,-unknown-,,basic,2,en,seo,google,linked,Web,Mac Desktop,Chrome,US
+94s3fuai01,2010-04-25,20100425201216,,-unknown-,,basic,2,en,sem-non-brand,vast,untracked,Web,iPhone,-unknown-,NDF
+l0ecexzzex,2010-04-25,20100425222347,2010-04-25,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+5wqniljn8n,2010-04-25,20100425234552,,FEMALE,41.0,facebook,0,en,other,craigslist,untracked,Web,Other/Unknown,-unknown-,NDF
+rpv2330ciy,2010-04-26,20100426011530,2010-04-27,-unknown-,,basic,2,en,direct,direct,linked,Web,Mac Desktop,Safari,US
+j52w6k4rdw,2010-04-26,20100426061034,2010-04-27,-unknown-,42.0,basic,0,en,seo,google,linked,Web,Mac Desktop,Safari,US
+3j8hg0dr04,2010-04-26,20100426121125,2010-04-27,MALE,43.0,facebook,3,en,direct,direct,untracked,Web,Mac Desktop,Safari,IT
+fzh136h9s1,2010-04-26,20100426183141,,-unknown-,,basic,2,en,direct,direct,omg,Web,Mac Desktop,Safari,NDF
+fd6gb3m1ae,2010-04-26,20100426200919,2010-04-26,FEMALE,33.0,basic,0,en,direct,direct,untracked,Web,iPhone,-unknown-,US
+kp127cvprl,2010-04-26,20100426205403,,-unknown-,61.0,basic,2,es,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+rn4ycf1mxi,2010-04-27,20100427044842,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+yjrmoqwkfe,2010-04-27,20100427063648,2010-06-01,MALE,31.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,NL
+ls4zm2qvh4,2010-04-27,20100427132245,,-unknown-,,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+e5olmksmba,2010-04-27,20100427181431,,MALE,39.0,basic,2,en,seo,google,linked,Web,Mac Desktop,Chrome,NDF
+wu91cbn838,2010-04-27,20100427232354,2010-05-07,FEMALE,,basic,2,fr,direct,direct,untracked,Web,Windows Desktop,Firefox,FR
+oa9klu4bot,2010-04-28,20100428002530,,FEMALE,55.0,facebook,2,en,direct,direct,linked,Web,Mac Desktop,Safari,NDF
+ijilcdb2mi,2010-04-28,20100428003307,,MALE,38.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Chrome,NDF
+y4ap3qcqba,2010-04-28,20100428034746,2010-04-29,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,CA
+7o7h8o1zrf,2010-04-28,20100428052007,,FEMALE,43.0,facebook,2,en,other,craigslist,untracked,Web,Mac Desktop,Firefox,NDF
+fkq0j30vf8,2010-04-28,20100428185258,2010-04-28,-unknown-,,basic,3,en,direct,direct,untracked,Web,iPhone,-unknown-,US
+767if1is7y,2010-04-28,20100428200633,2010-04-29,FEMALE,36.0,basic,3,en,direct,direct,untracked,Web,iPhone,-unknown-,US
+b5l09ad6aa,2010-04-28,20100428221228,2010-05-05,FEMALE,41.0,basic,3,en,other,craigslist,linked,Web,iPad,Mobile Safari,US
+2dmuy3lff2,2010-04-29,20100429034342,2010-04-30,MALE,35.0,basic,2,en,other,craigslist,tracked-other,Web,Mac Desktop,Safari,US
+l5uphrvuci,2010-04-29,20100429053223,2010-05-05,-unknown-,,basic,2,en,direct,direct,linked,Web,Mac Desktop,Firefox,FR
+tp3pyj8o1y,2010-04-29,20100429160612,,-unknown-,,basic,2,en,sem-non-brand,google,untracked,Web,Windows Desktop,IE,NDF
+rzhouzy2ok,2010-04-29,20100429161617,2010-04-29,FEMALE,5.0,facebook,0,en,other,craigslist,tracked-other,Web,Mac Desktop,Safari,IT
+dfbdp3ozhe,2010-04-29,20100429231917,2010-04-30,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+cybxhjg7qs,2010-04-29,20100429234313,2010-07-19,MALE,30.0,facebook,3,en,direct,direct,untracked,Web,Mac Desktop,Chrome,ES
+yh9cw0pkr7,2010-04-29,20100429235333,2010-05-02,MALE,35.0,basic,3,en,direct,direct,untracked,Web,iPhone,-unknown-,US
+toazhl601h,2010-04-29,20100429235656,2010-05-01,-unknown-,,facebook,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+itcjsfgprl,2010-04-30,20100430024205,2010-05-01,MALE,30.0,basic,3,en,direct,direct,untracked,Web,iPad,Mobile Safari,US
+au7cisk99y,2010-04-30,20100430041247,2010-05-01,FEMALE,35.0,facebook,2,en,seo,google,untracked,Web,Other/Unknown,-unknown-,US
+zc18mzhqkl,2010-04-30,20100430071425,2010-10-05,MALE,55.0,basic,2,en,sem-non-brand,google,untracked,Web,Mac Desktop,Chrome,US
+zn4k34mdym,2010-04-30,20100430161212,2010-05-08,MALE,33.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,FR
+qfqmv9mt5w,2010-04-30,20100430172438,,MALE,38.0,basic,3,en,content,google,untracked,Web,Windows Desktop,Chrome,NDF
+bu9ee23zgn,2010-04-30,20100430192227,2010-05-04,FEMALE,,basic,3,en,other,craigslist,untracked,Web,Mac Desktop,Safari,FR
+qb8xj4v83d,2010-04-30,20100430234014,,-unknown-,,basic,0,en,seo,google,,Web,Other/Unknown,-unknown-,NDF
+kk97r882ii,2010-05-01,20100501002823,,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+3z0g71317h,2010-05-01,20100501021713,,-unknown-,30.0,basic,3,en,content,google,,Web,Other/Unknown,-unknown-,NDF
+g8e3caky7u,2010-05-01,20100501150844,2010-05-01,MALE,38.0,facebook,3,en,direct,direct,tracked-other,Web,Windows Desktop,Chrome,FR
+q7copkzetz,2010-05-01,20100501154932,2010-05-03,-unknown-,,basic,3,en,seo,google,,Web,Other/Unknown,-unknown-,US
+upibvlpl37,2010-05-01,20100501164030,,-unknown-,,basic,3,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,NDF
+qcisr5eha6,2010-05-01,20100501201725,2010-05-04,FEMALE,36.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Firefox,IT
+jy3utap63r,2010-05-01,20100501204235,,FEMALE,37.0,basic,3,en,other,craigslist,linked,Web,Mac Desktop,Chrome,NDF
+bbmxnzyipq,2010-05-01,20100501212405,2010-05-08,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+anojvlueb5,2010-05-02,20100502004439,2010-05-02,MALE,33.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+pp6zqf7ja0,2010-05-02,20100502010831,2010-05-02,FEMALE,33.0,facebook,0,en,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+3owq07bxaq,2010-05-02,20100502044047,2010-05-02,-unknown-,,basic,3,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,US
+9uzlsl1ppa,2010-05-02,20100502175403,2010-05-02,-unknown-,,basic,2,en,seo,google,,Web,Other/Unknown,-unknown-,US
+nvfuxesr7t,2010-05-02,20100502203208,2010-05-03,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+it1xy358ev,2010-05-02,20100502220010,2010-05-03,-unknown-,,basic,3,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,US
+k6bwkpywgp,2010-05-02,20100502233058,2010-05-07,MALE,66.0,basic,2,en,sem-non-brand,google,omg,Web,Mac Desktop,Firefox,FR
+qwh6hotuhx,2010-05-02,20100502235625,2010-05-08,MALE,42.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,US
+phq5ic9lq3,2010-05-03,20100503004623,2010-05-05,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+7mlce19r0p,2010-05-03,20100503013819,,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+ez6x76ufi5,2010-05-03,20100503064148,,-unknown-,,basic,2,en,other,craigslist,linked,Web,iPhone,Mobile Safari,NDF
+25c8bpsw8s,2010-05-03,20100503145342,2010-05-11,-unknown-,43.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+wif36rzqzv,2010-05-03,20100503151620,,-unknown-,,basic,2,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,NDF
+5yv62gkib7,2010-05-03,20100503224739,,-unknown-,,basic,2,en,direct,direct,linked,Web,iPhone,Mobile Safari,NDF
+2gcvdulczc,2010-05-03,20100503232421,2010-05-04,-unknown-,37.0,facebook,0,en,other,craigslist,untracked,Web,Mac Desktop,Safari,FR
+x67fvv1bsb,2010-05-03,20100503234504,2010-05-19,-unknown-,,basic,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+glbjvlg7dx,2010-05-04,20100504043533,,-unknown-,,basic,3,en,seo,google,,Web,Other/Unknown,-unknown-,NDF
+svwo8gsij4,2010-05-04,20100504044853,2010-05-27,FEMALE,37.0,basic,3,en,direct,direct,linked,Web,Mac Desktop,Chrome,US
+98cgff763r,2010-05-04,20100504054953,,MALE,40.0,facebook,3,en,direct,direct,untracked,Web,Windows Desktop,IE,NDF
+r4psixs50q,2010-05-04,20100504150338,2010-05-04,MALE,43.0,facebook,2,en,direct,direct,omg,Web,Mac Desktop,Safari,US
+ljisw2oiu0,2010-05-04,20100504150604,2010-05-04,-unknown-,,basic,3,en,seo,google,linked,Web,Mac Desktop,Firefox,US
+nh7l8syd9z,2010-05-04,20100504201748,2010-05-08,FEMALE,41.0,basic,0,en,sem-non-brand,google,untracked,Web,Windows Desktop,Chrome,US
+uct6dye2ez,2010-05-05,20100505033422,2010-05-12,-unknown-,57.0,basic,2,en,seo,google,untracked,Web,Mac Desktop,Safari,US
+9hxa4k028j,2010-05-05,20100505044548,,-unknown-,,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Firefox,NDF
+ep4jkzkbag,2010-05-05,20100505061229,2010-06-18,FEMALE,51.0,basic,2,en,direct,direct,untracked,Web,Windows Desktop,Chrome,US
+mvd0j3hjx4,2010-05-05,20100505082624,,-unknown-,34.0,basic,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+hkogbgst7b,2010-05-05,20100505162023,,-unknown-,,basic,2,en,seo,google,,Web,Other/Unknown,-unknown-,NDF
+0l6drvk932,2010-05-05,20100505175355,2010-05-05,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,IT
+ochtz2ywon,2010-05-05,20100505230025,2011-04-25,MALE,32.0,basic,2,en,seo,google,untracked,Web,iPad,Mobile Safari,US
+86zt3jb8da,2010-05-05,20100505233925,2010-05-06,FEMALE,34.0,basic,2,en,direct,direct,omg,Web,Windows Desktop,Chrome,US
+4e274ysvkp,2010-05-06,20100506000817,2010-05-14,-unknown-,69.0,facebook,2,en,sem-non-brand,google,linked,Web,Windows Desktop,IE,US
+eli7c1nc9b,2010-05-06,20100506013533,2010-05-20,-unknown-,29.0,basic,2,en,other,craigslist,omg,Web,Windows Desktop,Chrome,US
+2gm4pei42b,2010-05-06,20100506030317,2010-05-07,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,other
+s7fsdaxz6m,2010-05-06,20100506172701,2010-05-15,-unknown-,,basic,2,en,sem-non-brand,other,,Web,Other/Unknown,-unknown-,US
+w8zct6k601,2010-05-06,20100506210333,,FEMALE,26.0,basic,2,en,seo,google,untracked,Web,iPad,Mobile Safari,NDF
+226l0nmxgv,2010-05-07,20100507041052,2010-05-08,-unknown-,31.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+2uxm4t7xjs,2010-05-07,20100507174102,,FEMALE,53.0,facebook,2,en,content,google,untracked,Web,Windows Desktop,AOL Explorer,NDF
+fs8e1p9h4m,2010-05-07,20100507182600,,-unknown-,,basic,2,en,direct,direct,untracked,Web,Windows Desktop,IE,NDF
+erwm92upfm,2010-05-07,20100507193221,,FEMALE,29.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,NDF
+4e676671tu,2010-05-07,20100507194103,,MALE,29.0,facebook,3,en,other,craigslist,linked,Web,Mac Desktop,Safari,NDF
+6ibnave6s6,2010-05-07,20100507225321,2010-07-03,-unknown-,,basic,3,en,seo,google,linked,Web,Mac Desktop,Safari,US
+wq76ltfifp,2010-05-07,20100507233443,2010-05-11,-unknown-,69.0,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+2tv75vj0gw,2010-05-08,20100508001615,2010-06-08,-unknown-,43.0,basic,2,en,sem-non-brand,google,untracked,Web,Windows Desktop,IE,US
+gs1skm17pg,2010-05-08,20100508014829,2010-05-17,-unknown-,,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+06dciyn7y7,2010-05-08,20100508120827,2010-05-10,-unknown-,,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+7wytkmyzeg,2010-05-08,20100508173559,2010-05-09,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+2w0lxw4k0y,2010-05-08,20100508192752,,FEMALE,,facebook,0,en,sem-non-brand,google,untracked,Web,Mac Desktop,Safari,NDF
+906fx9unlz,2010-05-08,20100508195604,2010-06-26,-unknown-,51.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Chrome,ES
+fc5vzq3anq,2010-05-08,20100508201419,2010-05-11,-unknown-,54.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,CA
+4wxqtytl2t,2010-05-08,20100508231908,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+ys07hw3yzg,2010-05-09,20100509042702,,-unknown-,36.0,facebook,3,en,sem-non-brand,other,,Web,Other/Unknown,-unknown-,NDF
+nljb2ehelq,2010-05-09,20100509071214,2010-05-15,-unknown-,,basic,3,en,direct,direct,untracked,Web,Windows Desktop,Chrome,FR
+ko6nr3jdqa,2010-05-09,20100509103927,,-unknown-,,basic,2,en,seo,google,omg,Web,Windows Desktop,Chrome,NDF
+z096yb02eo,2010-05-09,20100509174254,,FEMALE,35.0,facebook,3,en,other,craigslist,linked,Web,Windows Desktop,IE,NDF
+rj5zb5q780,2010-05-10,20100510032050,2010-05-12,-unknown-,,basic,2,en,seo,google,,Web,Other/Unknown,-unknown-,US
+1v3400vgwc,2010-05-10,20100510040838,,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+90kms5pfkj,2010-05-10,20100510081503,2010-05-11,FEMALE,42.0,basic,3,en,seo,google,untracked,Web,Mac Desktop,Chrome,US
+84t4ngy65k,2010-05-10,20100510200557,2010-05-12,-unknown-,,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,ES
+0vx6x016er,2010-05-10,20100510230747,2010-05-13,-unknown-,,basic,3,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,CA
+wg0jk96z0u,2010-05-10,20100510232955,2010-05-11,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+6da1tizfdl,2010-05-11,20100511000335,2010-05-11,MALE,30.0,facebook,3,en,direct,direct,omg,Web,Windows Desktop,Chrome,US
+j9tlqpze5c,2010-05-11,20100511015416,,-unknown-,,basic,2,en,sem-non-brand,google,untracked,Web,Windows Desktop,IE,NDF
+3xi48t0xcp,2010-05-11,20100511035059,,FEMALE,37.0,facebook,3,en,content,google,omg,Web,Mac Desktop,Chrome,NDF
+zhacyxc8n9,2010-05-11,20100511042602,,FEMALE,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+vcac576w2s,2010-05-11,20100511043402,,-unknown-,,basic,0,en,seo,google,,Web,Other/Unknown,-unknown-,NDF
+5ufx1v7i7a,2010-05-11,20100511081513,2010-05-11,-unknown-,,basic,0,en,direct,direct,untracked,Web,Windows Desktop,IE,US
+408z640vli,2010-05-11,20100511204908,2010-05-11,MALE,45.0,facebook,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+0uy63d3mg6,2010-05-11,20100511213944,2010-05-15,-unknown-,,basic,0,en,direct,direct,untracked,Web,Windows Desktop,Chrome,US
+xcqxcz4isp,2010-05-11,20100511215512,,-unknown-,,basic,3,en,other,craigslist,untracked,Web,Windows Desktop,Chrome,NDF
+lluuuvyvay,2010-05-11,20100511230535,2010-05-14,-unknown-,28.0,basic,0,en,seo,google,untracked,Web,Windows Desktop,Firefox,US
+96npjbknd4,2010-05-12,20100512045856,,-unknown-,,basic,3,en,direct,direct,linked,Web,Windows Desktop,IE,NDF
+lmyws6zaoh,2010-05-12,20100512082214,,FEMALE,54.0,basic,3,en,other,craigslist,omg,Web,Mac Desktop,Firefox,NDF
+ddtb1e1w7l,2010-05-12,20100512085635,,-unknown-,,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,NDF
+20dcglb1pr,2010-05-12,20100512092539,,-unknown-,,basic,2,en,sem-non-brand,vast,untracked,Web,iPhone,Mobile Safari,NDF
+8mrzpmo3vx,2010-05-12,20100512145910,2010-05-15,-unknown-,,basic,2,en,seo,google,linked,Web,Mac Desktop,Safari,US
+zcaroj8eko,2010-05-12,20100512152229,,FEMALE,35.0,facebook,2,en,other,craigslist,untracked,Web,iPhone,-unknown-,NDF
+pkaa4gf3uz,2010-05-12,20100512175808,2010-05-12,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+l519vf5kvm,2010-05-12,20100512184831,2010-06-17,MALE,35.0,facebook,0,en,other,craigslist,untracked,Web,Mac Desktop,Firefox,US
+c53be5ap9c,2010-05-12,20100512213832,2010-05-19,-unknown-,36.0,facebook,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+zb8z8xkhsp,2010-05-12,20100512221701,2010-05-13,FEMALE,39.0,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Safari,ES
+y77ijl4kzs,2010-05-13,20100513005359,,FEMALE,38.0,facebook,3,en,seo,google,tracked-other,Web,iPhone,Mobile Safari,NDF
+zkmkc2nmq8,2010-05-13,20100513021050,,FEMALE,53.0,facebook,2,en,direct,direct,untracked,Web,Mac Desktop,Firefox,NDF
+n6puqplu89,2010-05-13,20100513041950,,-unknown-,,basic,0,en,seo,google,untracked,Web,iPhone,-unknown-,NDF
+wbq36esvxu,2010-05-13,20100513042936,2010-05-18,MALE,33.0,facebook,2,en,direct,direct,untracked,Web,iPhone,-unknown-,FR
+1bdefxsm1h,2010-05-13,20100513045227,2010-09-07,-unknown-,,basic,3,en,direct,direct,linked,Web,Windows Desktop,Firefox,FR
+lkt3xdlaxk,2010-05-13,20100513061626,2010-05-14,-unknown-,,basic,2,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,US
+sdbxrbzx1p,2010-05-13,20100513173028,2010-05-13,-unknown-,,basic,3,en,seo,google,,Web,Other/Unknown,-unknown-,US
+7ze80dojil,2010-05-13,20100513192545,2010-05-15,-unknown-,36.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Chrome,US
+4so8dg1mpt,2010-05-13,20100513193800,,-unknown-,44.0,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+fputefl8in,2010-05-13,20100513203438,,-unknown-,,basic,3,en,other,craigslist,untracked,Web,iPhone,-unknown-,NDF
+zjdkjtxhn8,2010-05-13,20100513214429,,-unknown-,,basic,2,en,seo,google,untracked,Web,Mac Desktop,Chrome,NDF
+00k8dbf80o,2010-05-13,20100513223200,,MALE,51.0,basic,3,en,other,craigslist,omg,Web,Mac Desktop,Firefox,NDF
+t9yre009w4,2010-05-14,20100514011216,,MALE,34.0,facebook,2,en,other,craigslist,untracked,Web,iPhone,-unknown-,NDF
+uuzdihpuh6,2010-05-14,20100514091036,,FEMALE,26.0,facebook,2,en,seo,google,untracked,Web,Mac Desktop,Firefox,NDF
+zk6uq6x287,2010-05-14,20100514143222,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+8ezdq9ses0,2010-05-14,20100514150429,2010-05-16,FEMALE,35.0,basic,0,en,direct,direct,untracked,Web,Windows Desktop,Chrome,US
+yr1sqt0u9y,2010-05-14,20100514201039,,MALE,38.0,facebook,2,en,direct,direct,linked,Web,Mac Desktop,Firefox,NDF
+8lfswd0jil,2010-05-20,20100514221539,2010-05-16,FEMALE,34.0,basic,0,en,direct,direct,linked,Web,Android Phone,Chrome Mobile,US
+9067omsah8,2010-05-14,20100514222949,2010-05-14,-unknown-,,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+t33ehpxgt5,2010-05-14,20100514234442,2010-05-15,-unknown-,41.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Safari,FR
+edyofwncru,2010-05-15,20100515000826,2010-05-19,FEMALE,36.0,facebook,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+9gz9em5j5e,2010-05-15,20100515014701,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+9e3yf2ozm5,2010-05-15,20100515043532,2010-05-16,-unknown-,,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+fq2207xetj,2010-05-15,20100515121522,2010-05-15,MALE,51.0,facebook,3,en,other,craigslist,tracked-other,Web,iPad,Mobile Safari,US
+99uiqjwn8x,2010-05-15,20100515174339,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+5n1ezuhydr,2010-05-15,20100515181255,2010-05-17,-unknown-,33.0,basic,2,es,seo,google,,Web,Other/Unknown,-unknown-,US
+db4kw4ninu,2010-05-15,20100515201200,,-unknown-,38.0,basic,2,en,content,google,untracked,Web,Mac Desktop,Safari,NDF
+tngi32pr93,2010-05-16,20100516055401,2010-05-18,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,other
+60tpi9ndjj,2010-05-16,20100516063624,,MALE,39.0,basic,0,en,direct,direct,linked,Web,Windows Desktop,Chrome,NDF
+1a4nmh681j,2010-05-16,20100516150953,2010-06-05,MALE,46.0,basic,2,en,content,google,linked,Web,iPhone,Mobile Safari,other
+mik86147s8,2010-05-16,20100516151423,2010-06-16,-unknown-,,basic,2,en,sem-non-brand,google,omg,Web,Mac Desktop,Chrome,US
+nfkhtkjb5y,2010-05-16,20100516163921,,-unknown-,,basic,2,en,sem-non-brand,vast,omg,Web,Windows Desktop,IE,NDF
+howcg5synt,2010-05-16,20100516173214,2010-11-01,-unknown-,,facebook,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+vdg4dmzfe8,2010-05-16,20100516213903,,-unknown-,,basic,0,en,content,google,linked,Web,Mac Desktop,Firefox,NDF
+fb1gscckwq,2010-05-17,20100517025350,,-unknown-,,basic,3,en,sem-non-brand,google,untracked,Web,Windows Desktop,Firefox,NDF
+hpcwcnfra1,2010-05-17,20100517083301,,-unknown-,,basic,2,en,direct,direct,untracked,Web,Windows Desktop,IE,NDF
+k82tc3t1up,2010-05-17,20100517150207,,-unknown-,,basic,2,en,sem-non-brand,google,untracked,Web,Mac Desktop,Chrome,NDF
+d22j6g7d7b,2010-05-17,20100517225842,2010-05-21,MALE,37.0,facebook,3,en,direct,direct,untracked,Web,Mac Desktop,Safari,ES
+5f063dbg96,2010-05-17,20100517232304,,-unknown-,,basic,3,en,direct,direct,untracked,Web,iPad,Chrome Mobile,NDF
+yjhdjdiljd,2010-05-18,20100518042936,2010-05-22,FEMALE,35.0,basic,0,en,seo,google,untracked,Web,Mac Desktop,Safari,US
+yzy1petaq3,2010-05-18,20100518050120,2010-05-18,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+h03acyutc6,2010-05-18,20100518094459,2010-05-19,MALE,35.0,facebook,3,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+utvpff5iao,2010-05-18,20100518174747,2010-05-19,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+e2uuev3iix,2010-05-18,20100518180451,,FEMALE,53.0,facebook,2,en,direct,direct,omg,Web,Windows Desktop,Chrome,NDF
+axhr7hqk3r,2010-05-18,20100518235524,,FEMALE,31.0,facebook,2,en,seo,google,untracked,Web,Windows Desktop,Chrome,NDF
+dc3udjfdij,2010-05-19,20100519012455,2010-06-16,-unknown-,105.0,basic,2,en,other,craigslist,omg,Web,Mac Desktop,Safari,FR
+onyxp2in91,2010-05-19,20100519014650,,MALE,39.0,basic,2,en,sem-non-brand,google,untracked,Web,Windows Desktop,Firefox,NDF
+t6r8fr7i7s,2010-05-19,20100519022122,2010-05-21,FEMALE,57.0,basic,2,en,sem-non-brand,google,untracked,Web,Windows Desktop,IE,US
+o81jqbp6nz,2010-05-19,20100519061922,2010-05-19,MALE,68.0,basic,3,en,other,craigslist,tracked-other,Web,Windows Desktop,IE,CA
+bd8nmdweio,2010-05-19,20100519062759,2010-05-20,FEMALE,35.0,basic,1,en,sem-non-brand,google,untracked,Web,iPhone,Mobile Safari,FR
+o93tkul29e,2010-05-19,20100519085453,2010-05-26,MALE,28.0,facebook,0,en,other,craigslist,untracked,Web,Windows Desktop,Firefox,US
+tmwacqy7ie,2010-05-19,20100519175601,2010-08-04,MALE,35.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+j5etw8fkjz,2010-05-19,20100519181928,,-unknown-,,basic,3,en,content,google,,Web,Other/Unknown,-unknown-,NDF
+wphoz0aebe,2010-05-19,20100519220828,2010-05-19,-unknown-,,basic,3,en,content,google,,Web,Other/Unknown,-unknown-,FR
+mut7pml3n3,2010-05-19,20100519231643,2010-05-21,FEMALE,29.0,basic,2,en,direct,direct,untracked,Web,Windows Desktop,Chrome,US
+z0t5mbe64u,2010-05-20,20100520050133,2010-07-05,MALE,33.0,basic,2,en,other,craigslist,omg,Web,Mac Desktop,Chrome,US
+1yux9rbgma,2010-05-20,20100520061206,2010-05-20,FEMALE,25.0,facebook,2,en,other,craigslist,linked,Web,Mac Desktop,Chrome,US
+cavyw4uagm,2010-05-20,20100520073424,,-unknown-,32.0,basic,0,en,direct,direct,tracked-other,Web,Windows Desktop,Firefox,NDF
+vrhrf4cn7k,2010-05-20,20100520165814,,-unknown-,32.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Safari,NDF
+7vj97ikcxa,2010-05-20,20100520193313,,-unknown-,,basic,2,en,direct,direct,untracked,Web,Android Phone,Chrome Mobile,NDF
+5yatk13sko,2010-05-20,20100520212258,,-unknown-,5.0,facebook,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+0up62mkbxb,2010-05-20,20100520225729,,-unknown-,51.0,facebook,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+wbz4oiyadt,2010-05-21,20100521023517,2010-05-23,-unknown-,,basic,2,en,direct,direct,linked,Web,iPhone,Mobile Safari,US
+ixv5186g1h,2010-05-21,20100521070029,,MALE,95.0,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Firefox,NDF
+0u57qwlwja,2010-05-21,20100521165507,,-unknown-,,basic,3,en,seo,google,untracked,Web,iPhone,-unknown-,NDF
+t30mcstvcb,2010-05-21,20100521170254,2010-05-21,FEMALE,27.0,basic,3,en,sem-non-brand,google,untracked,Web,Mac Desktop,Safari,US
+9lxwul0jo3,2010-05-21,20100521203128,2011-02-07,MALE,31.0,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+zr80hpnaki,2010-05-22,20100522060902,2010-05-24,MALE,29.0,basic,3,en,direct,direct,linked,Web,iPhone,Mobile Safari,NL
+7x6cl3h823,2010-05-22,20100522074733,,-unknown-,64.0,basic,3,en,sem-non-brand,google,linked,Web,Mac Desktop,Firefox,NDF
+a2g5u5jgwd,2010-05-22,20100522165550,2010-05-26,-unknown-,29.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Chrome,US
+4bd0u3wnr5,2010-05-22,20100522192226,2010-05-22,-unknown-,,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+0efhfyf3dn,2010-05-22,20100522233739,,FEMALE,46.0,facebook,2,fr,direct,direct,omg,Web,Windows Desktop,Firefox,NDF
+2xi65bbybx,2010-05-22,20100522233955,2010-05-23,-unknown-,34.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+62ccojy2zw,2010-05-23,20100523174007,,FEMALE,52.0,basic,2,en,sem-non-brand,google,omg,Web,iPad,Mobile Safari,NDF
+ynj6hcwz4y,2010-05-23,20100523175803,2010-05-23,-unknown-,26.0,basic,3,en,other,craigslist,omg,Web,Mac Desktop,Chrome,FR
+cczrbc47ec,2010-05-23,20100523203337,2010-11-12,-unknown-,33.0,basic,3,en,seo,google,untracked,Web,Mac Desktop,Safari,CA
+xaobv73yiv,2010-05-23,20100523204958,,-unknown-,35.0,basic,3,en,seo,google,,Web,Other/Unknown,-unknown-,NDF
+oitnl6wsnp,2010-05-24,20100524041934,2010-05-24,FEMALE,49.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Firefox,US
+593gkcul8c,2010-05-24,20100524042738,,FEMALE,5.0,facebook,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,NDF
+3wenu2jg5c,2010-05-24,20100524045630,2010-05-24,FEMALE,33.0,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Firefox,ES
+t27g0d57yd,2010-05-24,20100524050820,,-unknown-,37.0,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+aw4ney1oye,2010-05-24,20100524155553,,-unknown-,,basic,2,en,sem-non-brand,google,omg,Web,Windows Desktop,Chrome,NDF
+a06yjae4ef,2010-05-24,20100524175417,2010-05-27,FEMALE,51.0,basic,0,en,other,craigslist,omg,Web,iPad,Mobile Safari,US
+2r0i3yslt7,2010-05-24,20100524191707,,MALE,33.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Firefox,NDF
+p3rctxqjhv,2010-05-24,20100524202957,,-unknown-,43.0,facebook,2,en,seo,google,,Web,Other/Unknown,-unknown-,NDF
+zchyyoof4w,2010-05-24,20100524204559,2010-06-12,FEMALE,31.0,facebook,2,en,other,craigslist,untracked,Web,Windows Desktop,Chrome,US
+wcxqq8k5qz,2010-05-24,20100524205654,,MALE,31.0,facebook,3,en,other,craigslist,product,Web,Windows Desktop,Firefox,NDF
+tddv47sf3b,2010-05-25,20100525012810,2010-07-07,FEMALE,35.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+3qnxgopiuo,2010-05-25,20100525032734,2010-05-29,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+dr6mejiwru,2010-05-25,20100525035944,2010-05-26,MALE,29.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,US
+3chg9747hv,2010-05-25,20100525103144,2010-05-25,FEMALE,47.0,basic,3,en,direct,direct,untracked,Web,Windows Desktop,Firefox,FR
+umf1wdk9uc,2010-05-25,20100525155541,,FEMALE,2014.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Safari,NDF
+zll1b0vl03,2010-05-25,20100525190752,2010-05-26,MALE,38.0,basic,3,en,seo,google,untracked,Web,Mac Desktop,Chrome,FR
+qfzep0tc68,2010-05-25,20100525220037,2010-05-26,FEMALE,29.0,basic,3,en,seo,google,untracked,Web,Mac Desktop,Firefox,US
+z1i4on4de1,2010-05-25,20100525222450,,FEMALE,38.0,basic,0,en,seo,google,linked,Web,Windows Desktop,Firefox,NDF
+1p5in5ifmz,2010-05-25,20100525232152,2010-06-04,-unknown-,,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+9f5jybup2w,2010-05-26,20100526000248,2010-06-03,-unknown-,,basic,2,en,sem-non-brand,google,untracked,Web,Mac Desktop,Chrome,US
+4e3hkx6itb,2010-05-26,20100526030114,,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+i71h6khw00,2010-05-26,20100526030411,,FEMALE,49.0,facebook,0,en,other,craigslist,omg,Web,Mac Desktop,Chrome,NDF
+mls48glp5v,2010-05-26,20100526060051,,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+8dfx6kyqxt,2010-05-26,20100526165917,,-unknown-,,basic,2,en,other,craigslist,untracked,Web,iPhone,Mobile Safari,NDF
+ie6g3f40j4,2010-05-26,20100526201126,2010-06-01,FEMALE,,basic,3,en,direct,direct,untracked,Web,Other/Unknown,Palm Pre web browser,other
+op0tocmhsh,2010-05-26,20100526202909,,FEMALE,26.0,facebook,2,en,sem-non-brand,google,omg,Web,Windows Desktop,Chrome,NDF
+mueiyihbfn,2010-05-26,20100526212803,,-unknown-,,basic,0,en,content,google,,Web,Other/Unknown,-unknown-,NDF
+tvefk1wu97,2010-05-26,20100526213857,2010-06-01,FEMALE,38.0,basic,0,en,other,craigslist,untracked,Web,Windows Desktop,Firefox,US
+vbr8prbj4y,2010-05-26,20100526215020,,-unknown-,,basic,2,en,other,craigslist,untracked,Web,iPhone,-unknown-,NDF
+njw449p8cw,2010-05-27,20100527005107,2010-05-31,MALE,45.0,basic,3,en,direct,direct,linked,Web,Windows Desktop,IE,US
+0shacmqlq0,2010-05-27,20100527014451,2010-05-27,-unknown-,36.0,basic,3,en,other,craigslist,linked,Web,Mac Desktop,Firefox,US
+kzlluh7spc,2010-05-27,20100527021349,2010-06-23,-unknown-,35.0,basic,3,en,other,craigslist,untracked,Web,Windows Desktop,IE,US
+m7k5tcg0vc,2010-05-27,20100527024530,,MALE,31.0,facebook,0,en,other,craigslist,omg,Web,Windows Desktop,Firefox,NDF
+p7vjr2na0h,2010-05-27,20100527024736,2010-05-27,FEMALE,38.0,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+13av6a7czk,2010-05-27,20100527033713,,FEMALE,28.0,facebook,3,en,other,craigslist,untracked,Web,iPhone,Chrome Mobile,NDF
+19ydc53ez6,2010-05-27,20100527035332,,FEMALE,24.0,facebook,2,en,sem-non-brand,google,linked,Web,Android Phone,Chrome Mobile,NDF
+el9gnrfdum,2010-05-27,20100527061039,2010-06-08,-unknown-,64.0,facebook,2,en,sem-non-brand,other,tracked-other,Web,Mac Desktop,Chrome,GB
+pteik4rjuq,2010-05-27,20100527074113,2010-05-27,-unknown-,28.0,basic,3,en,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+2dn308ks6p,2010-05-27,20100527122820,2010-05-28,-unknown-,,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Safari,IT
+xlglkwiovt,2010-05-27,20100527135744,,MALE,36.0,facebook,3,en,direct,direct,linked,Web,Mac Desktop,Chrome,NDF
+3jhlv2befs,2010-11-06,20100527151712,,MALE,45.0,basic,0,es,direct,direct,omg,Web,Windows Desktop,Firefox,NDF
+zitrdjjiuf,2010-05-27,20100527162126,,-unknown-,,basic,2,en,seo,google,omg,Web,Mac Desktop,Safari,NDF
+xfzcswol51,2010-05-27,20100527165542,2010-05-27,FEMALE,32.0,facebook,0,en,other,craigslist,untracked,Web,Windows Desktop,Firefox,US
+k44few5j9g,2010-05-27,20100527171031,,-unknown-,,basic,3,en,seo,google,,Web,Other/Unknown,-unknown-,NDF
+x3cadgt8vu,2010-05-27,20100527183409,2010-05-30,-unknown-,,basic,2,en,direct,direct,linked,Web,Mac Desktop,Chrome,US
+jq4o83icv0,2010-05-27,20100527215535,,-unknown-,32.0,facebook,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+a0baqtj6f7,2010-05-27,20100527220704,2010-05-29,FEMALE,32.0,facebook,3,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,FR
+lwkam1q7a2,2010-05-27,20100527235623,,-unknown-,,basic,3,en,sem-non-brand,vast,,Web,Other/Unknown,-unknown-,NDF
+63jyh0klbj,2010-05-28,20100528044949,2010-06-06,-unknown-,,basic,2,en,direct,direct,tracked-other,Web,Mac Desktop,Firefox,US
+avuypejhzs,2010-05-28,20100528085141,2010-05-28,-unknown-,50.0,basic,0,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,US
+sloth6vmuc,2010-05-28,20100528135403,2010-06-01,-unknown-,,basic,2,de,seo,google,,Web,Other/Unknown,-unknown-,US
+5p0nmf3r6i,2014-05-23,20100528140642,,FEMALE,39.0,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Safari,NDF
+72mhvkil62,2010-05-28,20100528141539,,-unknown-,,basic,0,en,seo,google,untracked,Web,Android Phone,-unknown-,NDF
+o2ox5tb0x1,2010-05-28,20100528175825,2010-05-28,FEMALE,45.0,facebook,2,en,direct,direct,omg,Web,Mac Desktop,Chrome,US
+zc2wj7mq0j,2010-05-28,20100528211321,,-unknown-,28.0,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+hiwse2pwjb,2010-05-29,20100529134443,,-unknown-,,basic,3,en,sem-non-brand,google,linked,Web,iPhone,Mobile Safari,NDF
+n49a28jyy6,2010-05-29,20100529222451,,-unknown-,,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+hvouxvvk6r,2010-05-30,20100530075134,2010-06-02,MALE,35.0,facebook,0,en,other,craigslist,untracked,Web,iPhone,-unknown-,US
+tubgbb4c9q,2010-05-30,20100530094611,,-unknown-,39.0,basic,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+o3kcez6xfc,2010-05-31,20100531040057,2010-05-31,-unknown-,68.0,basic,0,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,US
+us4akkhwm5,2010-05-31,20100531085130,2010-06-05,-unknown-,38.0,facebook,2,en,sem-non-brand,other,untracked,Web,Mac Desktop,Firefox,US
+1wtdpv3imv,2010-05-31,20100531230326,,-unknown-,,basic,2,en,other,craigslist,untracked,Web,Windows Desktop,IE,NDF
+ibkr6a0y80,2010-05-31,20100531232449,2010-06-02,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+dvr1tddjv7,2010-06-01,20100601013102,2010-06-04,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+ihirecq3eo,2010-06-01,20100601025802,2010-06-01,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+876ld4i98d,2010-06-01,20100601033331,,FEMALE,27.0,basic,2,en,sem-non-brand,google,untracked,Web,iPhone,Mobile Safari,NDF
+n9ileuohqv,2010-06-01,20100601044910,2010-06-12,FEMALE,38.0,basic,2,en,other,other,linked,Web,Mac Desktop,Firefox,US
+fmk33xu0xh,2010-06-01,20100601175037,,FEMALE,30.0,basic,3,en,sem-non-brand,vast,omg,Web,Windows Desktop,IE,NDF
+lq96r329o9,2010-06-01,20100601224540,,-unknown-,,basic,2,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,NDF
+jdc7qcbapb,2010-06-01,20100601225726,,MALE,35.0,facebook,2,en,other,craigslist,untracked,Web,iPhone,Mobile Safari,NDF
+dc8sqj3ln5,2010-06-01,20100601225804,2010-06-02,-unknown-,,basic,3,en,direct,direct,omg,Web,Windows Desktop,Chrome,US
+7qd3fhlsfv,2010-06-02,20100602024837,,-unknown-,29.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+zl87fzgk76,2010-06-02,20100602032004,,MALE,38.0,facebook,2,en,direct,direct,linked,Web,Mac Desktop,Safari,NDF
+nixrhzk40j,2010-06-02,20100602050653,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+m4dqjjm9cx,2010-06-02,20100602050935,2011-05-30,MALE,53.0,facebook,2,en,direct,direct,untracked,Web,Windows Desktop,Chrome,US
+2y9vkxqpw7,2010-06-02,20100602151459,,FEMALE,35.0,basic,3,en,sem-non-brand,google,omg,Web,Mac Desktop,Chrome,NDF
+f0i4e3xq2c,2010-06-02,20100602172522,2010-06-04,-unknown-,,basic,2,en,direct,direct,linked,Web,Mac Desktop,Safari,US
+kzruiyuwu7,2010-06-02,20100602191634,2010-06-03,FEMALE,48.0,basic,3,en,sem-non-brand,vast,omg,Web,Mac Desktop,Safari,other
+v6m5j1lnx2,2010-06-02,20100602194632,2010-06-05,-unknown-,26.0,basic,2,en,seo,google,,Web,Other/Unknown,-unknown-,US
+a6s48a6cr0,2010-06-03,20100603020732,2010-06-03,MALE,39.0,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Firefox,ES
+adfobbsbef,2010-06-03,20100603031726,2010-06-06,MALE,30.0,basic,2,en,other,craigslist,linked,Web,Mac Desktop,Chrome,US
+5bcj5xeizn,2010-06-03,20100603042337,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+wvv69fd8qw,2010-06-03,20100603043349,2010-06-03,-unknown-,,basic,2,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,US
+gk1qldi3hh,2010-06-03,20100603044455,2010-06-08,FEMALE,18.0,facebook,3,en,direct,direct,tracked-other,Web,Windows Desktop,Firefox,US
+4q8lj72iqg,2010-06-03,20100603142621,2010-06-07,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+u4lhdk649g,2010-06-03,20100603165021,2010-06-03,-unknown-,,basic,3,en,direct,direct,linked,Web,Mac Desktop,Firefox,US
+5iodjdt05s,2010-06-03,20100603172435,2010-06-04,-unknown-,52.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Safari,US
+m9r7pqp7fs,2010-06-03,20100603185836,,-unknown-,,basic,2,en,direct,direct,untracked,Web,iPhone,-unknown-,NDF
+jk5hktjcp0,2010-06-03,20100603191232,2010-06-03,-unknown-,35.0,facebook,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+7sumujhtcu,2010-06-03,20100603203530,,FEMALE,,basic,2,en,other,craigslist,linked,Web,Mac Desktop,Safari,NDF
+fs5mebpx5y,2010-06-03,20100603204725,2010-06-04,-unknown-,19.0,basic,3,en,direct,direct,untracked,Web,Windows Desktop,Firefox,CA
+icptlpd1jz,2010-06-04,20100604012632,,FEMALE,34.0,basic,2,en,seo,google,linked,Web,Mac Desktop,Safari,NDF
+ro17yijf3a,2010-06-04,20100604022251,,FEMALE,37.0,facebook,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+s0a273hide,2010-06-04,20100604132108,2010-07-24,MALE,31.0,basic,3,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,US
+li0jat12ni,2010-06-04,20100604162147,,-unknown-,,basic,2,en,direct,direct,omg,Web,Mac Desktop,Chrome,NDF
+l67arklsz5,2010-06-04,20100604171243,,FEMALE,44.0,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+0c9w58j6kf,2010-06-04,20100604185611,2010-06-04,-unknown-,35.0,facebook,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+b8irh2o66c,2010-06-04,20100604193154,2010-06-05,-unknown-,45.0,facebook,0,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+zairqsjmy7,2010-06-04,20100604221606,,-unknown-,,basic,2,en,direct,direct,linked,Web,Mac Desktop,Firefox,NDF
+twic0boppz,2010-06-04,20100604224246,,-unknown-,,basic,0,en,direct,direct,omg,Web,Mac Desktop,Safari,NDF
+7bcvl8mcpc,2010-06-05,20100605031241,,MALE,44.0,basic,2,en,sem-non-brand,google,untracked,Web,Windows Desktop,Firefox,NDF
+774et6r68m,2010-06-05,20100605035407,2010-07-29,FEMALE,33.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,US
+pijjat7j5w,2010-06-05,20100605054449,2010-06-12,MALE,32.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,other
+tue1vmwws5,2010-06-05,20100605161711,,-unknown-,63.0,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+ogtmg7ppiq,2010-06-05,20100605185504,,FEMALE,43.0,basic,2,en,direct,direct,untracked,Web,iPad,Mobile Safari,NDF
+1n5s0yu0z6,2010-06-05,20100605195431,2010-06-07,-unknown-,46.0,facebook,2,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+ijc8ct3tyk,2010-06-06,20100606024800,2010-06-06,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+ft72xr83u4,2010-06-06,20100606031145,2010-06-07,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+dz3jlbj0q5,2010-06-06,20100606041254,2010-06-07,-unknown-,,facebook,2,en,other,craigslist,untracked,Web,Windows Desktop,Chrome,US
+1ktbk6kj0s,2010-06-06,20100606151856,,-unknown-,,basic,2,en,direct,direct,untracked,Web,iPhone,Mobile Safari,NDF
+dyd3vnbe76,2010-06-06,20100606154932,2010-06-07,-unknown-,,basic,3,en,sem-non-brand,vast,,Web,Other/Unknown,-unknown-,other
+1kmpwpp5ux,2010-06-06,20100606160729,2010-06-07,-unknown-,58.0,basic,3,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,US
+mzds04mpkt,2010-06-06,20100606214011,,-unknown-,35.0,basic,0,en,seo,google,untracked,Web,Windows Desktop,Chrome,NDF
+n63v9tbrle,2010-06-07,20100607035057,2010-06-11,FEMALE,51.0,facebook,2,en,sem-non-brand,google,linked,Web,Mac Desktop,Chrome,US
+6dtvxjlanh,2010-06-07,20100607041718,,FEMALE,42.0,facebook,3,en,other,craigslist,omg,Web,Mac Desktop,Chrome,NDF
+apcp8s0bwo,2010-06-07,20100607043309,,MALE,36.0,facebook,2,en,direct,direct,untracked,Web,Android Tablet,IE,NDF
+u8on5xnzls,2010-06-07,20100607142451,2011-05-17,FEMALE,34.0,facebook,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+tu2iorbez0,2010-06-07,20100607173548,,MALE,5.0,facebook,2,en,other,craigslist,untracked,Web,Mac Desktop,Safari,NDF
+kqf8b3ta98,2010-06-07,20100607184626,,FEMALE,94.0,basic,0,en,content,google,linked,Web,Mac Desktop,Safari,NDF
+30hq5ubytn,2010-06-07,20100607190346,,-unknown-,46.0,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+7seasu68eo,2010-06-07,20100607214038,2011-06-07,-unknown-,31.0,basic,2,en,other,craigslist,untracked,Web,iPhone,-unknown-,US
+zgxbrsgjcn,2010-06-07,20100607220745,,-unknown-,5.0,basic,0,fr,direct,direct,linked,Web,iPhone,Mobile Safari,NDF
+4395zaz8fe,2010-06-07,20100607235738,,MALE,5.0,facebook,2,en,content,google,linked,Web,Windows Desktop,IE,NDF
+h0e4x1dsxp,2010-06-08,20100608042705,,-unknown-,35.0,facebook,2,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,NDF
+c2lh2mizj5,2010-06-08,20100608170603,,FEMALE,35.0,basic,2,en,direct,direct,tracked-other,Web,Mac Desktop,Safari,NDF
+je81w8fbmr,2010-06-08,20100608185930,,FEMALE,,basic,2,en,sem-non-brand,google,untracked,Web,iPad,Mobile Safari,NDF
+b6cmo8wnl3,2010-06-09,20100609022605,2011-06-08,-unknown-,19.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Firefox,CA
+qpuun000ht,2010-06-09,20100609155110,,-unknown-,,basic,2,en,seo,google,untracked,Web,Mac Desktop,Chrome,NDF
+kxhdsabccn,2010-06-09,20100609173118,2010-06-12,MALE,30.0,facebook,0,en,other,craigslist,linked,Web,Mac Desktop,Chrome,US
+lg4l6nqdtl,2010-06-09,20100609232555,,-unknown-,,basic,3,en,other,craigslist,linked,Web,Android Phone,Chrome Mobile,NDF
+d7isb14v9f,2010-06-09,20100609233008,2010-07-02,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+p5my4zzl3a,2010-06-09,20100609234548,,FEMALE,31.0,facebook,2,en,sem-non-brand,google,linked,Web,Windows Desktop,Chrome,NDF
+024ttsjo1d,2010-06-10,20100610004407,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+4tqjqedlhq,2010-06-10,20100610024337,,MALE,64.0,facebook,2,en,sem-non-brand,google,linked,Web,iPhone,Mobile Safari,NDF
+vurgao3oct,2010-06-10,20100610051436,2010-06-14,-unknown-,29.0,basic,0,en,direct,direct,tracked-other,Web,Mac Desktop,Safari,US
+6xzz0x076n,2010-06-10,20100610165307,2010-10-04,FEMALE,45.0,basic,3,en,other,craigslist,untracked,Web,iPhone,Mobile Safari,US
+tbuo31ve87,2010-06-10,20100610172808,2010-06-10,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,FR
+bz2fkslpqe,2010-06-10,20100610191118,2010-06-15,FEMALE,37.0,basic,0,en,sem-non-brand,google,linked,Web,Mac Desktop,Chrome,US
+hj12q5cks6,2010-06-10,20100610202432,,-unknown-,,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,NDF
+vbt63x7e5x,2010-06-10,20100610205234,,-unknown-,,basic,2,en,sem-non-brand,other,omg,Web,iPad,Mobile Safari,NDF
+050hy459xu,2010-06-10,20100610225543,,-unknown-,,basic,2,en,other,craigslist,omg,Web,iPad,Mobile Safari,NDF
+odrfgwbkvi,2010-06-11,20100611041446,,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+daea0pdtzt,2010-06-11,20100611063530,,MALE,31.0,facebook,2,en,direct,direct,linked,Web,Mac Desktop,Chrome,NDF
+wlrovw82h2,2010-06-11,20100611120002,2010-07-30,FEMALE,35.0,basic,3,en,sem-non-brand,google,untracked,Web,Mac Desktop,Safari,DE
+utowmiehyy,2010-06-11,20100611134445,,MALE,37.0,basic,0,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+5kjetbfg3o,2010-06-11,20100611195552,,MALE,,facebook,2,en,direct,direct,linked,Web,Mac Desktop,Firefox,NDF
+pj1un0fplz,2010-06-11,20100611224739,,-unknown-,,basic,2,en,other,craigslist,untracked,Web,Windows Desktop,Chrome,NDF
+86ottnd6j5,2010-06-12,20100612181406,2010-07-11,-unknown-,,basic,0,en,direct,direct,linked,Web,Mac Desktop,Safari,CA
+cvdri86qra,2010-06-12,20100612212817,,-unknown-,19.0,basic,0,en,other,craigslist,untracked,Web,Windows Desktop,Chrome,NDF
+a8yz53lr1m,2010-06-13,20100613065625,2010-06-17,FEMALE,44.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+8f9aup8lrk,2010-06-13,20100613142246,2010-06-13,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+jrevzwfo9o,2010-06-13,20100613171618,2010-06-13,-unknown-,36.0,facebook,3,en,direct,direct,omg,Web,Mac Desktop,Safari,US
+fp5jmegi20,2010-06-13,20100613175016,2010-06-13,-unknown-,,basic,2,en,seo,google,,Web,Other/Unknown,-unknown-,US
+s8wb7qdjqc,2010-06-14,20100614013701,2010-06-18,-unknown-,5.0,facebook,2,en,sem-non-brand,google,untracked,Web,Windows Desktop,IE,US
+0fejnu3m6n,2010-06-14,20100614015619,2010-06-14,FEMALE,,basic,3,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,US
+7japnxdt4o,2010-06-14,20100614045143,,FEMALE,56.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,NDF
+cqvzpdssvb,2010-06-14,20100614153743,2010-07-15,-unknown-,26.0,facebook,2,en,other,craigslist,linked,Web,Windows Desktop,Chrome,US
+ceum3xl08h,2010-06-14,20100614171620,,MALE,5.0,facebook,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+g7es6gx0dg,2010-06-14,20100614192917,2010-06-17,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+umcm4kgt6v,2010-06-14,20100614204906,,-unknown-,31.0,basic,2,en,other,craigslist,linked,Web,Windows Desktop,Chrome,NDF
+ttl2f5kp8y,2010-06-14,20100614231001,2010-06-15,FEMALE,37.0,facebook,2,en,direct,direct,untracked,Web,Windows Desktop,Chrome,US
+85w2qa2cv5,2010-06-15,20100615020934,2010-06-16,-unknown-,,basic,3,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,CA
+d0vicidnvy,2010-06-15,20100615040427,2011-04-13,FEMALE,26.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+dawk9jf0kn,2010-06-15,20100615045900,,-unknown-,,basic,0,en,seo,google,untracked,Web,Mac Desktop,Safari,NDF
+wgxth7dsdl,2010-06-15,20100615181050,,-unknown-,25.0,basic,2,en,direct,direct,omg,Web,Mac Desktop,Firefox,NDF
+xrqbkhh02j,2010-06-15,20100615193925,2010-06-15,-unknown-,18.0,basic,3,en,sem-non-brand,google,untracked,Web,Mac Desktop,Firefox,CA
+p7btobia7j,2010-06-15,20100615202743,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+zh0arn03ta,2010-06-15,20100615214521,,MALE,51.0,basic,2,en,other,craigslist,untracked,Web,Windows Desktop,IE,NDF
+d3myybjbwe,2010-06-15,20100615231111,2010-06-16,FEMALE,30.0,basic,2,en,seo,google,linked,Web,Mac Desktop,Firefox,US
+44nf02pdd3,2010-06-16,20100616001702,2010-06-16,-unknown-,,basic,2,de,other,craigslist,linked,Web,Mac Desktop,Safari,DE
+1zjljmw3fq,2010-06-16,20100616002721,2010-07-09,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+jsbz7e660c,2010-06-16,20100616013158,2010-07-08,FEMALE,55.0,basic,2,en,seo,google,omg,Web,Mac Desktop,Safari,US
+bk5jqskk1v,2010-06-16,20100616031954,2010-06-19,-unknown-,,basic,2,en,seo,google,untracked,Web,Mac Desktop,Chrome,ES
+oozck2brpp,2010-06-16,20100616034749,2010-06-16,-unknown-,,basic,2,en,sem-non-brand,google,untracked,Web,iPhone,-unknown-,US
+faneiv86dg,2010-06-16,20100616055209,,FEMALE,32.0,facebook,2,en,seo,google,untracked,Web,Windows Desktop,Chrome,NDF
+wbx1se9fw8,2010-06-16,20100616055322,2010-06-19,-unknown-,,basic,3,en,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+emvjwac5aa,2010-06-16,20100616061943,,-unknown-,,basic,3,en,seo,google,,Web,Other/Unknown,-unknown-,NDF
+a85bs4ttyb,2010-06-16,20100616064838,,-unknown-,,basic,2,en,direct,direct,linked,Web,iPhone,Mobile Safari,NDF
+s016mu0c9w,2010-06-16,20100616151810,,FEMALE,5.0,facebook,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,NDF
+7sra71uhn0,2010-06-16,20100616153546,2010-06-17,-unknown-,34.0,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+ieq72gy08r,2010-06-16,20100616183602,2010-06-20,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,FR
+efpisjs1kq,2010-06-16,20100616183828,,-unknown-,,facebook,2,en,other,craigslist,untracked,Web,iPhone,Mobile Safari,NDF
+iqi1ko7ldn,2010-06-17,20100617005948,,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+9xkmpjlkqb,2010-06-17,20100617033447,2010-06-17,MALE,30.0,facebook,2,en,seo,google,untracked,Web,Windows Desktop,Chrome,FR
+ejjgt1egne,2010-06-17,20100617064430,2010-06-17,MALE,25.0,basic,3,en,other,craigslist,untracked,Web,Mac Desktop,Chrome,US
+bn1tpbxc4n,2010-06-17,20100617150641,,MALE,32.0,facebook,2,en,sem-non-brand,google,untracked,Web,iPad,Mobile Safari,NDF
+gy6xm24sxy,2010-06-17,20100617192848,2010-07-06,MALE,32.0,basic,3,en,direct,direct,linked,Web,Windows Desktop,Firefox,ES
+m5lw41ek2t,2010-06-17,20100617193718,,FEMALE,46.0,basic,2,en,seo,google,untracked,Web,Mac Desktop,Safari,NDF
+w6juc7n2rd,2010-06-17,20100617205014,2010-06-20,-unknown-,,basic,2,en,seo,google,untracked,Web,Mac Desktop,Chrome,US
+scbcubqmet,2010-06-18,20100618100109,,-unknown-,,basic,3,en,seo,google,omg,Web,Windows Desktop,Chrome,NDF
+p4i3y658j4,2010-06-19,20100619060809,,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+c16qayvsld,2010-06-19,20100619173838,,-unknown-,,basic,3,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,NDF
+vtrminb4wp,2010-06-19,20100619182158,,-unknown-,,facebook,2,en,other,craigslist,tracked-other,Web,Mac Desktop,Chrome,NDF
+2ptoaj2e88,2010-06-19,20100619212303,,-unknown-,,basic,3,en,other,craigslist,linked,Web,Windows Desktop,Firefox,NDF
+fziyzobpfi,2010-06-19,20100619213811,2010-06-25,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+9jp60y37du,2010-06-19,20100619215532,,MALE,57.0,basic,0,en,direct,direct,omg,Web,Windows Desktop,IE,NDF
+jd2rvmhc87,2010-06-19,20100619223752,2010-06-22,MALE,5.0,facebook,3,en,direct,direct,untracked,Web,Windows Desktop,Chrome,US
+uynmgqe1j8,2010-06-19,20100619224927,,MALE,34.0,basic,3,en,sem-non-brand,google,linked,Web,Windows Desktop,Chrome,NDF
+4rdmvxoczg,2010-06-20,20100620041337,,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+1n2bta23f0,2010-06-20,20100620054315,,MALE,47.0,facebook,2,en,seo,google,untracked,Web,iPad,Mobile Safari,NDF
+dj3m3z3ax5,2010-06-20,20100620193408,2010-06-21,MALE,30.0,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Chrome,CA
+0znz1fhriv,2010-06-20,20100620213726,,-unknown-,,basic,2,en,direct,direct,linked,Web,iPad,Mobile Safari,NDF
+n2whg38rj7,2010-06-20,20100620221852,2010-06-20,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+sugdhd37yc,2010-06-20,20100620232029,,-unknown-,39.0,facebook,3,en,sem-non-brand,vast,,Web,Other/Unknown,-unknown-,NDF
+b4qgwhgi9j,2010-06-20,20100620234358,2010-06-21,FEMALE,,facebook,2,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+ihyj1lw52r,2010-06-21,20100621035311,2010-06-22,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+g3evpkicfq,2010-06-21,20100621113759,2010-06-28,-unknown-,,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+ylk21rmhyd,2010-06-21,20100621143209,,-unknown-,,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+rzvju63a7p,2010-06-21,20100621175301,,FEMALE,39.0,facebook,2,en,sem-non-brand,google,untracked,Web,iPad,Mobile Safari,NDF
+volclm9efz,2010-06-21,20100621183800,,-unknown-,,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Chrome,NDF
+8ndnwml9e9,2010-06-21,20100621193924,,-unknown-,,basic,1,en,seo,google,untracked,Web,Windows Desktop,Firefox,NDF
+t95rpc8yy0,2010-06-22,20100622010244,,-unknown-,40.0,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+clf2rlbeqg,2010-06-22,20100622015623,2010-07-05,MALE,39.0,facebook,2,en,other,craigslist,untracked,Web,Mac Desktop,Safari,US
+2rt43ujbf1,2010-06-22,20100622053940,,FEMALE,,facebook,2,en,sem-non-brand,other,linked,Web,Mac Desktop,Chrome,NDF
+4t0km3wg6r,2010-06-22,20100622092036,,-unknown-,,basic,2,en,direct,direct,linked,Web,iPad,Mobile Safari,NDF
+iu78rameu2,2010-06-22,20100622152408,,-unknown-,,basic,2,en,content,google,omg,Web,Windows Desktop,Chrome,NDF
+z3izdhlr2r,2010-06-22,20100622181036,,-unknown-,,basic,3,en,seo,google,omg,Web,Mac Desktop,Firefox,NDF
+azovlbvr8h,2010-06-22,20100622215215,,FEMALE,,facebook,2,en,other,craigslist,untracked,Web,Windows Desktop,Firefox,NDF
+ig3y6qd6zl,2010-06-22,20100622233058,2010-06-22,-unknown-,52.0,basic,0,en,seo,google,untracked,Web,Mac Desktop,Safari,US
+137ycjj201,2010-06-23,20100623042917,2010-06-23,MALE,29.0,basic,2,en,direct,direct,untracked,Web,iPhone,-unknown-,FR
+5v3my95u9r,2010-06-23,20100623051625,2010-06-23,FEMALE,47.0,facebook,3,en,other,craigslist,untracked,Web,Mac Desktop,Firefox,US
+ep67tiywda,2010-06-23,20100623061552,,FEMALE,5.0,facebook,3,en,sem-non-brand,vast,linked,Web,Android Phone,Android Browser,NDF
+vwwz281d6u,2010-06-23,20100623152124,2010-06-23,FEMALE,49.0,facebook,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+qmik8ghvzl,2010-06-23,20100623172627,2010-06-23,MALE,,facebook,3,en,direct,direct,,Web,Other/Unknown,-unknown-,other
+u2u3d83xg2,2010-06-23,20100623173143,,MALE,,facebook,3,en,direct,direct,linked,Web,Windows Desktop,Chrome,NDF
+41ajlsc0np,2010-06-23,20100623174817,2010-07-31,FEMALE,38.0,facebook,0,en,direct,direct,untracked,Web,iPad,Mobile Safari,US
+umtg7l1g0b,2010-06-23,20100623175706,,FEMALE,,facebook,2,en,direct,direct,untracked,Web,iPad,Mobile Safari,NDF
+r70z39j5h4,2010-06-23,20100623182445,2010-06-25,FEMALE,35.0,facebook,2,en,seo,google,untracked,Web,iPhone,-unknown-,US
+9fabp2toq1,2010-06-23,20100623185744,,FEMALE,32.0,facebook,2,en,direct,direct,untracked,Web,iPhone,-unknown-,NDF
+9432okxsz3,2010-06-23,20100623213711,,-unknown-,35.0,facebook,2,en,other,craigslist,linked,Web,Windows Desktop,Firefox,NDF
+6sndaew6fo,2010-06-23,20100623231612,2010-06-24,FEMALE,30.0,basic,0,en,seo,google,linked,Web,Mac Desktop,Safari,US
+qt28zv3bve,2010-06-24,20100624062725,2010-06-25,MALE,,facebook,2,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+jp5o4023bl,2010-06-24,20100624142423,2010-06-25,-unknown-,,basic,2,en,content,google,,Web,Other/Unknown,-unknown-,US
+ct6g5n9pey,2010-06-24,20100624142606,,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+ya415dl3tj,2010-06-24,20100624192857,,-unknown-,,basic,3,en,sem-non-brand,other,,Web,Other/Unknown,-unknown-,NDF
+rajsdmlxs7,2010-06-24,20100624215503,2010-06-25,FEMALE,34.0,basic,0,en,direct,direct,untracked,Web,Windows Desktop,Chrome,FR
+5v08s24wbi,2010-06-24,20100624232313,,FEMALE,,facebook,3,en,other,craigslist,omg,Web,iPhone,Mobile Safari,NDF
+gvyzn1bzd2,2010-06-25,20100625001249,,MALE,51.0,basic,2,en,sem-non-brand,vast,untracked,Web,Windows Desktop,IE,NDF
+bdm2l1azts,2012-04-20,20100625004836,2011-05-18,FEMALE,47.0,facebook,0,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+wstbpyedb7,2010-06-25,20100625015009,2010-09-22,-unknown-,37.0,basic,1,en,seo,google,untracked,Web,Mac Desktop,Chrome,US
+w3z31ny4cw,2010-06-25,20100625023513,2010-06-25,MALE,65.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+p68774yh9e,2010-06-25,20100625023551,,FEMALE,29.0,facebook,0,en,seo,google,untracked,Web,Other/Unknown,Chrome,NDF
+0hq4u2z2om,2010-06-25,20100625045938,2010-06-25,-unknown-,37.0,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+jg17rpei5j,2010-06-25,20100625152622,2010-06-27,FEMALE,49.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,DE
+5b070fkgvw,2010-06-25,20100625173252,,-unknown-,,basic,3,en,sem-non-brand,vast,,Web,Other/Unknown,-unknown-,NDF
+ljmdhvobyf,2010-06-25,20100625190111,2010-06-26,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+2fn7nl1f6w,2010-06-25,20100625203813,2010-06-29,-unknown-,32.0,basic,3,en,direct,direct,untracked,Web,iPhone,-unknown-,US
+5m7x2iohe5,2010-06-25,20100625214709,2010-06-26,-unknown-,26.0,facebook,3,en,direct,direct,untracked,Web,iPhone,-unknown-,IT
+welggh33yz,2010-06-25,20100625234008,2010-06-29,FEMALE,37.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Safari,ES
+ovo07stk0r,2010-06-26,20100626184542,,-unknown-,,basic,3,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,NDF
+ukbzuu7lpo,2010-06-26,20100626222012,2010-06-27,FEMALE,40.0,basic,2,en,seo,google,linked,Web,iPhone,Mobile Safari,US
+uotls8a6s1,2010-06-27,20100627045347,,FEMALE,51.0,basic,3,en,other,craigslist,linked,Web,Windows Desktop,Chrome,NDF
+svhy4xap9o,2010-06-27,20100627061708,,FEMALE,5.0,facebook,2,en,other,other,linked,Web,Mac Desktop,Safari,NDF
+ds2sej23xj,2010-06-27,20100627091732,2010-06-27,-unknown-,67.0,basic,3,en,direct,direct,linked,Web,iPad,Mobile Safari,GB
+dv9a4cvnaq,2010-06-27,20100627144657,,-unknown-,,basic,2,en,other,craigslist,omg,Web,Mac Desktop,Firefox,NDF
+fvwwfk1c0n,2010-06-27,20100627195126,2010-06-28,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,US
+02zm7gqjcj,2010-06-27,20100627205723,2010-06-28,-unknown-,,basic,2,en,direct,direct,untracked,Web,Windows Desktop,Firefox,US
+uhzc3p0f6h,2010-06-27,20100627220723,2010-06-29,-unknown-,,basic,2,en,other,craigslist,untracked,Web,Windows Desktop,IE,US
+ml5zo3j2ij,2010-06-28,20100628001040,2010-06-28,MALE,33.0,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Firefox,US
+5fqm7xqv9t,2010-06-28,20100628040815,,FEMALE,25.0,facebook,2,en,direct,direct,linked,Web,Mac Desktop,Firefox,NDF
+0gf72nfjmn,2010-06-28,20100628055649,,FEMALE,28.0,basic,3,en,direct,direct,untracked,Web,Android Phone,-unknown-,NDF
+t9d6qr0843,2010-06-28,20100628072410,2010-06-29,FEMALE,50.0,basic,0,en,other,craigslist,untracked,Web,Windows Desktop,Firefox,US
+xth3iy4b8w,2010-06-28,20100628154253,2010-06-28,FEMALE,5.0,facebook,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,US
+g0l4fpt3my,2010-06-28,20100628173043,2010-07-06,MALE,38.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,CA
+k00ljdt0hs,2010-06-28,20100628192511,,MALE,36.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Firefox,NDF
+02n2968rji,2010-06-28,20100628212646,,-unknown-,,facebook,2,en,other,craigslist,linked,Web,Mac Desktop,Firefox,NDF
+vq7ej89hq5,2010-06-28,20100628230803,,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+55ato799jp,2010-06-28,20100628234027,,-unknown-,,basic,2,en,other,craigslist,omg,Web,Windows Desktop,Chrome,NDF
+rumh32b55t,2010-06-29,20100629021545,2010-06-29,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,FR
+2cjsrqgxgs,2010-06-29,20100629022130,,MALE,56.0,basic,2,en,content,google,linked,Web,Mac Desktop,Safari,NDF
+ligafjf8b1,2010-06-29,20100629032216,,FEMALE,34.0,basic,2,en,other,craigslist,linked,Web,Android Phone,Android Browser,NDF
+j92zl26kq1,2010-06-29,20100629052400,,-unknown-,,basic,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+39lo1m4gp7,2010-06-29,20100629070534,,FEMALE,34.0,basic,2,en,other,craigslist,untracked,Web,Windows Desktop,IE,NDF
+riu9djoml7,2010-06-29,20100629080350,2010-07-01,-unknown-,29.0,basic,3,en,content,google,linked,Web,Mac Desktop,Chrome,US
+7tik9xpgdw,2011-05-03,20100629084950,2010-06-29,-unknown-,35.0,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+4org3ff1fa,2010-06-29,20100629151710,2010-08-21,MALE,34.0,basic,2,en,other,craigslist,untracked,Web,Mac Desktop,Firefox,US
+rreafa3il6,2010-06-29,20100629183520,,FEMALE,5.0,facebook,2,en,seo,google,,Web,Other/Unknown,-unknown-,NDF
+hqiggws7be,2010-06-29,20100629204815,,FEMALE,38.0,basic,2,en,other,craigslist,untracked,Web,Windows Desktop,Chrome,NDF
+8x6l4sfln3,2010-06-29,20100629225625,,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+1y1ba1uie3,2010-06-29,20100629232556,2010-06-30,FEMALE,32.0,basic,3,en,sem-non-brand,google,untracked,Web,Windows Desktop,Chrome,US
+2h1ti5p7ev,2010-06-30,20100630014244,,-unknown-,69.0,basic,2,en,direct,direct,untracked,Web,Desktop (Other),Chrome,NDF
+3ngxamnymt,2010-06-30,20100630022020,2010-07-06,MALE,,basic,2,en,other,craigslist,omg,Web,Mac Desktop,Chrome,US
+7507z9xexc,2010-06-30,20100630042008,2010-07-07,-unknown-,27.0,basic,2,en,direct,direct,untracked,Web,Windows Desktop,Chrome,US
+i4v7ucn9aa,2010-06-30,20100630183448,2010-07-19,MALE,75.0,basic,2,en,sem-non-brand,other,untracked,Web,Mac Desktop,Safari,US
+1t9skr88up,2010-06-30,20100630183553,,FEMALE,38.0,facebook,3,en,other,craigslist,tracked-other,Web,Windows Desktop,IE,NDF
+rqx4761ak7,2010-06-30,20100630223249,2010-07-02,MALE,34.0,basic,3,en,direct,direct,untracked,Web,Mac Desktop,Chrome,US
+8f6shb2m91,2010-07-01,20100701024405,2010-07-01,FEMALE,67.0,basic,2,en,direct,direct,untracked,Web,Windows Desktop,IE,US
+ojdcf8fgk5,2010-07-01,20100701064716,,MALE,39.0,facebook,0,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+8300tift8v,2010-07-01,20100701085325,2010-07-01,MALE,,facebook,2,en,sem-non-brand,google,,Web,Other/Unknown,-unknown-,US
+zy1ij1085n,2010-07-01,20100701162622,,-unknown-,,basic,2,en,direct,direct,omg,Web,Mac Desktop,Chrome,NDF
+b296j5e8k7,2010-07-01,20100701194035,,FEMALE,45.0,facebook,2,en,other,craigslist,omg,Web,Mac Desktop,Chrome,NDF
+m266nqek2t,2010-07-01,20100701205029,,-unknown-,61.0,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+uhpgo8phmt,2010-07-01,20100701210214,2010-07-02,FEMALE,33.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Safari,GB
+rmkks24l9s,2010-07-01,20100701211411,,MALE,34.0,facebook,0,en,seo,google,linked,Web,Android Tablet,IE,NDF
+pxt2tgkrw9,2010-07-01,20100701213856,2010-09-05,FEMALE,28.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Safari,US
+e7k5zj1t0m,2010-07-01,20100701223406,,FEMALE,34.0,facebook,2,en,other,craigslist,untracked,Web,Mac Desktop,Safari,NDF
+r87v1sxmn5,2010-07-02,20100702010146,2010-07-02,FEMALE,53.0,facebook,2,en,content,google,linked,Web,Mac Desktop,Firefox,FR
+2ktg26a6aw,2010-07-02,20100702053641,2010-07-06,MALE,29.0,basic,0,en,seo,google,omg,Web,Windows Desktop,Chrome,US
+fa6k7t6etm,2010-07-02,20100702083052,2010-07-06,MALE,35.0,basic,0,en,direct,direct,linked,Web,Mac Desktop,Safari,US
+90xulmiein,2010-07-02,20100702155643,2010-07-02,-unknown-,,basic,2,en,direct,direct,linked,Web,Mac Desktop,Chrome,US
+y5i31uq5ws,2010-07-02,20100702175021,,-unknown-,,basic,3,en,direct,direct,untracked,Web,iPad,Mobile Safari,NDF
+d69d8joenu,2010-07-02,20100702195001,2010-07-02,MALE,67.0,basic,3,en,direct,direct,omg,Web,Windows Desktop,Firefox,US
+ermo4z3lbb,2010-07-02,20100702204240,2010-07-02,FEMALE,28.0,basic,3,en,sem-non-brand,google,untracked,Web,Mac Desktop,Chrome,US
+35qog2z4hz,2010-07-02,20100702212128,,FEMALE,49.0,facebook,2,en,direct,direct,untracked,Web,Mac Desktop,Chrome,NDF
+cjayy31zlo,2010-07-03,20100703040221,,-unknown-,,basic,3,en,seo,google,untracked,Web,Mac Desktop,Safari,NDF
+iurvrmgedn,2010-07-03,20100703052749,,-unknown-,39.0,basic,0,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+2cct6t3jhi,2010-07-03,20100703065908,,-unknown-,,basic,3,en,sem-non-brand,google,omg,Web,Windows Desktop,Chrome,NDF
+pvjp7tft3m,2010-07-03,20100703211350,,FEMALE,5.0,facebook,3,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
+rjq7yq1jcq,2010-07-04,20100704001814,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+uu9s70rrrp,2010-07-04,20100704033025,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+a2rqzy0ojd,2010-07-04,20100704042057,2010-07-04,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,CA
+18gcqh826f,2010-07-04,20100704201029,2010-07-22,-unknown-,,basic,3,en,direct,direct,untracked,Web,iPhone,-unknown-,FR
+2tcgaoasyu,2010-07-04,20100704231357,,-unknown-,40.0,facebook,2,en,other,craigslist,omg,Web,Windows Desktop,Chrome,NDF
+lpgn3pm7tp,2010-07-04,20100704233249,,MALE,36.0,basic,2,en,direct,direct,untracked,Web,Mac Desktop,Safari,NDF
+0cv7otq3ax,2010-07-05,20100705010952,2011-05-27,FEMALE,36.0,basic,0,es,seo,google,linked,Web,Mac Desktop,Safari,US
+fds9bl11l6,2010-07-05,20100705021450,,-unknown-,,basic,3,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+xm97l4wvhd,2010-07-05,20100705095753,2010-07-05,FEMALE,35.0,basic,2,en,other,craigslist,untracked,Web,iPhone,-unknown-,US
+0rhmg7r6ln,2010-07-05,20100705171618,,FEMALE,30.0,basic,2,en,sem-non-brand,google,untracked,Web,iPhone,-unknown-,NDF
+9rdbt8mgty,2010-07-05,20100705174834,,MALE,31.0,basic,3,en,seo,google,,Web,Other/Unknown,-unknown-,NDF
+irl3zmaoj9,2010-07-05,20100705214135,2010-07-08,-unknown-,34.0,basic,2,en,direct,direct,untracked,Web,Windows Desktop,Firefox,other
+gm6aeoo7uy,2010-07-05,20100705230418,,MALE,70.0,basic,2,en,seo,google,untracked,Web,Windows Desktop,Firefox,NDF
+l9u6l7yla7,2010-07-06,20100706041322,2010-07-22,FEMALE,32.0,basic,2,en,seo,google,linked,Web,iPad,Mobile Safari,FR
+hapu3rfcd9,2010-07-06,20100706072443,,-unknown-,,basic,2,en,content,google,tracked-other,Web,Mac Desktop,Safari,NDF
+39xakgcml7,2010-07-06,20100706130245,,FEMALE,33.0,basic,2,en,direct,direct,linked,Web,Mac Desktop,Firefox,NDF
+rivzh42i77,2010-07-06,20100706163955,,FEMALE,5.0,facebook,3,en,sem-non-brand,vast,linked,Web,iPhone,Mobile Safari,NDF
+4yvxrzzgvd,2010-07-06,20100706164016,,-unknown-,,basic,1,en,seo,google,untracked,Web,Android Phone,-unknown-,NDF
+u0pectsafi,2010-07-06,20100706184118,2010-07-09,FEMALE,39.0,facebook,2,en,other,craigslist,untracked,Web,iPhone,Mobile Safari,US
+vxjk2hstay,2010-07-06,20100706214029,2010-07-06,-unknown-,,basic,3,en,seo,google,linked,Web,Windows Desktop,Firefox,US
+dhg8gf6a0m,2010-07-06,20100706214518,,-unknown-,,basic,2,en,direct,direct,untracked,Web,Windows Desktop,Firefox,NDF
+j6s0zwwdkn,2010-07-06,20100706223508,,FEMALE,28.0,basic,0,en,other,craigslist,linked,Web,Windows Desktop,Chrome,NDF
+3k83bz4wn1,2010-07-07,20100707021520,2010-07-07,FEMALE,29.0,basic,2,en,other,craigslist,linked,Web,Mac Desktop,Chrome,US
+lern9mx2ha,2010-07-07,20100707055421,2010-07-11,-unknown-,,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Firefox,GB
+oqp9esg8ed,2010-07-07,20100707060804,2010-07-07,FEMALE,38.0,basic,0,en,direct,direct,untracked,Web,Mac Desktop,Safari,US
+m3mkfkct6b,2010-07-07,20100707064223,2010-07-10,FEMALE,26.0,basic,0,en,direct,direct,omg,Web,Mac Desktop,Chrome,US
+0hewovu9tu,2010-07-07,20100707193401,2010-07-27,-unknown-,44.0,basic,2,en,direct,direct,untracked,Web,Windows Desktop,Firefox,US
+1lw1guepw9,2010-07-07,20100707195119,,-unknown-,,basic,2,en,direct,direct,linked,Web,Mac Desktop,Safari,NDF
+vryakyp5qg,2010-07-07,20100707213826,,-unknown-,,basic,2,en,other,craigslist,omg,Web,Windows Desktop,Chrome,NDF
+dwxlck4x1c,2010-07-07,20100707215727,,-unknown-,,basic,2,en,direct,direct,,Web,Other/Unknown,-unknown-,NDF
+slxnkv0po1,2010-07-07,20100707222832,,-unknown-,,basic,2,en,seo,google,untracked,Web,iPhone,-unknown-,NDF
+6g578zfekx,2010-07-08,20100708001126,,-unknown-,,basic,2,en,other,craigslist,,Web,Other/Unknown,-unknown-,NDF
