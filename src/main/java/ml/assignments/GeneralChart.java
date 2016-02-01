@@ -2,6 +2,7 @@ package ml.assignments;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Font;
 import java.util.List;
 
 import org.jfree.chart.ChartFactory;
@@ -10,6 +11,7 @@ import org.jfree.chart.JFreeChart;
 import org.jfree.chart.axis.NumberAxis;
 import org.jfree.chart.plot.XYPlot;
 import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
+import org.jfree.chart.title.TextTitle;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 import org.jfree.ui.ApplicationFrame;
@@ -39,6 +41,9 @@ public class GeneralChart extends ApplicationFrame {
 
 		//the chart
 		final JFreeChart chart = ChartFactory.createXYLineChart(title, xAxis, yAxis, dataSet);
+		Font titleFont = JFreeChart.DEFAULT_TITLE_FONT;
+		titleFont = new Font(titleFont.getName(), titleFont.getStyle(), 14);
+		chart.setTitle(new TextTitle(title, titleFont));
 		final ChartPanel chartPanel = new ChartPanel(chart);
 		customize(chart);
 		chartPanel.setPreferredSize(new java.awt.Dimension(700, 370));
@@ -62,7 +67,9 @@ public class GeneralChart extends ApplicationFrame {
 
 		final XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
 		renderer.setBaseStroke(new BasicStroke(4));
-		plot.setRenderer(renderer);
+		for (int i = 0; i < plot.getSeriesCount(); i++) {
+			renderer.setSeriesShapesVisible(i, false);
+		}
 
 		// change the auto tick unit selection to integer units only...
 		final NumberAxis rangeAxis = (NumberAxis) plot.getRangeAxis();

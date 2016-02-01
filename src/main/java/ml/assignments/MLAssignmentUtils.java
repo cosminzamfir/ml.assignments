@@ -3,6 +3,8 @@ package ml.assignments;
 import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
+import java.io.ObjectInputStream.GetField;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,11 +14,12 @@ import weka.classifiers.Evaluation;
 import weka.classifiers.functions.LibSVM;
 import weka.classifiers.functions.MultilayerPerceptron;
 import weka.classifiers.functions.SMO;
+import weka.classifiers.functions.neural.NeuralConnection;
+import weka.classifiers.functions.supportVector.CachedKernel;
 import weka.classifiers.functions.supportVector.PolyKernel;
 import weka.classifiers.functions.supportVector.RBFKernel;
 import weka.classifiers.lazy.IBk;
 import weka.classifiers.meta.AdaBoostM1;
-import weka.classifiers.pmml.consumer.SupportVectorMachineModel;
 import weka.classifiers.trees.J48;
 import weka.core.Instances;
 import weka.core.SelectedTag;
@@ -194,11 +197,12 @@ public class MLAssignmentUtils {
 		} else if (function == KernelFunction.Sigmoid) {
 			throw new RuntimeException(KernelFunction.Sigmoid + " not supported by " + smo.getClass().getName());
 		}
+		((CachedKernel) smo.getKernel()).setCacheSize(1);
 		return smo;
 	}
 
 	public static String toString(J48 classifier) {
-		return classifier.getClass().getSimpleName() + " -pruned=" + !classifier.getUnpruned();
+		return classifier.getClass().getSimpleName() + " - pruned=" + !classifier.getUnpruned();
 	}
 
 	public static String toString(IBk classifier) {
@@ -212,14 +216,47 @@ public class MLAssignmentUtils {
 
 	public static String toString(MultilayerPerceptron classifier) {
 		return classifier.getClass().getSimpleName() + " - learningRate=" + classifier.getLearningRate() + " - momentum=" + classifier.getMomentum()
-				+ " - hiddenUnits=" + classifier.getHiddenLayers();
+				+ " - hiddenUnits=" + ((NeuralConnection[])getField("m_neuralNodes",classifier)).length;
+	}
+
+	private static Object getField(String fieldName, Object o) {
+		try {
+		Field field = o.getClass().getDeclaredField(fieldName);
+		field.setAccessible(true);
+		return field.get(o);
+		} catch (Exception e) { 
+			throw new RuntimeException(e);
+		}
 	}
 
 	public static String toString(SMO classifier) {
-		return classifier.getClass().getSimpleName() + " - kernel=" + classifier.getKernel().getClass().getSimpleName();
+		return classifier.getClass().getSimpleName() + " - kernel=" + classifier.getKernel();
+	}
+
+	public static String toString(LibSVM classifier) {
+		return classifier.getClass().getSimpleName() + " - kernel=" + classifier.getKernelType().getSelectedTag().getReadable();
 	}
 
 	public static String toString(Classifier classifier) {
+		if (classifier instanceof J48) {
+			return toString((J48) classifier);
+		}
+		if (classifier instanceof MultilayerPerceptron) {
+			return toString((MultilayerPerceptron) classifier);
+		}
+		if (classifier instanceof IBk) {
+			return toString((IBk) classifier);
+		}
+		if (classifier instanceof LibSVM) {
+			return toString((LibSVM) classifier);
+		}
+		if (classifier instanceof SMO) {
+			return toString((SMO) classifier);
+		}
+		if (classifier instanceof AdaBoostM1) {
+			return toString((AdaBoostM1) classifier);
+		}
+
 		return classifier.getClass().getSimpleName();
 	}
 
@@ -259,7 +296,7 @@ public class MLAssignmentUtils {
 		classifiers.add(MLAssignmentUtils.buildBoosting());
 		classifiers.add(MLAssignmentUtils.buildNeuralNet());
 		classifiers.add(MLAssignmentUtils.buildKNearestNeibor());
-		//classifiers.add(MLAssignmentUtils.buildLibSVM(KernelFunction.Quadratic));
+		classifiers.add(MLAssignmentUtils.buildLibSVM(KernelFunction.Quadratic));
 		classifiers.add(MLAssignmentUtils.buildSMOSVM(KernelFunction.Quadratic));
 		return classifiers;
 	}
@@ -272,5 +309,5 @@ public class MLAssignmentUtils {
 		return Filter.useFilter(dataSet, filter);
 
 	}
-
+	
 }

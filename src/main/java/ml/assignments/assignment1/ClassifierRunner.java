@@ -64,4 +64,8 @@ public class ClassifierRunner {
 	public Evaluation getEvaluationOnTrainingSet() {
 		return evaluationOnTrainingSet;
 	}
+	
+	public Classifier getClassifier() {
+		return classifier;
+	}
 }
