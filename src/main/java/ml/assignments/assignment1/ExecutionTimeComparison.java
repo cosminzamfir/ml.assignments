@@ -3,6 +3,7 @@ package ml.assignments.assignment1;
 import java.util.ArrayList;
 import java.util.List;
 
+import ml.assignments.CommandLineOptions;
 import ml.assignments.GeneralChart;
 import ml.assignments.MLAssignmentUtils;
 import weka.classifiers.Classifier;
@@ -23,21 +24,20 @@ public class ExecutionTimeComparison {
 	static List<Classifier> classifiers = new ArrayList<>();
 	static String buildingTimeTitle = "Classifier building time (ms)";
 	static String evaluationTimeTitle = "Classifier evaluation time (ms)";
+	static String dataSetName = "robot-moves.txt";
 
 	public static void main(String[] args) throws Exception {
 		long start;
 		long end;
-
-		classifiers = MLAssignmentUtils.buildClassifiers();
+		CommandLineOptions options = CommandLineOptions.newInstance(args);
+		classifiers = MLAssignmentUtils.buildClassifiers(options);
 		buildArrays();
 		
-		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource("magic-gama-telescope.arff");
-		//Instances dataSet = MLAssignmentUtils.buildInstancesFromResource("robot-moves-binary.arff");
-		
+		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(options.getDataSetName(dataSetName));
 		dataSet = MLAssignmentUtils.shufle(dataSet);
 		
-		for (int i = 0; i < runs; i++) {
-			int size = initialSize + i * step;
+		for (int i = 0; i < options.getRuns(runs); i++) {
+			int size = options.getInitialSize(initialSize)+ i * options.getStepSize(step);
 			Instances training = new Instances(dataSet, 0, size);
 			for (int j = 0; j < classifiers.size(); j++) {
 				Classifier classifier = classifiers.get(j);

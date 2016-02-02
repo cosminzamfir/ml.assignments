@@ -3,6 +3,7 @@ package ml.assignments.assignment1;
 import java.util.ArrayList;
 import java.util.List;
 
+import ml.assignments.CommandLineOptions;
 import ml.assignments.GeneralChart;
 import ml.assignments.MLAssignmentUtils;
 import weka.classifiers.Classifier;
@@ -16,7 +17,7 @@ import weka.core.Instances;
  */
 public class StatIndicatorsComparison {
 
-	static int runs = 40;
+	static int runs = 20;
 	static int initialTrainingSize = 100;
 	static int step = 100;
 	static int testSize = 1000;
@@ -26,7 +27,7 @@ public class StatIndicatorsComparison {
 	static List<double[][]> fMeasures = new ArrayList<>();
 	static String dataSetName = "magic-gama-telescope.arff";
 
-	static String accuraciesTitle = "Accuracy (%)";
+	static String accuraciesTitle = "Accuracy (%)" ;
 	static String precisionsTitle = "Precision (%)";
 	static String recalsTitle = "Recal (%)";
 	static String fMeasuresTitle = "F-Measure";
@@ -34,17 +35,18 @@ public class StatIndicatorsComparison {
 	static List<Classifier> classifiers = new ArrayList<>();
 
 	public static void main(String[] args) throws Exception {
-
-		classifiers = MLAssignmentUtils.buildClassifiers();
+		CommandLineOptions options = CommandLineOptions.newInstance(args);
+		classifiers = options.getClassifiers(MLAssignmentUtils.buildClassifiers(options));
 		buildArrays();
 
-		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(dataSetName);
+		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(options.getDataSetName(dataSetName));
 		dataSet = MLAssignmentUtils.shufle(dataSet);
 
-		for (int i = 0; i < runs; i++) {
-			int size = initialTrainingSize + i * step;
+		for (int i = 0; i < options.getRuns(runs); i++) {
+			int size = options.getInitialSize(initialTrainingSize)+ i * options.getStepSize(step);
 			Instances training = new Instances(dataSet, 0, size);
-			Instances test = new Instances(dataSet, dataSet.size() - testSize, testSize);
+			
+			Instances test = new Instances(dataSet, dataSet.size() - options.getTestSize(testSize), options.getTestSize(testSize));
 			for (int j = 0; j < classifiers.size(); j++) {
 				Classifier classifier = classifiers.get(j);
 				ClassifierRunner runner = new ClassifierRunner(classifier);

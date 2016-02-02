@@ -26,35 +26,33 @@ public class ErrorComparison {
 
 	public static void main(String[] args) throws Exception {
 		CommandLineOptions options = CommandLineOptions.newInstance(args);
-		List<Classifier> classifiers = MLAssignmentUtils.buildClassifiers();
-		for (Classifier classifier : classifiers) {
+		Classifier classifier = options.getClassifier();
+		
+		ClassifierRunner runner = new ClassifierRunner(classifier);
+		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(options.getDataSetName(fileName));
+		dataSet = MLAssignmentUtils.shufle(dataSet);
+		MLAssignmentUtils.write(fileName + "_shuffled.arff", dataSet);
 
-			ClassifierRunner runner = new ClassifierRunner(classifier);
-			Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(fileName);
-			dataSet = MLAssignmentUtils.shufle(dataSet);
-			MLAssignmentUtils.write(fileName + "_shuffled.arff", dataSet);
-			
-			int size = dataSet.size();
-			Instances testSet = new Instances(dataSet, size - 1000, 1000);
+		int size = dataSet.size();
+		Instances testSet = new Instances(dataSet, size - options.getTestSize(testSize), options.getTestSize(testSize));
 
-			for (int i = 0; i < runs; i++) {
-				int trainingSize = initialTrainingSize + i * step;
-				Instances trainingDataSet = new Instances(dataSet, 0, trainingSize);
-				runner.run(trainingDataSet, testSet);
-				trainingErrorRateVersusTrainingSize[i][0] = trainingSize;
-				trainingErrorRateVersusTrainingSize[i][1] = runner.getEvaluationOnTrainingSet().pctIncorrect();
+		for (int i = 0; i < options.getRuns(runs); i++) {
+			int trainingSize = options.getInitialSize(initialTrainingSize) + i * options.getStepSize(step);
+			Instances trainingDataSet = new Instances(dataSet, 0, trainingSize);
+			runner.run(trainingDataSet, testSet);
+			trainingErrorRateVersusTrainingSize[i][0] = trainingSize;
+			trainingErrorRateVersusTrainingSize[i][1] = runner.getEvaluationOnTrainingSet().pctIncorrect();
 
-				testErrorRateVersusTrainingSize[i][0] = trainingSize;
-				testErrorRateVersusTrainingSize[i][1] = runner.getEvaluationOnTestSet().pctIncorrect();
-			}
-			List<double[][]> data = new ArrayList<>();
-			List<String> titles = new ArrayList<>();
-			data.add(trainingErrorRateVersusTrainingSize);
-			data.add(testErrorRateVersusTrainingSize);
-			titles.add("Training error rate");
-			titles.add("Test error rate");
-			String title = MLAssignmentUtils.toString(classifier) + " - error rates versus training size: " + fileName;
-			new GeneralChart(title, data, titles, "Training size", "Error rate");
+			testErrorRateVersusTrainingSize[i][0] = trainingSize;
+			testErrorRateVersusTrainingSize[i][1] = runner.getEvaluationOnTestSet().pctIncorrect();
 		}
+		List<double[][]> data = new ArrayList<>();
+		List<String> titles = new ArrayList<>();
+		data.add(trainingErrorRateVersusTrainingSize);
+		data.add(testErrorRateVersusTrainingSize);
+		titles.add("Training error rate");
+		titles.add("Test error rate");
+		String title = MLAssignmentUtils.toString(classifier) + " - error rates versus training size: " + fileName;
+		new GeneralChart(title, data, titles, "Training size", "Error rate");
 	}
 }

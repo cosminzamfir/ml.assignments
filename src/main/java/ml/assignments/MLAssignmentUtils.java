@@ -29,6 +29,7 @@ import weka.core.converters.Saver;
 import weka.filters.Filter;
 import weka.filters.unsupervised.instance.Randomize;
 import weka.filters.unsupervised.instance.RemoveWithValues;
+import weka.gui.SimpleCLIPanel.CommandlineCompletion;
 
 public class MLAssignmentUtils {
 
@@ -76,12 +77,16 @@ public class MLAssignmentUtils {
 		}
 	}
 
-	public static void write(String fileName, Instances dataSet) throws IOException {
-		ArffSaver saver = new ArffSaver();
-		saver.setFile(new File("C:/work/data/workspace/ml.assignments/src/main/resources/" + fileName));
-		saver.setRetrieval(Saver.BATCH);
-		saver.setInstances(dataSet);
-		saver.writeBatch();
+	public static void write(String fileName, Instances dataSet) {
+		try {
+			ArffSaver saver = new ArffSaver();
+			saver.setFile(new File("C:/work/data/workspace/ml.assignments/src/main/resources/" + fileName));
+			saver.setRetrieval(Saver.BATCH);
+			saver.setInstances(dataSet);
+			saver.writeBatch();
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	public static Instances shufle(Instances input) throws Exception {
@@ -97,41 +102,30 @@ public class MLAssignmentUtils {
 		return res;
 	}
 
-	public static void main(String[] args) throws Exception {
-		Instances ds = loadCSV("prudential-life-insurance.csv");
-		write("prudential-life-insurance.arff", ds);
-		//		for (int i = 0; i < ds.numAttributes(); i++) {
-		//			Attribute attr = ds.attribute(i);
-		//			if (ds.attributeStats(i).distinctCount != 2) {
-		//				System.out.println("@attribute " + attr.name() + " " + Attribute.typeToString(attr));
-		//			} else {
-		//				System.out.println("@attribute " + attr.name() + " {" + ds.attributeStats(i).numericStats.min + ", " + ds.attributeStats(i).numericStats.max
-		//						+ "}");
-		//			}
-		//		}
-	}
-
-	public static J48 buildDecisionTree(boolean usePruning) {
+	public static J48 buildDecisionTree(CommandLineOptions options) {
 		J48 res = new J48();
+		boolean usePruning = options.isPruning(true);
 		res.setUnpruned(!usePruning);
 		return res;
 	}
 
-	public static IBk buildKNearestNeibor() {
+	public static IBk buildKNearestNeibor(CommandLineOptions options) {
 		IBk res = new IBk();
-		res.setKNN(10);
-		res.setDistanceWeighting(new SelectedTag(IBk.WEIGHT_INVERSE, IBk.TAGS_WEIGHTING));
+		res.setKNN(options.getKNeibors(10));
+		int distanceWeight = options.getDistanceWeight(IBk.WEIGHT_INVERSE);
+		res.setDistanceWeighting(new SelectedTag(distanceWeight, IBk.TAGS_WEIGHTING));
 		return res;
 	}
 
-	public static AdaBoostM1 buildBoosting() {
+	public static AdaBoostM1 buildBoosting(CommandLineOptions options) {
 		AdaBoostM1 res = new AdaBoostM1();
-		res.setClassifier(new J48());
+		res.setClassifier(buildDecisionTree(options));
 		return res;
 	}
 
-	public static MultilayerPerceptron buildNeuralNet() {
+	public static MultilayerPerceptron buildNeuralNet(CommandLineOptions options) {
 		MultilayerPerceptron res = new MultilayerPerceptron();
+		res.setHiddenLayers(options.getHiddenUnits("a"));
 		return res;
 	}
 
@@ -216,15 +210,15 @@ public class MLAssignmentUtils {
 
 	public static String toString(MultilayerPerceptron classifier) {
 		return classifier.getClass().getSimpleName() + " - learningRate=" + classifier.getLearningRate() + " - momentum=" + classifier.getMomentum()
-				+ " - hiddenUnits=" + ((NeuralConnection[])getField("m_neuralNodes",classifier)).length;
+				+ " - hiddenUnits=" + ((NeuralConnection[]) getField("m_neuralNodes", classifier)).length;
 	}
 
 	private static Object getField(String fieldName, Object o) {
 		try {
-		Field field = o.getClass().getDeclaredField(fieldName);
-		field.setAccessible(true);
-		return field.get(o);
-		} catch (Exception e) { 
+			Field field = o.getClass().getDeclaredField(fieldName);
+			field.setAccessible(true);
+			return field.get(o);
+		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
 	}
@@ -290,12 +284,12 @@ public class MLAssignmentUtils {
 		return res * 100 / classes;
 	}
 
-	public static List<Classifier> buildClassifiers() {
+	public static List<Classifier> buildClassifiers(CommandLineOptions options) {
 		List<Classifier> classifiers = new ArrayList<>();
-		classifiers.add(MLAssignmentUtils.buildDecisionTree(true));
-		classifiers.add(MLAssignmentUtils.buildBoosting());
-		classifiers.add(MLAssignmentUtils.buildNeuralNet());
-		classifiers.add(MLAssignmentUtils.buildKNearestNeibor());
+		classifiers.add(MLAssignmentUtils.buildDecisionTree(options));
+		classifiers.add(MLAssignmentUtils.buildBoosting(options));
+		classifiers.add(MLAssignmentUtils.buildNeuralNet(options));
+		classifiers.add(MLAssignmentUtils.buildKNearestNeibor(options));
 		classifiers.add(MLAssignmentUtils.buildLibSVM(KernelFunction.Quadratic));
 		classifiers.add(MLAssignmentUtils.buildSMOSVM(KernelFunction.Quadratic));
 		return classifiers;
@@ -309,5 +303,5 @@ public class MLAssignmentUtils {
 		return Filter.useFilter(dataSet, filter);
 
 	}
-	
+
 }

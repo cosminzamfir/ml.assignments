@@ -9,6 +9,7 @@ import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.axis.NumberAxis;
+import org.jfree.chart.plot.FastScatterPlot;
 import org.jfree.chart.plot.XYPlot;
 import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 import org.jfree.chart.title.TextTitle;
@@ -16,6 +17,9 @@ import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RefineryUtilities;
+import org.jfree.util.ShapeUtilities;
+
+import weka.core.Instances;
 
 public class GeneralChart extends ApplicationFrame {
 
@@ -76,4 +80,73 @@ public class GeneralChart extends ApplicationFrame {
 		rangeAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());
 		// OPTIONAL CUSTOMISATION COMPLETED.
 	}
+
+	/** ================================================================================================== */
+
+	/**
+	 * Only data set with 2 dimensional real input values
+	 * @param title
+	 * @param instances
+	 */
+	public GeneralChart(String title, Instances instances) {
+		super(title);
+
+		final XYSeriesCollection dataSet = new XYSeriesCollection();
+
+		final XYSeries series0 = new XYSeries("Class0");
+		addToSeries(series0, instances, "0");
+
+		final XYSeries series1 = new XYSeries("Class1");
+		addToSeries(series1, instances, "1");
+
+		dataSet.addSeries(series0);
+		dataSet.addSeries(series1);
+
+		//the chart
+		final JFreeChart chart = ChartFactory.createXYLineChart(title, "X", "Y", dataSet);
+		Font titleFont = JFreeChart.DEFAULT_TITLE_FONT;
+		titleFont = new Font(titleFont.getName(), titleFont.getStyle(), 14);
+		chart.setTitle(new TextTitle(title, titleFont));
+		final ChartPanel chartPanel = new ChartPanel(chart);
+		customizeScatered(chart);
+		chartPanel.setPreferredSize(new java.awt.Dimension(500, 500));
+		setContentPane(chartPanel);
+		pack();
+		RefineryUtilities.centerFrameOnScreen(this);
+		setVisible(true);
+	}
+
+	private void customizeScatered(JFreeChart chart) {
+		chart.setBackgroundPaint(Color.white);
+
+		//final StandardLegend legend = (StandardLegend) chart.getLegend();
+		//legend.setDisplaySeriesShapes(true);
+
+		// get a reference to the plot for further customisation...
+		final XYPlot plot = chart.getXYPlot();
+		plot.setBackgroundPaint(Color.lightGray);
+		plot.setDomainGridlinePaint(Color.white);
+		plot.setRangeGridlinePaint(Color.white);
+
+		final XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer(false, true);
+		plot.setRenderer(renderer);
+		renderer.setSeriesShape(0, ShapeUtilities.createDiamond(1));
+		renderer.setSeriesShape(1, ShapeUtilities.createDiamond(1));
+
+		// change the auto tick unit selection to integer units only...
+		final NumberAxis rangeAxis = (NumberAxis) plot.getRangeAxis();
+		rangeAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());
+		// OPTIONAL CUSTOMISATION COMPLETED.
+	}
+
+	private void addToSeries(XYSeries series, Instances instances, String filter) {
+		for (int i = 0; i < instances.size(); i++) {
+			String classValue = instances.get(i).classValue() == 0 ? "0" : "1";
+			if (!classValue.equals(filter)) {
+				continue;
+			}
+			series.add(instances.get(i).value(0), instances.get(i).value(1));
+		}
+	}
+
 }

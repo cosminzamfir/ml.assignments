@@ -3,6 +3,7 @@ package ml.assignments.assignment1;
 import java.util.ArrayList;
 import java.util.List;
 
+import ml.assignments.CommandLineOptions;
 import ml.assignments.GeneralChart;
 import ml.assignments.MLAssignmentUtils;
 import weka.classifiers.functions.MultilayerPerceptron;
@@ -26,7 +27,8 @@ public class DecisionTreeTests {
 	
 
 	public static void main(String[] args) throws Exception {
-		J48 classifier = MLAssignmentUtils.buildDecisionTree(false);
+		CommandLineOptions options = CommandLineOptions.newInstance(args);
+		J48 classifier = MLAssignmentUtils.buildDecisionTree(options);
 		ClassifierRunner runner = new ClassifierRunner(classifier);
 		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(dataSetName);
 		dataSet = MLAssignmentUtils.shufle(dataSet);

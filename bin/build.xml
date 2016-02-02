@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project ml.assignments with libraries in sub-folder">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="C:/work/transfer/ml.assignment/ml.jar">
+            <manifest>
+                <!--
+            	<attribute name="Main-Class" value="ml.assignments.assignment1.Main"/>
+            	-->
+                <attribute name="Class-Path" value=". ml_lib/jcommon-1.0.23.jar ml_lib/jfreechart-1.0.19.jar ml_lib/log4j-1.2.17.jar ml_lib/stdlib.jar ml_lib/libsvm.jar ml_lib/weka-dev-3.7.6.jar ml_lib/commons-compress-1.10.jar ml_lib/java-cup.jar ml_lib/JFlex.jar ml_lib/junit.jar ml_lib/packageManager.jar ml_lib/junit-3.8.2.jar ml_lib/java-cup-11b-2015.03.26.jar ml_lib/java-cup-11b-runtime-2015.03.26.jar ml_lib/pentaho-package-manager-1.0.11.jar ml_lib/libsvm-3.17.jar"/>
+            </manifest>
+        	<fileset dir="C:/work/data/workspace/ml.assignments/bin"/>
+            <fileset dir="C:/work/data/ml.omcs/software/weka/weka-master/packages/external/LibSVM/build/classes"/>
+            <!--
+            <fileset dir="C:/work/data/ml.omcs/software/weka/weka-master/packages/external/LibSVM/build/testcases"/>
+            <fileset dir="C:/work/data/ml.omcs/software/weka/weka-master/weka/build/classes"/>
+            <fileset dir="C:/work/data/ml.omcs/software/weka/weka-master/weka/build/testcases"/>
+            -->
+        </jar>
+        <delete dir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <mkdir dir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/workspace/ml.assignments/lib/jcommon-1.0.23.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/workspace/ml.assignments/lib/jfreechart-1.0.19.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/workspace/ml.assignments/lib/log4j-1.2.17.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/workspace/ml.assignments/lib/stdlib.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/workspace/ml.assignments/lib/libsvm.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/workspace/ml.assignments/lib/weka-dev-3.7.6.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/workspace/ml.assignments/lib/commons-compress-1.10.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/workspace/ml.assignments/lib/java-cup.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/workspace/ml.assignments/lib/JFlex.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/workspace/ml.assignments/lib/junit.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/workspace/ml.assignments/lib/packageManager.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/java-cup-11b/2015.03.26/java-cup-11b-2015.03.26.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/java-cup-11b-runtime/2015.03.26/java-cup-11b-runtime-2015.03.26.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/.m2/repository/org/pentaho/pentaho-commons/pentaho-package-manager/1.0.11/pentaho-package-manager-1.0.11.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+        <copy file="C:/work/data/.m2/repository/tw/edu/ntu/csie/libsvm/3.17/libsvm-3.17.jar" todir="C:/work/transfer/ml.assignment/ml_lib"/>
+    </target>
+</project>
