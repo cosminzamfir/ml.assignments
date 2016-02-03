@@ -18,20 +18,20 @@ public class ExecutionTimeComparison {
 
 	static int runs = 40;
 	static int initialSize = 1;
-	static int step = 100;
+	static int step = 1;
 	static List<double[][]> buildingTimes = new ArrayList<>();
 	static List<double[][]> evaluationTimes = new ArrayList<>();
 	static List<Classifier> classifiers = new ArrayList<>();
 	static String buildingTimeTitle = "Classifier building time (ms)";
 	static String evaluationTimeTitle = "Classifier evaluation time (ms)";
-	static String dataSetName = "robot-moves.txt";
+	static String dataSetName = "robot-moves.arff";
 
 	public static void main(String[] args) throws Exception {
 		long start;
 		long end;
 		CommandLineOptions options = CommandLineOptions.instance(args);
 		classifiers = MLAssignmentUtils.buildClassifiers(options);
-		buildArrays();
+		buildArrays(options);
 		
 		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(options.getDataSetName(dataSetName));
 		dataSet = MLAssignmentUtils.shufle(dataSet);
@@ -68,10 +68,10 @@ public class ExecutionTimeComparison {
 		return res;
 	}
 
-	private static void buildArrays() {
+	private static void buildArrays(CommandLineOptions options) {
 		for (Classifier classifier : classifiers) {
-			buildingTimes.add(new double[runs][2]);
-			evaluationTimes.add(new double[runs][2]);
+			buildingTimes.add(new double[options.getRuns(runs)][2]);
+			evaluationTimes.add(new double[options.getRuns(runs)][2]);
 		}
 	}
 }

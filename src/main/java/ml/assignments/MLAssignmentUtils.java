@@ -92,7 +92,7 @@ public class MLAssignmentUtils {
 	public static void write(String fileName, Instances dataSet) {
 		try {
 			ArffSaver saver = new ArffSaver();
-			saver.setFile(new File("C:/work/data/workspace/ml.assignments/src/main/resources/" + fileName));
+			saver.setFile(new File("c:/data/dropbox/dropbox/omcs/ml/projects/ml.assignments/src/main/resources/" + fileName));
 			saver.setRetrieval(Saver.BATCH);
 			saver.setInstances(dataSet);
 			saver.writeBatch();
@@ -126,6 +126,7 @@ public class MLAssignmentUtils {
 		res.setKNN(options.getKNeibors(10));
 		int distanceWeight = options.getDistanceWeight(IBk.WEIGHT_INVERSE);
 		res.setDistanceWeighting(new SelectedTag(distanceWeight, IBk.TAGS_WEIGHTING));
+		
 		return res;
 	}
 
@@ -171,7 +172,7 @@ public class MLAssignmentUtils {
 		return svm;
 	}
 
-	public static SMO buildSMOSVM(KernelFunction function) {
+	public static SMO buildSMOSVM(KernelFunction function, CommandLineOptions options) {
 		SMO smo = new SMO();
 		if (function == KernelFunction.Liniar) {
 			PolyKernel kernel = new PolyKernel();
@@ -199,6 +200,7 @@ public class MLAssignmentUtils {
 			smo.setKernel(kernel);
 		} else if (function == KernelFunction.Radial) {
 			RBFKernel kernel = new RBFKernel();
+			kernel.setGamma(options.getGamma(1));
 			smo.setKernel(kernel);
 		} else if (function == KernelFunction.Sigmoid) {
 			throw new RuntimeException(KernelFunction.Sigmoid + " not supported by " + smo.getClass().getName());
@@ -303,7 +305,7 @@ public class MLAssignmentUtils {
 		classifiers.add(MLAssignmentUtils.buildNeuralNet(options));
 		classifiers.add(MLAssignmentUtils.buildKNearestNeibor(options));
 		classifiers.add(MLAssignmentUtils.buildLibSVM(KernelFunction.Quadratic));
-		classifiers.add(MLAssignmentUtils.buildSMOSVM(KernelFunction.Quadratic));
+		classifiers.add(MLAssignmentUtils.buildSMOSVM(KernelFunction.Quadratic, options));
 		return classifiers;
 	}
 

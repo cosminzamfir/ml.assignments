@@ -177,9 +177,11 @@ public class DataSetBuilder {
 		}
 
 
-		Instances dataSet = DataSetBuilder.newQuadraticSeparableNormalDataSet(2, 0.7, 0.1, 10000, coefficients);
-		MLAssignmentUtils.write("ellipsoid_2d.arff", dataSet);
-		//new GeneralChart("Separation", dataSet);
+		DataSetBuilder builder = DataSetBuilder.defaultBuilder(2, 25000, 0.5, 0.3);
+		builder.separationFunction(new Function1());
+		Instances dataSet = builder.build();
+		MLAssignmentUtils.write("test-function.arff", dataSet);
+		new GeneralChart("Separation", dataSet);
 		
 	}
 }

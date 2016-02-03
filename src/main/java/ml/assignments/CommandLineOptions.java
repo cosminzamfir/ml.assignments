@@ -31,6 +31,7 @@ public class CommandLineOptions {
 		TRAINING_SIZE("-trainingSize", "The size of the training data set", "numeric"),
 		DISTANCE_WEIGHT("-distanceWeight", "The distance weighting function for KNN", "<" + IBk.WEIGHT_NONE + "(none)|" + IBk.WEIGHT_INVERSE + "(inverse)|" + IBk.WEIGHT_SIMILARITY+ "(similarity)|"),
 		CROSS_VALIDATE("-crossValidate", "Perform cross validation?. Default true", "true|false"),
+		GAMMA("-gamma", "Gamma parameter for SMO. Default 1", "numeric"),
 		HELP("-help", "Help !", "no params");
 
 		String key;
@@ -264,7 +265,7 @@ public class CommandLineOptions {
 			return MLAssignmentUtils.buildLibSVM(getKernelFunction(KernelFunction.Quadratic));
 		}
 		if (value.equalsIgnoreCase("smo")) {
-			return MLAssignmentUtils.buildSMOSVM(getKernelFunction(KernelFunction.Quadratic));
+			return MLAssignmentUtils.buildSMOSVM(getKernelFunction(KernelFunction.Quadratic), this);
 		}
 		if (value.equalsIgnoreCase("boost")) {
 			return MLAssignmentUtils.buildBoosting(this);
@@ -353,5 +354,9 @@ public class CommandLineOptions {
 
 	private static void p(String option, String description, String values) {
 		System.out.println("        " + option + " - " + description + " - " + values);
+	}
+
+	public double getGamma(double defaultValue) {
+		return getDoubleValue(Option.GAMMA.key(), defaultValue);
 	}
 }
