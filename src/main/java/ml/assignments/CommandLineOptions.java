@@ -12,6 +12,7 @@ public class CommandLineOptions {
 
 	private static enum Option {
 		
+		CLASS_INDEX("-classIndex", "last|first", "What attribute is the class index?"),
 		CLASSIIFIER("-c", "Classifier", "<dt|knn|ann|libsvm|smo|boost>"),
 		CLASSIIFIERS("-cs", "Classifiers", "one or more of <dt|knn|ann|libsvm|smo|boost>"),
 		BASE_LEARNER("-baseLearner", "The base learner for Boosting", "<dt|knn|ann|libsvm|smo|boost>"),
@@ -29,6 +30,7 @@ public class CommandLineOptions {
 		TEST_SIZE("-testSize", "The size of the test data set", "numeric"),
 		TRAINING_SIZE("-trainingSize", "The size of the training data set", "numeric"),
 		DISTANCE_WEIGHT("-distanceWeight", "The distance weighting function for KNN", "<" + IBk.WEIGHT_NONE + "(none)|" + IBk.WEIGHT_INVERSE + "(inverse)|" + IBk.WEIGHT_SIMILARITY+ "(similarity)|"),
+		CROSS_VALIDATE("-crossValidate", "Perform cross validation?. Default true", "true|false"),
 		HELP("-help", "Help !", "no params");
 
 		String key;
@@ -67,6 +69,7 @@ public class CommandLineOptions {
 	public static int STEP_SIZE_DEF = 40;
 	public static String DATA_SET_FILE_DEF = "robot-moves.arff";
 
+	private static CommandLineOptions instance = null;
 	private List<KeyValue> options = new ArrayList<>();
 
 	private static class KeyValue {
@@ -81,7 +84,10 @@ public class CommandLineOptions {
 		private String value;
 	}
 
-	public static CommandLineOptions newInstance(String[] args) {
+	public static CommandLineOptions instance(String[] args) {
+		if(instance != null) {
+			return instance;
+		}
 		if(args.length == 1 && args[0].equals(Option.HELP.key())) {
 			printUsage();
 			System.exit(0);
@@ -96,7 +102,12 @@ public class CommandLineOptions {
 			checkKey(key);
 			res.options.add(new KeyValue(key, value));
 		}
-		return res;
+		instance = res;
+		return instance;
+	}
+	
+	public static CommandLineOptions getInstance() {
+		return instance;
 	}
 
 	private static void checkKey(String key) {
@@ -313,6 +324,10 @@ public class CommandLineOptions {
 		return getIntValue(Option.DISTANCE_WEIGHT.key(), defaultValue);
 	}
 	
+	public boolean crossValidate()	{
+		return getBooleanValue(Option.CROSS_VALIDATE.key(), true);
+	}
+	
 	public KernelFunction getKernelFunction(KernelFunction defaultValue) {
 		if(!hasOption(Option.KERNEL_FUNCTION.key())) {
 			return KernelFunction.Quadratic;
@@ -330,6 +345,10 @@ public class CommandLineOptions {
 		for (Option option : Option.values()) {
 			p(option.key(), option.description(), option.usage());
 		}
+	}
+	
+	public String getClassIndex() {
+		return getValue(Option.CLASS_INDEX.key(), "last");
 	}
 
 	private static void p(String option, String description, String values) {

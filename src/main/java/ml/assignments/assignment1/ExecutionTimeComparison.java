@@ -29,7 +29,7 @@ public class ExecutionTimeComparison {
 	public static void main(String[] args) throws Exception {
 		long start;
 		long end;
-		CommandLineOptions options = CommandLineOptions.newInstance(args);
+		CommandLineOptions options = CommandLineOptions.instance(args);
 		classifiers = MLAssignmentUtils.buildClassifiers(options);
 		buildArrays();
 		
@@ -41,7 +41,7 @@ public class ExecutionTimeComparison {
 			Instances training = new Instances(dataSet, 0, size);
 			for (int j = 0; j < classifiers.size(); j++) {
 				Classifier classifier = classifiers.get(j);
-				ClassifierRunner runner = new ClassifierRunner(classifier);
+				ClassifierRunner runner = new ClassifierRunner(classifier, options);
 				
 				start = System.currentTimeMillis();
 				runner.buildModel(training);

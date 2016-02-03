@@ -35,7 +35,7 @@ public class StatIndicatorsComparison {
 	static List<Classifier> classifiers = new ArrayList<>();
 
 	public static void main(String[] args) throws Exception {
-		CommandLineOptions options = CommandLineOptions.newInstance(args);
+		CommandLineOptions options = CommandLineOptions.instance(args);
 		classifiers = options.getClassifiers(MLAssignmentUtils.buildClassifiers(options));
 		buildArrays();
 
@@ -49,7 +49,7 @@ public class StatIndicatorsComparison {
 			Instances test = new Instances(dataSet, dataSet.size() - options.getTestSize(testSize), options.getTestSize(testSize));
 			for (int j = 0; j < classifiers.size(); j++) {
 				Classifier classifier = classifiers.get(j);
-				ClassifierRunner runner = new ClassifierRunner(classifier);
+				ClassifierRunner runner = new ClassifierRunner(classifier, options);
 				runner.buildModel(training);
 				Evaluation eval = runner.evaluateModel(training, test);
 				accuracies.get(j)[i][0] = size;

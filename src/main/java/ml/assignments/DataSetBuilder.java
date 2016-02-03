@@ -167,7 +167,8 @@ public class DataSetBuilder {
 	public static void main(String[] args) {
 		//Instances dataSet = DataSetBuilder.newLinearSeparableNormalDataSet(2, 1, 0.1, 5000, 0, 1, 1);
 		
-		double[][] coefficients = new double[10][4];
+		
+		double[][] coefficients = new double[2][4];
 		for (int i = 0; i < coefficients.length; i++) {
 			coefficients[i][0] = 0;
 			coefficients[i][1] = 0;
@@ -176,8 +177,8 @@ public class DataSetBuilder {
 		}
 
 
-		Instances dataSet = DataSetBuilder.newQuadraticSeparableNormalDataSet(10, 6, 0.1, 10000, coefficients);
-		MLAssignmentUtils.write("ellipsoid_10d.arff", dataSet);
+		Instances dataSet = DataSetBuilder.newQuadraticSeparableNormalDataSet(2, 0.7, 0.1, 10000, coefficients);
+		MLAssignmentUtils.write("ellipsoid_2d.arff", dataSet);
 		//new GeneralChart("Separation", dataSet);
 		
 	}

@@ -9,24 +9,38 @@ import ml.assignments.MLAssignmentUtils;
 public class Main {
 
 	public static void main(String[] args) throws Exception {
-		CommandLineOptions options = CommandLineOptions.newInstance(args);
+		CommandLineOptions options = CommandLineOptions.instance(args);
 		String dataSetName = options.getDataSetName();
 		int trainingSize = options.getTrainingSize();
 		int testSize = options.getTestSize(1000);
 		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(dataSetName);
 		MLAssignmentUtils.shufle(dataSet);
+		//MLAssignmentUtils.write(options.getDataSetName() + ".shuffled", dataSet);
 		Instances training = new Instances(dataSet, 0, trainingSize);
 		Instances test = new Instances(dataSet, dataSet.size() - testSize, testSize);
-		
-		
-		ClassifierRunner runner = new ClassifierRunner(options.getClassifier());
+
+		ClassifierRunner runner = new ClassifierRunner(options.getClassifier(), options);
 		runner.buildModel(training);
 		Classifier classifier = runner.getClassifier();
+		System.out.println("===================== Classifier ==========================");
 		System.out.println(classifier);
-		System.out.println("=================================================================");
-		Evaluation eval = runner.evaluateModel(training, test);
+
+		Evaluation eval = runner.evaluateModel(training, training);
+		System.out.println("=============== Evaluation on training set =========================");
 		System.out.println(eval.toSummaryString(true));
-		System.out.println("=================================================================");
 		System.out.println(eval.toMatrixString());
+
+		eval = runner.evaluateModel(training, test);
+		System.out.println("=============== Evaluation on test set =========================");
+		System.out.println(eval.toSummaryString(true));
+		System.out.println(eval.toMatrixString());
+
+		if (options.crossValidate()) {
+			Evaluation crossValidation = runner.crossValidate(training);
+			System.out.println("============== Cross - validation =========================");
+			System.out.println(crossValidation.toSummaryString(true));
+			System.out.println(crossValidation.toMatrixString());
+		}
+
 	}
 }

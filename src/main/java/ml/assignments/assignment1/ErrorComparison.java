@@ -7,6 +7,7 @@ import ml.assignments.CommandLineOptions;
 import ml.assignments.GeneralChart;
 import ml.assignments.MLAssignmentUtils;
 import weka.classifiers.Classifier;
+import weka.classifiers.Evaluation;
 import weka.core.Instances;
 
 /**
@@ -25,26 +26,28 @@ public class ErrorComparison {
 	static String fileName = "robot-moves.arff";
 
 	public static void main(String[] args) throws Exception {
-		CommandLineOptions options = CommandLineOptions.newInstance(args);
+		CommandLineOptions options = CommandLineOptions.instance(args);
 		Classifier classifier = options.getClassifier();
 		
-		ClassifierRunner runner = new ClassifierRunner(classifier);
+		ClassifierRunner runner = new ClassifierRunner(classifier, options);
 		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(options.getDataSetName(fileName));
 		dataSet = MLAssignmentUtils.shufle(dataSet);
 		MLAssignmentUtils.write(fileName + "_shuffled.arff", dataSet);
 
 		int size = dataSet.size();
-		Instances testSet = new Instances(dataSet, size - options.getTestSize(testSize), options.getTestSize(testSize));
+		Instances test = new Instances(dataSet, size - options.getTestSize(testSize), options.getTestSize(testSize));
 
 		for (int i = 0; i < options.getRuns(runs); i++) {
 			int trainingSize = options.getInitialSize(initialTrainingSize) + i * options.getStepSize(step);
-			Instances trainingDataSet = new Instances(dataSet, 0, trainingSize);
-			runner.run(trainingDataSet, testSet);
+			Instances training = new Instances(dataSet, 0, trainingSize);
+			runner.buildModel(training);
+			Evaluation testSetEvalution = runner.evaluateModel(training, test);
+			Evaluation trainingSetEvaluation = runner.evaluateModel(training, training);
 			trainingErrorRateVersusTrainingSize[i][0] = trainingSize;
-			trainingErrorRateVersusTrainingSize[i][1] = runner.getEvaluationOnTrainingSet().pctIncorrect();
+			trainingErrorRateVersusTrainingSize[i][1] = trainingSetEvaluation.pctIncorrect();
 
 			testErrorRateVersusTrainingSize[i][0] = trainingSize;
-			testErrorRateVersusTrainingSize[i][1] = runner.getEvaluationOnTestSet().pctIncorrect();
+			testErrorRateVersusTrainingSize[i][1] = testSetEvalution.pctIncorrect();
 		}
 		List<double[][]> data = new ArrayList<>();
 		List<String> titles = new ArrayList<>();

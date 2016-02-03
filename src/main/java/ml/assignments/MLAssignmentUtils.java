@@ -37,7 +37,9 @@ public class MLAssignmentUtils {
 		Reader r;
 		try {
 			r = new java.io.BufferedReader(new java.io.InputStreamReader(Thread.currentThread().getContextClassLoader().getResourceAsStream(resourceName)));
-			return new Instances(r);
+			Instances res = new Instances(r);
+			setClassIndex(res);
+			return res;
 		} catch (Exception e) {
 			throw new RuntimeException("", e);
 		}
@@ -47,9 +49,19 @@ public class MLAssignmentUtils {
 		Reader r;
 		try {
 			r = new java.io.BufferedReader(new java.io.FileReader(fileName));
-			return new Instances(r);
+			Instances res = new Instances(r);
+			setClassIndex(res); 
+			return res;
 		} catch (Exception e) {
 			throw new RuntimeException("", e);
+		}
+	}
+
+	private static void setClassIndex(Instances res) {
+		if(CommandLineOptions.getInstance() != null && CommandLineOptions.getInstance().getClassIndex().equals("first")) {
+			res.setClassIndex(0);
+		} else {
+			res.setClassIndex(res.numAttributes() - 1);
 		}
 	}
 

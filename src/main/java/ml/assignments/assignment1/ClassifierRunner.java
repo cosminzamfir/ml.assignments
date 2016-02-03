@@ -1,7 +1,9 @@
 package ml.assignments.assignment1;
 
 import java.util.Date;
+import java.util.Random;
 
+import ml.assignments.CommandLineOptions;
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.core.Instances;
@@ -14,57 +16,37 @@ import weka.core.Instances;
 public class ClassifierRunner {
 
 	private Classifier classifier;
-	private Evaluation evaluationOnTestSet;
-	private Evaluation evaluationOnTrainingSet;
+	private CommandLineOptions commandLineOptions;
 
-	public ClassifierRunner(Classifier classifier) {
+	public ClassifierRunner(Classifier classifier, CommandLineOptions commandLineOptions) {
 		super();
 		this.classifier = classifier;
-	}
-	
-	public void run(Instances trainingDataSet, Instances testDataSet) throws Exception {
-		buildModel(trainingDataSet);
-		evaluationOnTestSet = evaluateModel(trainingDataSet, testDataSet);
-		evaluationOnTrainingSet = evaluateModel(trainingDataSet, trainingDataSet);
+		this.commandLineOptions = commandLineOptions;
 	}
 	
 	public void buildModel(Instances trainingDataSet) throws Exception {
-		trainingDataSet.setClassIndex(trainingDataSet.numAttributes() - 1);
 		System.out.println(new Date() + ":" + "Buillding " + classifier.getClass().getName() + " classifier. Training size: " + trainingDataSet.size());
 		classifier.buildClassifier(trainingDataSet);
-		System.out.println(new Date() + ":" + "Done");
+		System.out.println(new Date() + ":" + "Building classifier done.");
 	}
 	
 	public Evaluation evaluateModel(Instances training, Instances test) throws Exception {
 		System.out.println(new Date() + ":" + "Validating " + classifier.getClass().getName() + " classifier.");
-		test.setClassIndex(test.numAttributes() - 1);
 		Evaluation evaluation = new Evaluation(training);
 		evaluation.evaluateModel(classifier, test);
-		System.out.println(new Date() + ":" + "Done");
+		System.out.println(new Date() + ":" + "Evaluation done.");
 		return evaluation;
-		
-	}
-
-	/**
-	 * @param dataSet
-	 * @param trainingSize - select first trainingSize examples from dataSet
-	 * @param testingSize - select next testingSize examples, starting at trainingSize+1 position
-	 * @throws Exception
-	 */
-	public void run(Instances dataSet, int trainingSize, int testingSize) throws Exception {
-		Instances training = new Instances(dataSet, 0, trainingSize);
-		Instances test = new Instances(dataSet, trainingSize + 1, trainingSize + 1 + testingSize);
-		run(training, test);
-	}
-
-	public Evaluation getEvaluationOnTestSet() {
-		return evaluationOnTestSet;
 	}
 	
-	public Evaluation getEvaluationOnTrainingSet() {
-		return evaluationOnTrainingSet;
+	public Evaluation crossValidate(Instances training) throws Exception {
+		Evaluation crossValidation;
+		System.out.println(new Date() + ":" + "Cross-validating " + classifier.getClass().getName() + " classifier.");
+		crossValidation = new Evaluation(training);
+		crossValidation.crossValidateModel(classifier, training, 10, new Random());
+		System.out.println(new Date() + ":" + "Cross-validation done.");
+		return crossValidation;
 	}
-	
+
 	public Classifier getClassifier() {
 		return classifier;
 	}

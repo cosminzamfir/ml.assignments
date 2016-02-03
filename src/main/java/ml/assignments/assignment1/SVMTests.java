@@ -3,6 +3,7 @@ package ml.assignments.assignment1;
 import java.util.ArrayList;
 import java.util.List;
 
+import ml.assignments.CommandLineOptions;
 import ml.assignments.GeneralChart;
 import ml.assignments.MLAssignmentUtils;
 import weka.classifiers.Evaluation;
@@ -44,6 +45,7 @@ public class SVMTests {
 
 	public static void main(String[] args) throws Exception {
 
+		CommandLineOptions options = CommandLineOptions.instance(args);
 		initialize();
 		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(dataSetName);
 		dataSet = MLAssignmentUtils.shufle(dataSet);
@@ -51,7 +53,7 @@ public class SVMTests {
 		ClassifierRunner runner = null;
 		for (int k = 0; k < kernelFunctions.size(); k++) {
 			KernelFunction function = kernelFunctions.get(k);
-			runner = new ClassifierRunner(useLibSVM ? MLAssignmentUtils.buildLibSVM(function) : MLAssignmentUtils.buildSMOSVM(function));
+			runner = new ClassifierRunner(useLibSVM ? MLAssignmentUtils.buildLibSVM(function) : MLAssignmentUtils.buildSMOSVM(function), options);
 			for (int i = 0; i < runs; i++) {
 				int trainingSize = initialTrainingSize + i * step;
 				Instances training = new Instances(dataSet, 0, trainingSize);

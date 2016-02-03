@@ -6,6 +6,7 @@ import java.util.List;
 import ml.assignments.CommandLineOptions;
 import ml.assignments.GeneralChart;
 import ml.assignments.MLAssignmentUtils;
+import weka.classifiers.Evaluation;
 import weka.classifiers.functions.MultilayerPerceptron;
 import weka.classifiers.trees.J48;
 import weka.core.Instances;
@@ -27,19 +28,20 @@ public class DecisionTreeTests {
 	
 
 	public static void main(String[] args) throws Exception {
-		CommandLineOptions options = CommandLineOptions.newInstance(args);
+		CommandLineOptions options = CommandLineOptions.instance(args);
 		J48 classifier = MLAssignmentUtils.buildDecisionTree(options);
-		ClassifierRunner runner = new ClassifierRunner(classifier);
+		ClassifierRunner runner = new ClassifierRunner(classifier, options);
 		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(dataSetName);
 		dataSet = MLAssignmentUtils.shufle(dataSet);
 		int size = dataSet.size();
 		
-		Instances trainingDataSet = new Instances(dataSet, 0, trainingSize);
-		Instances testSet = new Instances(dataSet, size - 1000, 1000);
+		Instances training = new Instances(dataSet, 0, trainingSize);
+		Instances test = new Instances(dataSet, size - 1000, 1000);
 		for (int i = 0; i < runs ; i ++) {
-			runner.run(trainingDataSet, testSet);
+			runner.buildModel(training);
+			Evaluation testSetEvaluation = runner.evaluateModel(training, test);
 			accuracyVersusBlaBla[i][0] = i;
-			accuracyVersusBlaBla[i][1] = runner.getEvaluationOnTrainingSet().pctIncorrect();
+			accuracyVersusBlaBla[i][1] = testSetEvaluation.pctIncorrect();
 		}
 		List<double[][]> data = new ArrayList<>();
 		List<String> titles = new ArrayList<>();

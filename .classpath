@@ -14,7 +14,6 @@
 	<classpathentry kind="lib" path="lib/JFlex.jar"/>
 	<classpathentry kind="lib" path="lib/junit.jar"/>
 	<classpathentry kind="lib" path="lib/packageManager.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/LibSVM"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/ml"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
