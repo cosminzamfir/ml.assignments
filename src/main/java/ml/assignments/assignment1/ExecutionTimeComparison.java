@@ -16,15 +16,11 @@ import weka.core.Instances;
  */
 public class ExecutionTimeComparison {
 
-	static int runs = 40;
-	static int initialSize = 1;
-	static int step = 1;
 	static List<double[][]> buildingTimes = new ArrayList<>();
 	static List<double[][]> evaluationTimes = new ArrayList<>();
 	static List<Classifier> classifiers = new ArrayList<>();
 	static String buildingTimeTitle = "Classifier building time (ms)";
 	static String evaluationTimeTitle = "Classifier evaluation time (ms)";
-	static String dataSetName = "robot-moves.arff";
 
 	public static void main(String[] args) throws Exception {
 		long start;
@@ -33,11 +29,11 @@ public class ExecutionTimeComparison {
 		classifiers = MLAssignmentUtils.buildClassifiers(options);
 		buildArrays(options);
 		
-		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(options.getDataSetName(dataSetName));
+		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(options.getDataSetName());
 		dataSet = MLAssignmentUtils.shufle(dataSet);
 		
-		for (int i = 0; i < options.getRuns(runs); i++) {
-			int size = options.getInitialSize(initialSize)+ i * options.getStepSize(step);
+		for (int i = 0; i < options.getRuns(); i++) {
+			int size = options.getInitialSize()+ i * options.getStepSize();
 			Instances training = new Instances(dataSet, 0, size);
 			for (int j = 0; j < classifiers.size(); j++) {
 				Classifier classifier = classifiers.get(j);
@@ -70,8 +66,8 @@ public class ExecutionTimeComparison {
 
 	private static void buildArrays(CommandLineOptions options) {
 		for (Classifier classifier : classifiers) {
-			buildingTimes.add(new double[options.getRuns(runs)][2]);
-			evaluationTimes.add(new double[options.getRuns(runs)][2]);
+			buildingTimes.add(new double[options.getRuns()][2]);
+			evaluationTimes.add(new double[options.getRuns()][2]);
 		}
 	}
 }

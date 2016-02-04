@@ -17,28 +17,23 @@ import weka.core.Instances;
  */
 public class ErrorComparison {
 
-	static int runs = 110;
-	static int initialTrainingSize = 100;
-	static int step = 40;
-	static int testSize = 1000;
-	static double[][] trainingErrorRateVersusTrainingSize = new double[runs][2];
-	static double[][] testErrorRateVersusTrainingSize = new double[runs][2];
-	static String fileName = "robot-moves.arff";
+	static double[][] trainingErrorRateVersusTrainingSize;
+	static double[][] testErrorRateVersusTrainingSize;
 
 	public static void main(String[] args) throws Exception {
 		CommandLineOptions options = CommandLineOptions.instance(args);
+		initArrays(options);
 		Classifier classifier = options.getClassifier();
 		
 		ClassifierRunner runner = new ClassifierRunner(classifier, options);
-		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(options.getDataSetName(fileName));
+		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(options.getDataSetName());
 		dataSet = MLAssignmentUtils.shufle(dataSet);
-		MLAssignmentUtils.write(fileName + "_shuffled.arff", dataSet);
 
 		int size = dataSet.size();
-		Instances test = new Instances(dataSet, size - options.getTestSize(testSize), options.getTestSize(testSize));
+		Instances test = new Instances(dataSet, size - options.getTestSize(), options.getTestSize());
 
-		for (int i = 0; i < options.getRuns(runs); i++) {
-			int trainingSize = options.getInitialSize(initialTrainingSize) + i * options.getStepSize(step);
+		for (int i = 0; i < options.getRuns(); i++) {
+			int trainingSize = options.getInitialSize() + i * options.getStepSize();
 			Instances training = new Instances(dataSet, 0, trainingSize);
 			runner.buildModel(training);
 			Evaluation testSetEvalution = runner.evaluateModel(training, test);
@@ -55,7 +50,13 @@ public class ErrorComparison {
 		data.add(testErrorRateVersusTrainingSize);
 		titles.add("Training error rate");
 		titles.add("Test error rate");
-		String title = MLAssignmentUtils.toString(classifier) + " - error rates versus training size: " + fileName;
+		String title = MLAssignmentUtils.toString(classifier) + " - error rates versus training size: " + options.getDataSetName();
 		new GeneralChart(title, data, titles, "Training size", "Error rate");
 	}
+	
+	private static void initArrays(CommandLineOptions options) {
+		trainingErrorRateVersusTrainingSize = new double[options.getRuns()][2];
+		testErrorRateVersusTrainingSize = new double[options.getRuns()][2];
+	}
+
 }

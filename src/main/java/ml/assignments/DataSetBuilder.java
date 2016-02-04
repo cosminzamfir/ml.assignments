@@ -3,14 +3,9 @@ package ml.assignments;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.jfree.chart.plot.ThermometerPlot;
-
-import ml.model.DataSet;
 import ml.model.function.LinearMultivariableFunction;
 import ml.model.function.MultivariableFunction;
 import ml.model.function.PolynomialMultivariableFunction;
-import ml.model.function.SigmoidFunction;
-import ml.model.function.SigmoidMultivariableFunction;
 import ml.utils.Utils;
 import weka.core.Attribute;
 import weka.core.DenseInstance;

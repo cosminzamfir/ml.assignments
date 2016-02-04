@@ -1,10 +1,10 @@
 package ml.assignments.assignment1;
 
+import ml.assignments.CommandLineOptions;
+import ml.assignments.MLAssignmentUtils;
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.core.Instances;
-import ml.assignments.CommandLineOptions;
-import ml.assignments.MLAssignmentUtils;
 
 public class Main {
 
@@ -12,7 +12,7 @@ public class Main {
 		CommandLineOptions options = CommandLineOptions.instance(args);
 		String dataSetName = options.getDataSetName();
 		int trainingSize = options.getTrainingSize();
-		int testSize = options.getTestSize(1000);
+		int testSize = options.getTestSize();
 		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(dataSetName);
 		MLAssignmentUtils.shufle(dataSet);
 		//MLAssignmentUtils.write(options.getDataSetName() + ".shuffled", dataSet);

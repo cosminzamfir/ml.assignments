@@ -10,34 +10,25 @@ import weka.classifiers.Evaluation;
 import weka.classifiers.functions.MultilayerPerceptron;
 import weka.core.Instances;
 
-/**
- * Plot the error in the training set and the error in the test set as a function of the training set.
- * @author eh2zamf
- *
- */
-public class NeuralNetTests {
+public class NeuralNetTest {
 
 	static int initialHiddenLayers = 5;
-	static int runs = 1;
-	static double step = 1;
-	static int trainingSize = 1000;
-	static int testSize = 1000;
-	static double[][] accuracies = new double[runs][2];
-	static double[][] crossValidatedAccuracies = new double[runs][2];
-	static String dataSetName = "robot-moves.arff";
+	static double[][] accuracies ;
+	static double[][] crossValidatedAccuracies;
 
 	public static void main(String[] args) throws Exception {
 		CommandLineOptions options = CommandLineOptions.instance(args);
+		initArrays(options);
 		MultilayerPerceptron classifier = MLAssignmentUtils.buildNeuralNet(options);
 		ClassifierRunner runner = new ClassifierRunner(classifier, options);
-		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(options.getDataSetName(dataSetName));
+		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(options.getDataSetName());
 		dataSet = MLAssignmentUtils.shufle(dataSet);
 		int size = dataSet.size();
 		
-		Instances training = new Instances(dataSet, 0, options.getTrainingSize(trainingSize));
-		Instances test = new Instances(dataSet, size - options.getTestSize(options.getTestSize(testSize)), options.getTestSize(testSize));
-		for (int i = 0; i < options.getRuns(runs); i ++) {
-			int hiddentUnits = options.getInitialSize(initialHiddenLayers) + i;
+		Instances training = new Instances(dataSet, 0, options.getTrainingSize());
+		Instances test = new Instances(dataSet, size - options.getTestSize(), options.getTestSize());
+		for (int i = 0; i < options.getRuns(); i ++) {
+			int hiddentUnits = options.getInitialSize() + i;
 			classifier.setHiddenLayers(String.valueOf(hiddentUnits));
 			runner.buildModel(training);
 			Evaluation testSetEvaluation = runner.evaluateModel(training, test);
@@ -55,7 +46,13 @@ public class NeuralNetTests {
 		data.add(crossValidatedAccuracies);
 		titles.add("Test error rate as function of hidden units");
 		titles.add("Cross-validation error rate as function of hidden units");
-		String title = classifier.getClass().getSimpleName() + " - error rates versus hidden units : " + options.getDataSetName(dataSetName);
+		String title = classifier.getClass().getSimpleName() + " - error rates versus hidden units : " + options.getDataSetName();
 		new GeneralChart(title, data, titles, "Hidden Units", "Accuracy");
+	}
+
+	private static void initArrays(CommandLineOptions options) {
+		accuracies = new double[options.getRuns()][2];
+		crossValidatedAccuracies = new double[options.getRuns()][2];
+		
 	}
 }

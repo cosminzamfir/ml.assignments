@@ -17,15 +17,10 @@ import weka.core.Instances;
  */
 public class StatIndicatorsComparison {
 
-	static int runs = 20;
-	static int initialTrainingSize = 100;
-	static int step = 100;
-	static int testSize = 1000;
 	static List<double[][]> accuracies = new ArrayList<>();
 	static List<double[][]> precisions = new ArrayList<>();
 	static List<double[][]> recalls = new ArrayList<>();
 	static List<double[][]> fMeasures = new ArrayList<>();
-	static String dataSetName = "magic-gama-telescope.arff";
 
 	static String accuraciesTitle = "Accuracy (%)" ;
 	static String precisionsTitle = "Precision (%)";
@@ -36,17 +31,17 @@ public class StatIndicatorsComparison {
 
 	public static void main(String[] args) throws Exception {
 		CommandLineOptions options = CommandLineOptions.instance(args);
-		classifiers = options.getClassifiers(MLAssignmentUtils.buildClassifiers(options));
-		buildArrays();
+		classifiers = options.getClassifiers();
+		buildArrays(options);
 
-		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(options.getDataSetName(dataSetName));
+		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(options.getDataSetName());
 		dataSet = MLAssignmentUtils.shufle(dataSet);
 
-		for (int i = 0; i < options.getRuns(runs); i++) {
-			int size = options.getInitialSize(initialTrainingSize)+ i * options.getStepSize(step);
+		for (int i = 0; i < options.getRuns(); i++) {
+			int size = options.getInitialSize()+ i * options.getStepSize();
 			Instances training = new Instances(dataSet, 0, size);
 			
-			Instances test = new Instances(dataSet, dataSet.size() - options.getTestSize(testSize), options.getTestSize(testSize));
+			Instances test = new Instances(dataSet, dataSet.size() - options.getTestSize(), options.getTestSize());
 			for (int j = 0; j < classifiers.size(); j++) {
 				Classifier classifier = classifiers.get(j);
 				ClassifierRunner runner = new ClassifierRunner(classifier, options);
@@ -79,12 +74,13 @@ public class StatIndicatorsComparison {
 		return res;
 	}
 
-	private static void buildArrays() {
+	private static void buildArrays(CommandLineOptions options) {
 		for (int i = 0; i < classifiers.size(); i++) {
-			accuracies.add(new double[runs][2]);
-			precisions.add(new double[runs][2]);
-			recalls.add(new double[runs][2]);
-			fMeasures.add(new double[runs][2]);
+			int r = options.getRuns();
+			accuracies.add(new double[r][2]);
+			precisions.add(new double[r][2]);
+			recalls.add(new double[r][2]);
+			fMeasures.add(new double[r][2]);
 		}
 	}
 }

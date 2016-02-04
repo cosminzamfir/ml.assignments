@@ -3,16 +3,17 @@ package ml.assignments;
 import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
-import java.io.ObjectInputStream.GetField;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
+import ml.assignments.CommandLineOptions.Option;
 import ml.assignments.assignment1.SVMTests.KernelFunction;
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.functions.LibSVM;
 import weka.classifiers.functions.MultilayerPerceptron;
+import weka.classifiers.functions.MultilayerPerceptronTanh;
 import weka.classifiers.functions.SMO;
 import weka.classifiers.functions.neural.NeuralConnection;
 import weka.classifiers.functions.supportVector.CachedKernel;
@@ -20,6 +21,7 @@ import weka.classifiers.functions.supportVector.PolyKernel;
 import weka.classifiers.functions.supportVector.RBFKernel;
 import weka.classifiers.lazy.IBk;
 import weka.classifiers.meta.AdaBoostM1;
+import weka.classifiers.trees.DecisionStump;
 import weka.classifiers.trees.J48;
 import weka.core.Instances;
 import weka.core.SelectedTag;
@@ -29,7 +31,6 @@ import weka.core.converters.Saver;
 import weka.filters.Filter;
 import weka.filters.unsupervised.instance.Randomize;
 import weka.filters.unsupervised.instance.RemoveWithValues;
-import weka.gui.SimpleCLIPanel.CommandlineCompletion;
 
 public class MLAssignmentUtils {
 
@@ -123,8 +124,8 @@ public class MLAssignmentUtils {
 
 	public static IBk buildKNearestNeibor(CommandLineOptions options) {
 		IBk res = new IBk();
-		res.setKNN(options.getKNeibors(10));
-		int distanceWeight = options.getDistanceWeight(IBk.WEIGHT_INVERSE);
+		res.setKNN(options.getKNeibors());
+		int distanceWeight = options.getDistanceWeight();
 		res.setDistanceWeighting(new SelectedTag(distanceWeight, IBk.TAGS_WEIGHTING));
 		
 		return res;
@@ -132,14 +133,28 @@ public class MLAssignmentUtils {
 
 	public static AdaBoostM1 buildBoosting(CommandLineOptions options) {
 		AdaBoostM1 res = new AdaBoostM1();
-		res.setClassifier(buildDecisionTree(options));
+		res.setClassifier(options.getBaseLearner());
 		return res;
 	}
 
 	public static MultilayerPerceptron buildNeuralNet(CommandLineOptions options) {
-		MultilayerPerceptron res = new MultilayerPerceptron();
-		res.setHiddenLayers(options.getHiddenUnits("a"));
-		return res;
+		String hiddenUnits = options.getHiddenUnits();
+		String activationFunction = options.getActivationFunction();
+		if(activationFunction.equalsIgnoreCase("sigmoid")) {
+			MultilayerPerceptron res = new MultilayerPerceptron();
+			res.setHiddenLayers(hiddenUnits);
+			res.setLearningRate(options.getLearningRate());
+			res.setMomentum(options.getMomentum());
+			return res;
+		}
+		if(activationFunction.equalsIgnoreCase("tanh")) {
+			MultilayerPerceptronTanh res = new MultilayerPerceptronTanh();
+			res.setHiddenLayers(hiddenUnits);
+			res.setLearningRate(options.getLearningRate());
+			res.setMomentum(options.getMomentum());
+			return res;
+		}
+		throw new RuntimeException("Invalid activation function value. Only " + Option.ACTIVATION_FUNCTION.usage() + " are supported");
 	}
 
 	public static LibSVM buildLibSVM(KernelFunction function) {
@@ -222,7 +237,7 @@ public class MLAssignmentUtils {
 				+ classifier.getClassifier().getClass().getSimpleName();
 	}
 
-	public static String toString(MultilayerPerceptron classifier) {
+	public static String toString(MultilayerPerceptronTanh classifier) {
 		return classifier.getClass().getSimpleName() + " - learningRate=" + classifier.getLearningRate() + " - momentum=" + classifier.getMomentum()
 				+ " - hiddenUnits=" + ((NeuralConnection[]) getField("m_neuralNodes", classifier)).length;
 	}
@@ -249,8 +264,8 @@ public class MLAssignmentUtils {
 		if (classifier instanceof J48) {
 			return toString((J48) classifier);
 		}
-		if (classifier instanceof MultilayerPerceptron) {
-			return toString((MultilayerPerceptron) classifier);
+		if (classifier instanceof MultilayerPerceptronTanh) {
+			return toString((MultilayerPerceptronTanh) classifier);
 		}
 		if (classifier instanceof IBk) {
 			return toString((IBk) classifier);
@@ -316,6 +331,10 @@ public class MLAssignmentUtils {
 		filter.setInvertSelection(true);
 		return Filter.useFilter(dataSet, filter);
 
+	}
+
+	public static DecisionStump buildDecisionStump(CommandLineOptions commandLineOptions) {
+		return new DecisionStump();
 	}
 
 }
