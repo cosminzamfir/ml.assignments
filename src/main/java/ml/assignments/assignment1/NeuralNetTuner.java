@@ -5,42 +5,38 @@ import weka.classifiers.functions.MultilayerPerceptron;
 
 import java.util.Map.Entry;
 
-public class NeuralNetTuner extends ClassifierTuner {
+public class NeuralNetTuner extends AbstractClassifierTuner {
 
-    public MultilayerPerceptron ann;
+	public MultilayerPerceptron ann;
+	private double[] learningRates = { 0.2, 0.4, 0.8 };
+	private double[] momenta = { 0, 0.3, 0.6 };
+	private int minHiddenUnits = 5;
+	private int maxHiddenUnits;
 
-    public NeuralNetTuner() {
-        classifier = new MultilayerPerceptron();
-        ann = (MultilayerPerceptron) classifier;
-    }
+	public NeuralNetTuner() {
+		classifier = new MultilayerPerceptron();
+		ann = (MultilayerPerceptron) classifier;
+	}
 
-    public void run(CommandLineOptions options) throws Exception {
-        initialize(options);
-        int hiddenUnits = 1;
-        double momentum = 0;
-        double learningRate = 0;
+	public void run(CommandLineOptions options) throws Exception {
+		initialize(options);
+		maxHiddenUnits = dataSet.numAttributes() + 2;
+		for (int hiddenUnits = minHiddenUnits; hiddenUnits < maxHiddenUnits; hiddenUnits+=2) {
+			for (double momentum : momenta) {
+				for (double learningRate : learningRates) {
+					ann.setHiddenLayers(String.valueOf(hiddenUnits));
+					ann.setMomentum(momentum);
+					ann.setLearningRate(learningRate);
+					singleRun("hiddenUnits=" + hiddenUnits + ";momentum=" + momentum + ";learningRate=" + learningRate);
+				}
+			}
+		}
+	}
 
-        for (int huIndex = 5; huIndex < dataSet.numAttributes(); huIndex++) {
-            for (int momIndex = 0; momIndex < 5; momIndex++) {
-                for (int lrIndex = 1; lrIndex < 5; lrIndex++) {
-                    hiddenUnits = huIndex;
-                    momentum = momIndex * 0.1;
-                    learningRate = lrIndex * 0.1;
-                    ann.setHiddenLayers(String.valueOf(hiddenUnits));
-                    ann.setMomentum(momentum);
-                    ann.setLearningRate(learningRate);
-                    singleRun("hiddenUnits=" + hiddenUnits + ";momentum=" + momentum + ";learningRate=" + learningRate);
-                }
-            }
-        }
-
-    }
-
-    public static void main(String[] args) throws Exception {
-        NeuralNetTuner tuner = new NeuralNetTuner();
-        CommandLineOptions options = CommandLineOptions.instance(args);
-        tuner.run(options);
-        Entry<Double, String> best = tuner.getBestResult();
-        System.out.println("Best result: " + best.getKey() + " - " + best.getValue());
-    }
+	public static void main(String[] args) throws Exception {
+		NeuralNetTuner tuner = new NeuralNetTuner();
+		CommandLineOptions options = CommandLineOptions.instance(args);
+		tuner.run(options);
+		tuner.getBestResult();
+	}
 }

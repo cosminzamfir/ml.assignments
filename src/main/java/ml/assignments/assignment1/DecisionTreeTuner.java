@@ -6,9 +6,10 @@ import java.util.Map.Entry;
 
 import weka.classifiers.trees.J48;
 
-public class DecisionTreeTuner extends ClassifierTuner {
+public class DecisionTreeTuner extends AbstractClassifierTuner {
 
     public J48 j48;
+    double[] confidences = {0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45};
 
     public DecisionTreeTuner() {
         classifier = new J48();
@@ -25,10 +26,8 @@ public class DecisionTreeTuner extends ClassifierTuner {
         //lower confidence, more pruning: http://ww.samdrazin.com/classes/een548/project2report.pdf. Default is 0.25
         pruning = true;
         j48.setUnpruned(!pruning);
-        float confidence = 0;
-        for (int i = 1; i < 5; i++) {
-            confidence = (float) (i * 0.1);
-            j48.setConfidenceFactor(confidence);
+        for (double confidence : confidences) {
+            j48.setConfidenceFactor((float) confidence);
             singleRun("pruning=true;confidenceFactor=" + confidence);
         }
     }
@@ -37,7 +36,6 @@ public class DecisionTreeTuner extends ClassifierTuner {
         DecisionTreeTuner tuner = new DecisionTreeTuner();
         CommandLineOptions options = CommandLineOptions.instance(args);
         tuner.run(options);
-        Entry<Double, String> best = tuner.getBestResult();
-        System.out.println("Best result: " + best.getKey() + " - " + best.getValue());
+        tuner.getBestResult();
     }
 }

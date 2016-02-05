@@ -160,23 +160,9 @@ public class DataSetBuilder {
 	}
 
 	public static void main(String[] args) {
-		//Instances dataSet = DataSetBuilder.newLinearSeparableNormalDataSet(2, 1, 0.1, 5000, 0, 1, 1);
-		
-		
-		double[][] coefficients = new double[2][4];
-		for (int i = 0; i < coefficients.length; i++) {
-			coefficients[i][0] = 0;
-			coefficients[i][1] = 0;
-			coefficients[i][2] = i % 2 + 1;
-			coefficients[i][3] = 0;
-		}
-
-
-		DataSetBuilder builder = DataSetBuilder.defaultBuilder(2, 25000, 0.5, 0.3);
+		DataSetBuilder builder = DataSetBuilder.defaultBuilder(20, 25000, 2, 0.1);
 		builder.separationFunction(new Function1());
 		Instances dataSet = builder.build();
 		MLAssignmentUtils.write("test-function.arff", dataSet);
-		new GeneralChart("Separation", dataSet);
-		
 	}
 }

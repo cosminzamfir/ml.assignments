@@ -7,6 +7,7 @@ import ml.assignments.CommandLineOptions;
 import ml.assignments.GeneralChart;
 import ml.assignments.MLAssignmentUtils;
 import weka.classifiers.Classifier;
+import weka.classifiers.lazy.IBk;
 import weka.core.Instances;
 
 /**
@@ -28,23 +29,24 @@ public class ExecutionTimeComparison {
 		CommandLineOptions options = CommandLineOptions.instance(args);
 		classifiers = MLAssignmentUtils.buildClassifiers(options);
 		buildArrays(options);
-		
+
 		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(options.getDataSetName());
 		dataSet = MLAssignmentUtils.shufle(dataSet);
-		
+
 		for (int i = 0; i < options.getRuns(); i++) {
-			int size = options.getInitialSize()+ i * options.getStepSize();
+			int size = options.getInitialSize() + i * options.getStepSize();
 			Instances training = new Instances(dataSet, 0, size);
 			for (int j = 0; j < classifiers.size(); j++) {
 				Classifier classifier = classifiers.get(j);
 				ClassifierRunner runner = new ClassifierRunner(classifier, options);
-				
+
 				start = System.currentTimeMillis();
 				runner.buildModel(training);
 				end = System.currentTimeMillis();
-				buildingTimes.get(j)[i][0] = size;
-				buildingTimes.get(j)[i][1] = (end - start);
-				
+				if (!(classifier instanceof IBk)) {
+					buildingTimes.get(j)[i][0] = size;
+					buildingTimes.get(j)[i][1] = (end - start);
+				}
 				start = System.currentTimeMillis();
 				runner.evaluateModel(training, training);
 				end = System.currentTimeMillis();
@@ -66,7 +68,9 @@ public class ExecutionTimeComparison {
 
 	private static void buildArrays(CommandLineOptions options) {
 		for (Classifier classifier : classifiers) {
-			buildingTimes.add(new double[options.getRuns()][2]);
+			if (!(classifier instanceof IBk)) {
+				buildingTimes.add(new double[options.getRuns()][2]);
+			}
 			evaluationTimes.add(new double[options.getRuns()][2]);
 		}
 	}

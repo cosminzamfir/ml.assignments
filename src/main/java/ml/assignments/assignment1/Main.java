@@ -14,7 +14,7 @@ public class Main {
 		int trainingSize = options.getTrainingSize();
 		int testSize = options.getTestSize();
 		Instances dataSet = MLAssignmentUtils.buildInstancesFromResource(dataSetName);
-		MLAssignmentUtils.shufle(dataSet);
+		dataSet = MLAssignmentUtils.shufle(dataSet);
 		//MLAssignmentUtils.write(options.getDataSetName() + ".shuffled", dataSet);
 		Instances training = new Instances(dataSet, 0, trainingSize);
 		Instances test = new Instances(dataSet, dataSet.size() - testSize, testSize);
@@ -34,6 +34,7 @@ public class Main {
 		System.out.println("=============== Evaluation on test set =========================");
 		System.out.println(eval.toSummaryString(true));
 		System.out.println(eval.toMatrixString());
+		System.out.println(eval.pctIncorrect() + ".......");
 
 		if (options.crossValidate()) {
 			Evaluation crossValidation = runner.crossValidate(training);

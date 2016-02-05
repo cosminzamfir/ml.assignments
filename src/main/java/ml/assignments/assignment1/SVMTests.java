@@ -53,7 +53,7 @@ public class SVMTests {
 		ClassifierRunner runner = null;
 		for (int k = 0; k < kernelFunctions.size(); k++) {
 			KernelFunction function = kernelFunctions.get(k);
-			runner = new ClassifierRunner(useLibSVM ? MLAssignmentUtils.buildLibSVM(function) : MLAssignmentUtils.buildSMOSVM(function, options), options);
+			runner = new ClassifierRunner(useLibSVM ? MLAssignmentUtils.buildLibSVM(function, options) : MLAssignmentUtils.buildSMOSVM(function, options), options);
 			for (int i = 0; i < runs; i++) {
 				int trainingSize = initialTrainingSize + i * step;
 				Instances training = new Instances(dataSet, 0, trainingSize);

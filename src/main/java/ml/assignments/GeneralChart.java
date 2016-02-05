@@ -3,6 +3,7 @@ package ml.assignments;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.jfree.chart.ChartFactory;
@@ -24,12 +25,16 @@ public class GeneralChart extends ApplicationFrame {
 
 	private static final long serialVersionUID = 1L;
 
+	public GeneralChart(String title, List<double[][]> observations, List<String> titles, String xAxis, String yAxis) {
+		this(title, observations, titles, xAxis, yAxis, false);
+	}
+
 	/**
 	 * @param title the chart title
 	 * @param observations List of 'observations'. Each 'observations' consists of n arrays of [x,y]. For each 'observations' there is one graph line
 	 * @param titles the titles of each observation 
 	 */
-	public GeneralChart(String title, List<double[][]> observations, List<String> titles, String xAxis, String yAxis) {
+	public GeneralChart(String title, List<double[][]> observations, List<String> titles, String xAxis, String yAxis, boolean pairsOfTwo) {
 		super(title);
 
 		final XYSeriesCollection dataSet = new XYSeriesCollection();
@@ -48,7 +53,7 @@ public class GeneralChart extends ApplicationFrame {
 		titleFont = new Font(titleFont.getName(), titleFont.getStyle(), 14);
 		chart.setTitle(new TextTitle(title, titleFont));
 		final ChartPanel chartPanel = new ChartPanel(chart);
-		customize(chart);
+		customize(chart, pairsOfTwo);
 		chartPanel.setPreferredSize(new java.awt.Dimension(700, 370));
 		setContentPane(chartPanel);
 		pack();
@@ -56,7 +61,7 @@ public class GeneralChart extends ApplicationFrame {
 		setVisible(true);
 	}
 
-	private void customize(JFreeChart chart) {
+	private void customize(JFreeChart chart, boolean pairsOfTwo) {
 		chart.setBackgroundPaint(Color.white);
 
 		//final StandardLegend legend = (StandardLegend) chart.getLegend();
@@ -72,12 +77,36 @@ public class GeneralChart extends ApplicationFrame {
 		renderer.setBaseStroke(new BasicStroke(4));
 		for (int i = 0; i < plot.getSeriesCount(); i++) {
 			renderer.setSeriesShapesVisible(i, false);
+			if (pairsOfTwo) {
+				renderer.setSeriesPaint(i, getColors().get(i / 2));
+				if (i % 2 == 0) {
+					renderer.setSeriesStroke(
+							i,
+							new BasicStroke(
+									2.0f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND,
+									1.0f, new float[] { 6.0f, 6.0f }, 0.0f
+							)
+							);	
+				}
+			}
 		}
+		plot.setRenderer(renderer);
 
 		// change the auto tick unit selection to integer units only...
 		final NumberAxis rangeAxis = (NumberAxis) plot.getRangeAxis();
 		rangeAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());
 		// OPTIONAL CUSTOMISATION COMPLETED.
+	}
+
+	private List<Color> getColors() {
+		List<Color> res = new ArrayList<>();
+		res.add(Color.BLUE);
+		res.add(Color.RED);
+		res.add(Color.GREEN);
+		res.add(Color.BLACK);
+		res.add(Color.MAGENTA);
+		res.add(Color.ORANGE);
+		return res;
 	}
 
 	/** ================================================================================================== */

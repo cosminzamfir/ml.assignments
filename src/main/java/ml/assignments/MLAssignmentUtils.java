@@ -29,11 +29,14 @@ import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
 import weka.core.converters.Saver;
 import weka.filters.Filter;
+import weka.filters.supervised.attribute.AttributeSelection;
+import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.instance.Randomize;
 import weka.filters.unsupervised.instance.RemoveWithValues;
 
 public class MLAssignmentUtils {
 
+	public static final String ROOT_FOLDER = "C:/work/data/workspace/ml.assignments/";
 	public static Instances buildInstancesFromResource(String resourceName) {
 		Reader r;
 		try {
@@ -51,7 +54,7 @@ public class MLAssignmentUtils {
 		try {
 			r = new java.io.BufferedReader(new java.io.FileReader(fileName));
 			Instances res = new Instances(r);
-			setClassIndex(res); 
+			setClassIndex(res);
 			return res;
 		} catch (Exception e) {
 			throw new RuntimeException("", e);
@@ -59,7 +62,7 @@ public class MLAssignmentUtils {
 	}
 
 	private static void setClassIndex(Instances res) {
-		if(CommandLineOptions.getInstance() != null && CommandLineOptions.getInstance().getClassIndex().equals("first")) {
+		if (CommandLineOptions.getInstance() != null && CommandLineOptions.getInstance().getClassIndex().equals("first")) {
 			res.setClassIndex(0);
 		} else {
 			res.setClassIndex(res.numAttributes() - 1);
@@ -93,7 +96,7 @@ public class MLAssignmentUtils {
 	public static void write(String fileName, Instances dataSet) {
 		try {
 			ArffSaver saver = new ArffSaver();
-			saver.setFile(new File("c:/data/dropbox/dropbox/omcs/ml/projects/ml.assignments/src/main/resources/" + fileName));
+			saver.setFile(new File(ROOT_FOLDER + "src/main/resources/" + fileName));
 			saver.setRetrieval(Saver.BATCH);
 			saver.setInstances(dataSet);
 			saver.writeBatch();
@@ -119,6 +122,7 @@ public class MLAssignmentUtils {
 		J48 res = new J48();
 		boolean usePruning = options.isPruning(true);
 		res.setUnpruned(!usePruning);
+		res.setConfidenceFactor(options.getConfidenceFactor());
 		return res;
 	}
 
@@ -127,7 +131,6 @@ public class MLAssignmentUtils {
 		res.setKNN(options.getKNeibors());
 		int distanceWeight = options.getDistanceWeight();
 		res.setDistanceWeighting(new SelectedTag(distanceWeight, IBk.TAGS_WEIGHTING));
-		
 		return res;
 	}
 
@@ -140,14 +143,14 @@ public class MLAssignmentUtils {
 	public static MultilayerPerceptron buildNeuralNet(CommandLineOptions options) {
 		String hiddenUnits = options.getHiddenUnits();
 		String activationFunction = options.getActivationFunction();
-		if(activationFunction.equalsIgnoreCase("sigmoid")) {
+		if (activationFunction.equalsIgnoreCase("sigmoid")) {
 			MultilayerPerceptron res = new MultilayerPerceptron();
 			res.setHiddenLayers(hiddenUnits);
 			res.setLearningRate(options.getLearningRate());
 			res.setMomentum(options.getMomentum());
 			return res;
 		}
-		if(activationFunction.equalsIgnoreCase("tanh")) {
+		if (activationFunction.equalsIgnoreCase("tanh")) {
 			MultilayerPerceptronTanh res = new MultilayerPerceptronTanh();
 			res.setHiddenLayers(hiddenUnits);
 			res.setLearningRate(options.getLearningRate());
@@ -157,7 +160,8 @@ public class MLAssignmentUtils {
 		throw new RuntimeException("Invalid activation function value. Only " + Option.ACTIVATION_FUNCTION.usage() + " are supported");
 	}
 
-	public static LibSVM buildLibSVM(KernelFunction function) {
+	
+	public static LibSVM buildLibSVM(KernelFunction function, CommandLineOptions options) {
 		LibSVM svm = new LibSVM();
 		if (function == KernelFunction.Liniar) {
 			svm.setKernelType(new SelectedTag(LibSVM.KERNELTYPE_LINEAR, LibSVM.TAGS_KERNELTYPE));
@@ -181,6 +185,7 @@ public class MLAssignmentUtils {
 			svm.setDegree(6);
 		} else if (function == KernelFunction.Radial) {
 			svm.setKernelType(new SelectedTag(LibSVM.KERNELTYPE_RBF, LibSVM.TAGS_KERNELTYPE));
+			svm.setGamma(options.getGamma());
 		} else if (function == KernelFunction.Sigmoid) {
 			svm.setKernelType(new SelectedTag(LibSVM.KERNELTYPE_SIGMOID, LibSVM.TAGS_KERNELTYPE));
 		}
@@ -215,14 +220,22 @@ public class MLAssignmentUtils {
 			smo.setKernel(kernel);
 		} else if (function == KernelFunction.Radial) {
 			RBFKernel kernel = new RBFKernel();
-			kernel.setGamma(options.getGamma(1));
+			kernel.setGamma(options.getGamma());
 			smo.setKernel(kernel);
 		} else if (function == KernelFunction.Sigmoid) {
 			throw new RuntimeException(KernelFunction.Sigmoid + " not supported by " + smo.getClass().getName());
 		}
-		((CachedKernel) smo.getKernel()).setCacheSize(1);
 		return smo;
 	}
+	
+	public static LibSVM buildLibSVM(CommandLineOptions options) {
+		return buildLibSVM(KernelFunction.Quadratic, options);
+	}
+	
+	public static SMO buildSMOSVM(CommandLineOptions options) {
+		return buildSMOSVM(KernelFunction.Quadratic, options);
+	}
+
 
 	public static String toString(J48 classifier) {
 		return classifier.getClass().getSimpleName() + " - pruned=" + !classifier.getUnpruned();
@@ -319,8 +332,8 @@ public class MLAssignmentUtils {
 		classifiers.add(MLAssignmentUtils.buildBoosting(options));
 		classifiers.add(MLAssignmentUtils.buildNeuralNet(options));
 		classifiers.add(MLAssignmentUtils.buildKNearestNeibor(options));
-		classifiers.add(MLAssignmentUtils.buildLibSVM(KernelFunction.Quadratic));
-		classifiers.add(MLAssignmentUtils.buildSMOSVM(KernelFunction.Quadratic, options));
+		classifiers.add(MLAssignmentUtils.buildLibSVM(options));
+		classifiers.add(MLAssignmentUtils.buildSMOSVM(options));
 		return classifiers;
 	}
 
@@ -335,6 +348,18 @@ public class MLAssignmentUtils {
 
 	public static DecisionStump buildDecisionStump(CommandLineOptions commandLineOptions) {
 		return new DecisionStump();
+	}
+
+	public static Instances keepOnlyAttributes(Instances dataSet, String attributesToKeep) {
+		try {
+			Remove filter = new Remove();
+			filter.setInvertSelection(true);
+			filter.setAttributeIndices(attributesToKeep);
+			filter.setInputFormat(dataSet);
+			return Filter.useFilter(dataSet, filter);
+		} catch (Exception e) {
+			throw new RuntimeException("Error keeping attributes " + attributesToKeep, e);
+		}
 	}
 
 }

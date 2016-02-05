@@ -9,7 +9,7 @@ import weka.classifiers.meta.AdaBoostM1;
 import weka.classifiers.trees.DecisionStump;
 import weka.classifiers.trees.J48;
 
-public class BoostingTuner extends ClassifierTuner {
+public class BoostingTuner extends AbstractClassifierTuner {
 
     public AdaBoostM1 adaBoost;
 
@@ -46,7 +46,6 @@ public class BoostingTuner extends ClassifierTuner {
         BoostingTuner tuner = new BoostingTuner();
         CommandLineOptions options = CommandLineOptions.instance(args);
         tuner.run(options);
-        Entry<Double, String> best = tuner.getBestResult();
-        System.out.println("Best result: " + best.getKey() + " - " + best.getValue());
+        tuner.getBestResult();
     }
 }

@@ -51,7 +51,7 @@ public class ErrorComparison {
 		titles.add("Training error rate");
 		titles.add("Test error rate");
 		String title = MLAssignmentUtils.toString(classifier) + " - error rates versus training size: " + options.getDataSetName();
-		new GeneralChart(title, data, titles, "Training size", "Error rate");
+		new GeneralChart(title, data, titles, "Training size", "Error rate", true);
 	}
 	
 	private static void initArrays(CommandLineOptions options) {

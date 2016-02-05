@@ -33,14 +33,31 @@ Command line options:
         -activation - The activation function for ANN - values: sigmoid|tanh - default: sigmoid
         -help - Pring this help screen
 
-3. To run once any classifier on one of the 2 data sets 
+- To plot the learning curves of the non-tuned algos on a data set:
+	java -cp ml.jar:ml_lib/*.jar:data ml.assignments.assignment1.LearningCurve -dataSet <filename> -initialSize 100 -stepSize 43 -runs 100 -testSize 1000
+
+- To plot the learning curves of the tuned algorithms on one of the data set, run the following command:
+  java -cp ml.jar:./ml_lib/*.jar:./data ml.assignments.assignment1.LearningCurve <params>, where params are:
+  - for the first data set: -dataSet robot-moves.arff -pruning ... -confidenceFactor ... -bl ... -kn ... -distanceWeight ... -momentum ... -learningRate ... -hiddenUnits ... -kernel ... -initialSize 100 -runs 100 -stepSize 43   
+  - for the second data set: -dataSet ... -pruning ... -confidenceFactor ... -bl ... -kn ... -distanceWeight ... -momentum ... -learningRate ... -hiddenUnits ... -kernel ... -initialSize 100 -runs 100 -stepSize 43
+
+
+
+
+
+
+
+
+
+
+- To run once any classifier on one of the 2 data sets 
 		java -cp ml.jar:./ml_lib/*.jar:./data ml.assignments.assignment1.Main <parameters>
 		Example: run decision tree with pruning on data set robot-moves.arff, trainingSize 4000, testSize 1000, with cross validation:
 			java -cp ml.jar:./ml_lib/*.jar:./data ml.assignments.assignment1.Main -dataSet robot-moves.arff -c dt -trainingSize 4000 -testSize 1000 -crossValidate true -pruning true
 	This will run the specified classifier on the data set and will output to console: the classifier, the evaluation on the training set, the evaluation on the test set and
 	the cross-validation
 	
-4. To compare the accuracy and 3 other statistical indicators (precision, recall, F-measure) for several algorithms as a function of training size:
+- To compare the accuracy and 3 other statistical indicators (precision, recall, F-measure) for several algorithms as a function of training size:
 		java -cp ml.jar:./ml_lib/*.jar:./data ml.assignments.assignment1.StatIndicatorsComparison <parameters>
 		Example: run decision tree, boosting, KNN and ANN algorithms on robot-moves.arff, 40 times, starting with training size 100, increasing with 100 at each iteration,
 		with the test size 1000
@@ -48,7 +65,7 @@ Command line options:
 		This will create 4 charts (accuracy,precision,recal,F-measure) - each chart contains the stat indicator versus training size
 		for all algorithms   	
 		 	
-5. To compare the classification + evaluatin time for several algorithms as a function of training size:
+- To compare the classification + evaluatin time for several algorithms as a function of training size:
 		Example: run decision tree, boosting, KNN and ANN algorithms on robot-moves.arff, 40 times, starting with training size 100, increasing with 100 at each iteration
 		 	java -cp ml.jar:./ml_lib/*.jar:./data ml.assignments.assignment1.ExecutionTimeComparison -dataSet robot-moves.arff -cs dt,boost,knn,ann -initialSize 100 -stepSize 100 -runs 40
 		 This will create 2 charts : traing time + evaluation time versus training size, each chart containing all algorithms

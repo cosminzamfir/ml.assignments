@@ -13,12 +13,13 @@ public class CommandLineOptions {
 
 		CLASS_INDEX("-classIndex", "last|first", "What attribute is the class index?", "last"),
 		CLASSIIFIER("-c", "Classifier", "<dt|knn|ann|libsvm|smo|boost>"),
-		CLASSIIFIERS("-cs", "Classifiers", "one or more of dt|knn|ann|libsvm|smo|boost", "dt,knn,ann,libsvm,smo,boost"),
+		CLASSIIFIERS("-cs", "Classifiers", "one or more of dt|knn|ann|libsvm|smo|boost", "dt,knn,ann,smo,boost"),
 		BASE_LEARNER("-baseLearner", "The base learner for Boosting", "ds|dt|knn|ann|libsvm|smo", "ds"),
-		PRUNING("-pruning", "Use pruning for decision tree?", "<true|false>", "true"),
+		PRUNING("-pruning", "Use pruning for decision tree?", "<true|false>", true),
+		CONFIDENCE_J48("-confidenceFactor", "Confidence factor for J48 pruning", "numeric", 0.25),
 		LEARNING_RATE("-learningRate", "For neural nets", "numeric", 0.3),
 		MOMENTUM("-momentum", "For neural nets", "numeric", 0.2),
-		KERNEL_FUNCTION("-kernel", "The kernel function", "<Liniar|Quadratic|Cubic|Radial|Sigmoid>", "Quadratic"),
+		KERNEL_FUNCTION("-kernel", "The kernel function", "<Liniar|Quadratic|Cubic|Radial|Sigmoid>", KernelFunction.Quadratic),
 		MAX_ITERATINS("-maxIterations", "For boosting", "numeric", 10),
 		HIDDEN_UNITS("-hiddenUnits", "For neural nets", "Comma delimited string of numbers/symbols. Each token -> one hidden layer with so many nodes", "a"),
 		K_NEIGHBORS("-kn", "The size of k-neighbours", "numeric", 10),
@@ -29,9 +30,9 @@ public class CommandLineOptions {
 		TEST_SIZE("-testSize", "The size of the test data set", "numeric", 1000),
 		TRAINING_SIZE("-trainingSize", "The size of the training data set", "numeric", 1000),
 		DISTANCE_WEIGHT("-distanceWeight", "The distance weighting function for KNN", "<" + IBk.WEIGHT_NONE + "(none)|" + IBk.WEIGHT_INVERSE + "(inverse)|"
-				+ IBk.WEIGHT_SIMILARITY + "(similarity)|", IBk.WEIGHT_INVERSE),
+				+ IBk.WEIGHT_SIMILARITY + "(similarity)|", IBk.WEIGHT_NONE),
 		CROSS_VALIDATE("-crossValidate", "Perform cross validation?. Default true", "true|false", true),
-		GAMMA("-gamma", "Gamma parameter for SMO.", "numeric", 1),
+		GAMMA("-gamma", "Gamma parameter for SMO.", "numeric", 1d),
 		ACTIVATION_FUNCTION("-activation", "The activation function for ANN", "sigmoid|tanh", "sigmoid"),
 		HELP("-help", "Help !", "no params");
 
@@ -237,10 +238,10 @@ public class CommandLineOptions {
 			return MLAssignmentUtils.buildNeuralNet(this);
 		}
 		if (value.equalsIgnoreCase("libsvm")) {
-			return MLAssignmentUtils.buildLibSVM(getKernelFunction());
+			return MLAssignmentUtils.buildLibSVM(this);
 		}
 		if (value.equalsIgnoreCase("smo")) {
-			return MLAssignmentUtils.buildSMOSVM(getKernelFunction(), this);
+			return MLAssignmentUtils.buildSMOSVM(this);
 		}
 		if (value.equalsIgnoreCase("boost")) {
 			return MLAssignmentUtils.buildBoosting(this);
@@ -332,7 +333,11 @@ public class CommandLineOptions {
 				: o.defaultValue));
 	}
 
-	public double getGamma(double defaultValue) {
+	public double getGamma() {
 		return getDoubleValue(Option.GAMMA);
+	}
+
+	public float getConfidenceFactor() {
+		return getDoubleValue(Option.CONFIDENCE_J48).floatValue();
 	}
 }
