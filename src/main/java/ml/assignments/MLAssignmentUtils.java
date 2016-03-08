@@ -1,6 +1,7 @@
 package ml.assignments;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
 import java.lang.reflect.Field;
@@ -37,6 +38,7 @@ import weka.filters.unsupervised.instance.RemoveWithValues;
 public class MLAssignmentUtils {
 
 	public static final String ROOT_FOLDER = "C:/work/data/workspace/ml.assignments/";
+
 	public static Instances buildInstancesFromResource(String resourceName) {
 		Reader r;
 		try {
@@ -160,7 +162,6 @@ public class MLAssignmentUtils {
 		throw new RuntimeException("Invalid activation function value. Only " + Option.ACTIVATION_FUNCTION.usage() + " are supported");
 	}
 
-	
 	public static LibSVM buildLibSVM(KernelFunction function, CommandLineOptions options) {
 		LibSVM svm = new LibSVM();
 		if (function == KernelFunction.Liniar) {
@@ -227,15 +228,14 @@ public class MLAssignmentUtils {
 		}
 		return smo;
 	}
-	
+
 	public static LibSVM buildLibSVM(CommandLineOptions options) {
 		return buildLibSVM(KernelFunction.Quadratic, options);
 	}
-	
+
 	public static SMO buildSMOSVM(CommandLineOptions options) {
 		return buildSMOSVM(KernelFunction.Quadratic, options);
 	}
-
 
 	public static String toString(J48 classifier) {
 		return classifier.getClass().getSimpleName() + " - pruned=" + !classifier.getUnpruned();
@@ -360,6 +360,19 @@ public class MLAssignmentUtils {
 		} catch (Exception e) {
 			throw new RuntimeException("Error keeping attributes " + attributesToKeep, e);
 		}
+	}
+
+	public static void writeToFile(String fileName, String s, boolean append) {
+		try {
+			File file = new File(fileName);
+			file.createNewFile();
+			FileWriter writer = new FileWriter(new File(fileName), append);
+			writer.write(s + "\n");
+			writer.close();
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+
 	}
 
 }

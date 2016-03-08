@@ -15,5 +15,6 @@
 	<classpathentry kind="lib" path="lib/junit.jar"/>
 	<classpathentry kind="lib" path="lib/packageManager.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/ml"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/abagail"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

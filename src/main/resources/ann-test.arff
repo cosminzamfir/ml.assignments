@@ -1,0 +1,20 @@
+@relation ANNTest
+@attribute us1 numeric
+@attribute us2 numeric
+@attribute us3 numeric
+@attribute us4 numeric
+@attribute us5 numeric
+@attribute us6 numeric
+@attribute us7 numeric
+@attribute us8 numeric
+@attribute class {1,2,3,4,5,6,7,8}
+
+@data
+1,0,0,0,0,0,0,0,1
+0,1,0,0,0,0,0,0,2
+0,0,1,0,0,0,0,0,3
+0,0,0,1,0,0,0,0,4
+0,0,0,0,1,0,0,0,5
+0,0,0,0,0,1,0,0,6
+0,0,0,0,0,0,1,0,7
+0,0,0,0,0,0,0,1,8
