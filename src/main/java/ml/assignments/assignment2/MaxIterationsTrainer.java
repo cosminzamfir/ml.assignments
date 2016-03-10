@@ -8,6 +8,7 @@ import opt.RandomizedHillClimbing;
 import opt.SimulatedAnnealing;
 import opt.ga.StandardGeneticAlgorithm;
 import opt.prob.MIMIC;
+import shared.Instance;
 import shared.Trainer;
 import util.Utils;
 
@@ -107,5 +108,9 @@ public class MaxIterationsTrainer implements Trainer {
 
 	public long getTimeToBestIteration() {
 		return timeToBestIteration;
+	}
+	
+	public Instance getOptimal() {
+		return trainer.getOptimal();
 	}
 }

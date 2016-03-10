@@ -375,4 +375,24 @@ public class MLAssignmentUtils {
 
 	}
 
+	public static int getStartN() {
+		String s = System.getProperty("startN");
+		return s == null ? 10: Integer.valueOf(s);
+	}
+
+	public static int getEndN() {
+		String s = System.getProperty("endN");
+		return s == null ? 100 : Integer.valueOf(s);
+	}
+
+	public static int getStep() {
+		String s = System.getProperty("step");
+		return s == null ? 5 : Integer.valueOf(s);
+	}
+
+	public static int getTrials() {
+		String s = System.getProperty("trials");
+		return s == null ? 3 : Integer.valueOf(s);
+	}
+
 }

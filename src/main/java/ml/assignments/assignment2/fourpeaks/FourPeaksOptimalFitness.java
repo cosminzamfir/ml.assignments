@@ -1,5 +1,6 @@
 package ml.assignments.assignment2.fourpeaks;
 
+import ml.assignments.MLAssignmentUtils;
 import ml.assignments.assignment2.ExecutionResult;
 import ml.assignments.assignment2.ExecutionResults;
 import ml.assignments.assignment2.MaxIterationsTrainer;
@@ -7,10 +8,10 @@ import opt.OptimizationAlgorithm;
 
 public abstract class FourPeaksOptimalFitness {
 
-	private static final int startN = 150;
-	private static final int endN = 160;
-	private static final int step = 10;
-	private static final int TRIALS = 1;
+	private static final int startN = MLAssignmentUtils.getStartN();
+	private static final int endN = MLAssignmentUtils.getEndN();
+	private static final int step = MLAssignmentUtils.getStep();
+	private static final int TRIALS = MLAssignmentUtils.getTrials();
 	
 	public void run() {
 		System.out.println(getDescription());

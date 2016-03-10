@@ -1,7 +1,10 @@
 package ml.assignments.assignment2.tsp;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Random;
 
+import ml.assignments.MLAssignmentUtils;
 import ml.assignments.assignment2.ExecutionResult;
 import ml.assignments.assignment2.ExecutionResults;
 import ml.assignments.assignment2.MaxIterationsTrainer;
@@ -9,10 +12,11 @@ import opt.OptimizationAlgorithm;
 
 public abstract class TSPSingleRun {
 
-	private static final int startN = 5;
-	private static final int endN = 150;
-	private static final int step = 5;
-	private static final int TRIALS = 3;
+	private static final int startN = MLAssignmentUtils.getStartN();
+	private static final int endN = MLAssignmentUtils.getEndN();
+	private static final int step = MLAssignmentUtils.getStep();
+	private static final int TRIALS = MLAssignmentUtils.getTrials();
+	private static Map<Integer, double[][]> points = new LinkedHashMap<Integer, double[][]>(); 
 
 	public void run() {
 		System.out.println(getDescription());
@@ -41,13 +45,18 @@ public abstract class TSPSingleRun {
 	}
 
 	private double[][] generatePoints(int n) {
+		if(points.containsKey(n)) {
+			return points.get(n);
+		}
 		Random random = new Random();
 		// create the random points
-		double[][] points = new double[n][2];
-		for (int i = 0; i < points.length; i++) {
-			points[i][0] = random.nextDouble();
-			points[i][1] = random.nextDouble();
+		double[][] res = new double[n][2];
+		for (int i = 0; i < res.length; i++) {
+			res[i][0] = random.nextDouble();
+			res[i][1] = random.nextDouble();
 		}
-		return points;
+		
+		points.put(n, res);
+		return res;
 	}
 }

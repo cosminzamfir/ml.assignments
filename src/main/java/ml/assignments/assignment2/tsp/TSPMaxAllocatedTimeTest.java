@@ -4,9 +4,9 @@ import opt.OptimizationAlgorithm;
 
 public class TSPMaxAllocatedTimeTest {
 
-	static boolean RHC = false;
-	static boolean SA = false;
-	static boolean GA = false;
+	static boolean RHC = true;
+	static boolean SA = true;
+	static boolean GA = true;
 	static boolean MIMIC = true;
 
 	public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class TSPMaxAllocatedTimeTest {
 
 			@Override
 			public OptimizationAlgorithm getOptimizationAlgorithm(double[][] points) {
-				return TravelingSalesmanUtils.buildRHC(points);
+				return TSPUtils.buildRHC(points);
 			}
 		}.run();
 	
@@ -25,7 +25,7 @@ public class TSPMaxAllocatedTimeTest {
 		
 			@Override
 			public OptimizationAlgorithm getOptimizationAlgorithm(double[][] points) {
-				return TravelingSalesmanUtils.buildSA(points);
+				return TSPUtils.buildSA(points);
 			}
 		}.run();
 
@@ -35,7 +35,7 @@ public class TSPMaxAllocatedTimeTest {
 			
 			@Override
 			public OptimizationAlgorithm getOptimizationAlgorithm(double[][] points) {
-				return TravelingSalesmanUtils.buildGA(points);
+				return TSPUtils.buildGA(points);
 			}
 		}.run();
 
@@ -45,7 +45,7 @@ public class TSPMaxAllocatedTimeTest {
 			
 			@Override
 			public OptimizationAlgorithm getOptimizationAlgorithm(double[][] points) {
-				return TravelingSalesmanUtils.buildMIMIC(points);
+				return TSPUtils.buildMIMIC(points);
 			}
 		}.run();
 
