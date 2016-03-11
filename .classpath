@@ -16,5 +16,7 @@
 	<classpathentry kind="lib" path="lib/packageManager.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/ml"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/abagail"/>
+	<classpathentry kind="lib" path="C:/work/data/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar"/>
+	<classpathentry kind="lib" path="C:/work/data/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
