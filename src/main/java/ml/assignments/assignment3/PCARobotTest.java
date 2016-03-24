@@ -9,24 +9,10 @@ import shared.Instance;
 import shared.filt.PrincipalComponentAnalysis;
 import util.linalg.Matrix;
 
-/**
- * A class for testing
- * @author Andrew Guillory gtg008g@mail.gatech.edu
- * @version 1.0
- */
-public class PrincipalComponentAnalysisTest {
+public class PCARobotTest {
     
-    /**
-     * The test main
-     * @param args ignored
-     */
     public static void main(String[] args) {
-        List<String> labels = new ArrayList<String>();
-        labels.add("Slight-Right-Turn");
-        labels.add("Sharp-Right-Turn");
-        labels.add("Move-Forward");
-        labels.add("Slight-Left-Turn");
-    	Instance[] instances =  MLAssignmentUtils.initializeInstances(4000, "robot-moves.txt", 24, labels);
+    	Instance[] instances =  MLAssignmentUtils.initializeRobotDataSet(5400);
         DataSet set = new DataSet(instances);
         System.out.println("Before PCA: the data set");
         //System.out.println(set);
@@ -45,6 +31,7 @@ public class PrincipalComponentAnalysisTest {
         System.out.println("===============================================");
         System.out.println("After PCA: the data set");
         //System.out.println(set);
+        
         Matrix reverse = filter.getProjection().transpose();
         for (int i = 0; i < set.size(); i++) {
             Instance instance = set.get(i);
@@ -53,7 +40,8 @@ public class PrincipalComponentAnalysisTest {
         System.out.println("===============================================");
         System.out.println("After reconstructing");
         //System.out.println(set);
-        
+     
+        //TODO - compute the overall error after reconstruction
     }
 
 }

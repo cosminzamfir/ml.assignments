@@ -488,6 +488,25 @@ public class MLAssignmentUtils {
 
         return instances;
     }
+    
+    public static Instance[] initializeRobotDataSet(int size) {
+        List<String> labels = new ArrayList<String>();
+        labels.add("Slight-Right-Turn");
+        labels.add("Sharp-Right-Turn");
+        labels.add("Move-Forward");
+        labels.add("Slight-Left-Turn");
+    	Instance[] instances =  initializeInstances(size, "robot-moves.txt", 24, labels);
+    	return instances;
+    }
+    
+    public static Instance[] initializeGeneratedDataSet(int size) {
+        List<String> labels = new ArrayList<String>();
+        labels.add("0");
+        labels.add("1");
+    	Instance[] instances =  initializeInstances(size, "test-function.txt", 20, labels);
+    	return instances;
+    }
 
+    
 
 }
