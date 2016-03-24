@@ -163,6 +163,6 @@ public class DataSetBuilder {
 		DataSetBuilder builder = DataSetBuilder.defaultBuilder(20, 25000, 2, 0.1);
 		builder.separationFunction(new Function1());
 		Instances dataSet = builder.build();
-		MLAssignmentUtils.write("test-function.arff", dataSet);
+		MLAssignmentUtils.write("test-function-1.arff", dataSet);
 	}
 }

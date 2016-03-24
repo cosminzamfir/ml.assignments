@@ -1,0 +1,14 @@
+@relation TestCluster
+
+@attribute x1 numeric
+@attribute x2 numeric
+@attribute x3 numeric
+@attribute x4 numeric
+
+@data
+91,14,1,1.1
+42,22,1,1.1
+33,34,1,1.11
+24,56,1,1.11
+15,43,1,1.11
+71,23,1,1.11

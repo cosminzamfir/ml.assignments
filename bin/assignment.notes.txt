@@ -1,133 +1,63 @@
-Supervised Learning
-    Due Feb 7 by 11:59pm Points 100 Submitting a file upload Available Jan 14 at 12am - May 6 at 11:59pm 4 months
 Numbers
-The assignment is worth 15% of your final grade.
+The assignment is worth 10% of your final grade.
+
 Why?
-The purpose of this project is to explore some techniques in supervised learning. 
-It is important to realize that understanding an algorithm or technique requires understanding how it behaves under a variety of circumstances. 
-As such, you will be asked to "implement" some simple learning algorithms (for sufficiently small values of implement, meaning I don't really want you to implement anything at all), 
-and to compare their performance.
+Now it's time to explore unsupervised learning algorithms. 
+This part of the assignment asks you to use some of the clustering and dimensionality reduction algorithms we've looked at in class and to revisit earlier assignments. 
+The goal is for you to think about how these algorithms are the same as, different from, and interact with your earlier work.
 
-You may program in any language that you wish (we do prefer broadly-used or revered languages like java, matlab, python, Lisp, R, or even C++; 
-let us know beforehand if you're going to use something else). 
-In any case it is your responsibility to make sure that the code can run on the standard CoC linux boxes. 
-Re-read that last sentence. Next, ask yourself what it could possibly mean in practice.  Well, in practice, it means that if a TA needs to recreate your experiments, 
-it will be possible (as detailed below) and if it isn't possible because you used some obscure language you made up based on HTML 2.0, well, 
-that's just not going to work out.  Some of you who have been out of school for a long time and/or are used to assignments where you are told exactly what to do 
-will fret about this requirement and try to infer more than is there. Don't. 
-Use standard packages or languages and you'll never have to even figure out how to log into any CoC machine. 
-
+The same ground rules apply for programming languages.
 Read everything below carefully!
+
+
 The Problems Given to You
+You are to implement (or find the code for) six algorithms. The first two are clustering algorithms:
+    k-means clustering
+    Expectation Maximization
 
-You should implement five learning algorithms. They are for:
-    Decision trees with some form of pruning
-    Neural networks
-    Boosting
-    Support Vector Machines
-    k-nearest neighbors
+You can choose your own measures of distance/similarity. Naturally, you'll have to justify your choices, but you're practiced at that sort of thing by now.
+The last four algorithms are dimensionality reduction algorithms:
+    PCA
+    ICA
+    Randomized Projections
+    Any other feature selection algorithm you desire
 
-Each algorithm is described in detail in your textbook, the handouts, and all over the web. In fact, instead of implementing the algorithms yourself, 
-you may (and by may I mean should) use software packages that you find elsewhere; however, if you do so you should provide proper attribution. 
-Also, you will note that you have to do some fiddling to get good results, graphs and such, so even if you use another's package, you may need to be able to modify it in various ways.
+You are to run a number of experiments. Come up with at least two datasets. If you'd like (and it makes a lot of sense in this case) you can use the ones you used in the first assignment.
+    Run the clustering algorithms on the data sets and describe what you see.
+    Apply the dimensionality reduction algorithms to the two datasets and describe what you see.
+    Reproduce your clustering experiments, but on the data after you've run dimensionality reduction on it.
+    
+    Apply the dimensionality reduction algorithms to one of your datasets from assignment #1 
+    (if you've reused the datasets from assignment #1 to do experiments 1-3 above then you've already done this) and rerun your neural network learner on the newly projected data.
+    Apply the clustering algorithms to the same dataset to which you just applied the dimensionality reduction algorithms (you've probably already done this), 
+    treating the clusters as if they were new features. In other words, treat the clustering algorithms as if they were dimensionality reduction algorithms. 
+    Again, rerun your neural network learner on the newly projected data.
 
-Decision Trees. 
-For the decision tree, you should implement or steal a decision tree algorithm (and by "implement or steal" I mean "steal"). 
-Be sure to use some form of pruning. You are not required to use information gain (for example, there is something called the GINI index that is sometimes used) to split attributes, 
-but you should describe whatever it is that you do use.
-
-Neural Networks. 
-For the neural network you should implement or steal your favourite kind of network and training algorithm. You may use networks of nodes with as many layers as you like 
-and any activation function you see fit.
-
-Boosting. 
-Implement or steal a boosted version of your decision trees. As before, you will want to use some form of pruning, 
-but presumably because you're using boosting you can afford to be much more aggressive about your pruning.
-
-Support Vector Machines. 
-You should implement (for sufficently loose definitions of implement including "download") SVMs. This should be done in such a way that you can swap out kernel functions. 
-I'd like to see at least two.
-
-k-Nearest Neighbors. 
-You should "implement" kNN. Use different values of k.
-
-Testing. In addition to implementing (wink), the algorithms described above, you should design two interesting classification problems. 
-For the purposes of this assignment, a classification problem is just a set of training examples and a set of test examples. I don't care where you get the data. 
-You can download some, take some from your own research, or make some up on your own. Be careful about the data you choose, though. 
-You'll have to explain why they are interesting, use them in later assignments, and come to really care about them. 
 
 What to Turn In
-You must submit via canvas two files: 
-	yourgtaccount-analysis.pdf, yourgtaccount-readme.txt, yourgtaccount-code.{tar.gz, zip} (where gtaccount is probably something like gtg7577b or maybe ci16). 
-	These files will contain:
-		- the yourgtaccount-readme.txt contains instructions for running your code (see note below)
-		- the yourgtaccount-code.{tar.gz, zip} contains your code (see note below). You can optionally also submit a link to your code in the readme file.
-		- a file named yourgtaccount-analysis.pdf containing your writeup
-		- any supporting files you need, such as your training and test sets (see note below).
+You must submit via canvas these files: yourgtaccount-analysis.pdf, yourgtaccount-readme.txt, yourgtaccount-code.{tar.gz, zip} (where gtaccount is probably something like gtg7577b or maybe ci16). These files will contain:
+    - the yourgtaccount-readme.txt contains instructions for running your code (see note below)
+    - the yourgtaccount-code.{tar.gz, zip} contains your code (see note below). You can optionally also submit a link to your code in the readme file.
+    - a file named yourgtaccount-analysis.pdf containing your writeup
+    - any supporting files you need, such as your training and test sets (see note below).
 
-Note below: if the data are way, way, too huge for submitting, see if you can arrange for an URL. This also goes for code, too. 
-Submitting all of Weka isn't necessary, for example, because I can get it myself; however, you should at least submit any files you found necessary to change and 
-enough support and explanation so we could reproduce your results if we really wanted to do so. In any case, include all the information inyourgtaccount-readme.txt
+Note below: if the data are way, way, too huge for submitting, see if you can arrange for an URL. This also goes for code, too. Submitting all of Weka isn't necessary, for example, because I can get it myself; however, you should at least submit any files you found necessary to change and enough support and explanation so we could reproduce your results if we really wanted to do so. In any case, include all the information inyourgtaccount-readme.txt
 
-The file yourgtaccount-analysis.pdf should contain:
-    - a description of your classification problems, and why you feel that they are interesting. Think hard about this. To be at all interesting the problems should be non-trivial 
-	on the one hand, but capable of admitting comparisons and analysis of the various algorithms on the other.
+The file yourgtaccount-analysis.pdf should contain: 
 
-    - the training and testing error rates you obtained running the various learning algorithms on your problems. 
-	At the very least you should include graphs that show performance on both training and test data as a function of training size (note that this implies that you need to design 
-	a classification problem that has more than a trivial amount of data) and--for the algorithms that are iterative--training times.
+    a discussion of your datasets, and why they're interesting: If you're using the same datasets as before at least briefly remind us of what they are so we don't have to revisit your old assignment write-up.
+    explanations of your methods: How did you choose k?
+    a description of the kind of clusters that you got.
+    analyses of your results. Why did you get the clusters you did? Do they make "sense"? If you used data that already had labels (for example data from a classification problem from assignment #1) did the clusters line up with the labels? Do they otherwise line up naturally? Why or why not? Compare and contrast the different algorithms. What sort of changes might you make to each of those algorithms to improve performance? How much performance was due to the problems you chose? Be creative and think of as many questions you can, and as many answers as you can. Take care to justify your analysis with data explictly.
+    Can you describe how the data look in the new spaces you created with the various aglorithms? For PCA, what is the distribution of eigenvalues? For ICA, how kurtotic are the distributions? Do the projection axes for ICA seem to capture anything "meaningful"? Assuming you only generate k projections (i.e., you do dimensionality reduction), how well is the data reconstructed by the randomized projections? PCA? How much variation did you get when you re-ran your RP several times (I know I don't have to mention that you might want to run RP many times to see what happens, but I hope you forgive me)?
+    When you reproduced your clustering experiments on the datasets projected onto the new spaces created by ICA, PCA and RP, did you get the same clusters as before? Different clusters? Why? Why not?
+    When you re-ran your neural network algorithms were there any differences in performance? Speed? Anything at all?
 
-    - analyses of your results:
-		- Why did you get the results you did? 
-		- Compare and contrast the different algorithms. What sort of changes might you make to each of those algorithms to improve performance? 
-		- How fast were they in terms of wall clock time? Iterations? Would cross validation help (and if it would, why didn't you implement it?)? 
-		- How much performance was due to the problems you chose? How about the values you chose for learning rates, stopping criteria, pruning methods, and so forth 
-		(and why doesn't your analysis show results for the different values you chose?)? 
-		Which algorithm performed best? How do you define best? Be creative and think of as many questions you can, and as many answers as you can.
+It might be difficult to generate the same kinds of graphs for this part of the assignment as you did before; however, you should come up with some way to describe the kinds of clusters you get. If you can do that visually all the better. 
 
-For the sanity of your graders, please keep your analysis as short as possible while still covering the requirements of the assignment: 
-	to facilitate this sanity, analysis writeup is limited to 12 pages.
 
+Note: Analysis writeup is limited to 10 pages total.
+ 
 Grading Criteria
-You are being graded on your analysis more than anything else. Roughly speaking, implementing everything and getting it to run is worth maybe 0% of the grade on this assignment 
-(I know you don't believe me, but in fact, steal the code; I not only don't care, I am encouraging you to use one of the many packages available both from the resources page 
-and on the web). Of course, analysis without proof of working code makes the analysis suspect.
-The key thing is that your explanations should be both thorough and concise. 
-Imagine you are writing a paper for the major conference in your field the year you will be graduating and you need to impress all those folks who will 
-be deciding whether to interview you later. You don't want them to think you're shallow do you? 
-Or that you're incapable of coming up with interesting classification problems, right? 
-And you surely don't want them to think that you make up for a lack of content by blathering on about irrelevant aspects of your work? Of course not.
 
-Finally, I'd like to point out that I am very particular about the format of the assignments. 
-Follow the directions carefully. Failure to turn in files without the proper naming scheme, or anything else that makes the graders' lives unduly 
-hard is simply going to lead to an ignored assignment. I am remarkably inflexible about this. 
-Also, there will be no late assignments accepted, so start now. Have fun. 
-One day you'll look back on this and smile. There may be tears, but they will be tears of joy.
-
-DataSets
-=========
-http://archive.ics.uci.edu/ml/datasets/MAGIC+Gamma+Telescope - use ROC curve for the comparison
-
-Performance comparison
-======================
-- accuracy - #correct / #total
-- F-score - see F measure
-- Lift
-- Roc Area
-- average precision - see precision
-- precision-recall break-even point
-- squared error
-- cross-entropy
-- root of the mean squared error - valid for regression only
-- kappa-statistics - agreement of prediction with the true class
-- true-positive (Recall/sensitivity) - the rate of examples classified as x, among all examples having class x (how much part of the class have been captured)
-- true-negative (specificity) measure the proportion of negative tests identified as such
-- false-positive - the proportion of examples classified as x, but belongs to a different class
-- precision - the proportion of the examples which truly have class x among all those classified as x. 
-- F-measure = 2*Precision*Recall/(Precision+Recall)
-
-=========================================
-- Main - run any algo on any data set - DONE
-- Tuner - tune all algo on any data set
-- ExecutionTimeComparison 
-- LearningCurve
+At this point you are not surprised to read that you are being graded on your analysis more than anything else. I will refer you to this section from assignment #1 for a more detailed explanation. As always, start now. 

@@ -1,13 +1,20 @@
 package ml.assignments;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.Reader;
 import java.lang.reflect.Field;
+import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Scanner;
 
+import shared.Instance;
 import ml.assignments.CommandLineOptions.Option;
 import ml.assignments.assignment1.SVMTests.KernelFunction;
 import weka.classifiers.Classifier;
@@ -42,7 +49,11 @@ public class MLAssignmentUtils {
 	public static Instances buildInstancesFromResource(String resourceName) {
 		Reader r;
 		try {
-			r = new java.io.BufferedReader(new java.io.InputStreamReader(Thread.currentThread().getContextClassLoader().getResourceAsStream(resourceName)));
+			InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream(resourceName);
+			if(is == null) {
+				throw new RuntimeException("Non existing resource file: " + resourceName);
+			}
+			r = new java.io.BufferedReader(new java.io.InputStreamReader(is));
 			Instances res = new Instances(r);
 			setClassIndex(res);
 			return res;
@@ -362,6 +373,18 @@ public class MLAssignmentUtils {
 		}
 	}
 
+	public static Instances removeAttributes(Instances dataSet, String attributesToRemove) {
+		try {
+			Remove filter = new Remove();
+			filter.setInvertSelection(false);
+			filter.setAttributeIndices(attributesToRemove);
+			filter.setInputFormat(dataSet);
+			return Filter.useFilter(dataSet, filter);
+		} catch (Exception e) {
+			throw new RuntimeException("Error removing attributes " + attributesToRemove, e);
+		}
+	}
+
 	public static void writeToFile(String fileName, String s, boolean append) {
 		try {
 			File file = new File(fileName);
@@ -394,5 +417,77 @@ public class MLAssignmentUtils {
 		String s = System.getProperty("trials");
 		return s == null ? 3 : Integer.valueOf(s);
 	}
+	
+	public static String toString(double[] array) {
+		StringBuilder sb = new StringBuilder();
+		for (double d : array) {
+			sb.append(NumberFormat.getInstance().format(d)).append(" ");
+		}
+		return sb.toString();
+	}
+
+	public static double average(HashMap<String, Double> map) {
+		double res = 0;
+		for (Double d: map.values()) {
+			res += d;
+		}
+		return res/map.size();
+	}
+
+	public static double countIf(int[] clusterAssignments, int equalTo) {
+		int res = 0;
+		for (int i : clusterAssignments) {
+			if(i == equalTo) {
+				res ++;
+			}
+		}
+		return res;
+	}
+	
+	
+    public static Instance[] initializeInstances(int size, String filePath, int nrAttributes, List<String> labels ) {
+    	
+    	int nrLabels = labels.size();
+        double[][][] attributes = new double[size][][];
+
+        try {
+        	InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream(filePath);
+            BufferedReader br = new BufferedReader(new InputStreamReader(is));
+
+            for(int i = 0; i < attributes.length; i++) {
+                Scanner scan = new Scanner(br.readLine());
+                scan.useDelimiter(",");
+
+                attributes[i] = new double[2][];
+                attributes[i][0] = new double[nrAttributes]; 
+                attributes[i][1] = new double[nrLabels];
+
+                for(int j = 0; j < nrAttributes; j++)
+                    attributes[i][0][j] = Double.parseDouble(scan.next());
+
+                String label = scan.next();
+                for (int j = 0; j < nrLabels; j++) {
+                	if (j == labels.indexOf(label)) {
+                		attributes[i][1][j] = 1;
+                	} else {
+                		attributes[i][1][j] = 0;
+                	}
+                }
+            }
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+
+        Instance[] instances = new Instance[attributes.length];
+
+        for(int i = 0; i < instances.length; i++) {
+            instances[i] = new Instance(attributes[i][0]);
+            instances[i].setLabel(new Instance(attributes[i][1]));
+        }
+
+        return instances;
+    }
+
 
 }
