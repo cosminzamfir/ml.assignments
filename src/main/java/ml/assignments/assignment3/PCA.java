@@ -14,10 +14,10 @@ import util.linalg.Vector;
 
 /**
  * arguments: <inputFile> <numInstances> <numAttributes> <numEigenVectorsToKeep> <dataFileOuput> <commaSeparatedListOfClassLabels>
- * Read the input file
+ * Read the input file (the first <numInstances> of it)
  * Run the PCA and reduce the dimensions to <numEigenVectorsToKeep> param
  * Save the reduced data set as <dataFileOutput>
- * Reconstruct the original data set and compute the reconstruction error as the average euclidean distance
+ * Reconstruct the original data set and compute the reconstruction error as the average euclidean distance of the 2 data sets
  * @author cosmin
  *
  */

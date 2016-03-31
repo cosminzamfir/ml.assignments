@@ -12,11 +12,11 @@ import util.linalg.Matrix;
 import util.linalg.Vector;
 
 /**
- * arguments: <inputFile> <numInstances> <numAttributes> <numComponents>
- * <dataFileOuput> <commaSeparatedListOfClassLabels> Read the input file Run the
- * ICA and reduce the dimensions to <numEigenVectorsToKeep> param Save the
- * reduced data set as <dataFileOutput> Reconstruct the original data set and
- * compute the reconstruction error as the average euclidean distance
+ * arguments: <inputFile> <numInstances> <numAttributes> <numComponents> <dataFileOuput> <commaSeparatedListOfClassLabels> 
+ * Read the input file (the first <numInstances> of it) 
+ * Run the ICA and reduce the dimensions to <numComponents> param 
+ * Save the reduced data set as <dataFileOutput> 
+ * Reconstruct the original data set and compute the reconstruction error as the average euclidean distance beween the 2 data sets
  * 
  * @author cosmin
  * 

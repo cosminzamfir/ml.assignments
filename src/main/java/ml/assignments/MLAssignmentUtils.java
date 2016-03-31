@@ -109,7 +109,7 @@ public class MLAssignmentUtils {
 	public static void write(String fileName, Instances dataSet) {
 		try {
 			ArffSaver saver = new ArffSaver();
-			saver.setFile(new File(ROOT_FOLDER + "src/main/resources/" + fileName));
+			saver.setFile(new File(fileName));
 			saver.setRetrieval(Saver.BATCH);
 			saver.setInstances(dataSet);
 			saver.writeBatch();
