@@ -390,7 +390,7 @@ public class MLAssignmentUtils {
 			File file = new File(fileName);
 			file.createNewFile();
 			FileWriter writer = new FileWriter(new File(fileName), append);
-			writer.write(s + "\n");
+			writer.write(s);
 			writer.close();
 		} catch (IOException e) {
 			throw new RuntimeException(e);

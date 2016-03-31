@@ -1,0 +1,1 @@
+java -cp ml.jar:ml_lib:datasets ml.assignments.assignment1.PerformanceComparison -dataSet generated.arff -initialSize 100 -runs 50 -stepSize 200 -testSize 5000 -pruning true -confidenceFactor 0.01 -baseLearner dt -hiddenUnits 19 -momentum 0.3 -learningRate 0.2 -kernel Quadratic -kn 20 -distanceWeight 4

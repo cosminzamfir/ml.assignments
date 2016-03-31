@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project ml.assignments">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="D:/cosmin/workspace"/>
+    <property name="dir.jarfile" value="D:/Dropbox/omcs/ml/assignments"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/ml.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="ml.assignments.assignment2.ann.OptimizeANN"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="D:/Dropbox/omcs/ml/projects/ml.assignments/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml.assignments/lib/jcommon-1.0.23.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml.assignments/lib/jfreechart-1.0.19.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml.assignments/lib/log4j-1.2.17.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml.assignments/lib/stdlib.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml.assignments/lib/libsvm.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml.assignments/lib/weka-dev-3.7.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml.assignments/lib/commons-compress-1.10.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml.assignments/lib/java-cup.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml.assignments/lib/JFlex.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml.assignments/lib/junit.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml.assignments/lib/packageManager.jar"/>
+            <fileset dir="D:/Dropbox/omcs/ml/projects/ml/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apps/eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/apps/eclipse/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml/lib/log4j-1.2.17.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml/lib/jcommon-1.0.23.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml/lib/jfreechart-1.0.19.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml/lib/stdlib.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml/lib/weka-dev-3.7.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml/lib/commons-lang-2.6.jar"/>
+            <fileset dir="D:/Dropbox/omcs/ml/projects/abagail/ABAGAIL/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml.assignments/lib/slf4j-api-1.7.18.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox/omcs/ml/projects/ml.assignments/lib/slf4j-log4j12-1.7.18.jar"/>
+        </jar>
+    </target>
+</project>

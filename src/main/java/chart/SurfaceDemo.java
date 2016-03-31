@@ -24,7 +24,7 @@ public class SurfaceDemo extends AbstractAnalysis {
         Mapper mapper = new Mapper() {
             @Override
             public double f(double x, double y) {
-                return Math.sin(x * y);
+                return 3*x*x*x - 4*y*y + 3*y*y - 4*y*y*y;
             }
         };
 
@@ -36,7 +36,7 @@ public class SurfaceDemo extends AbstractAnalysis {
         final Shape surface = Builder.buildOrthonormal(new OrthonormalGrid(range, steps, range, steps), mapper);
         surface.setColorMapper(new ColorMapper(new ColorMapRainbow(), surface.getBounds().getZmin(), surface.getBounds().getZmax(), new Color(1, 1, 1, .5f)));
         surface.setFaceDisplayed(true);
-        surface.setWireframeDisplayed(false);
+        surface.setWireframeDisplayed(true);
 
         // Create a chart
         chart = AWTChartComponentFactory.chart(Quality.Advanced, getCanvasType());

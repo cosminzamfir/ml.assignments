@@ -1,8 +1,5 @@
 package ml.assignments.assignment3;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import ml.assignments.MLAssignmentUtils;
 import shared.DataSet;
 import shared.Instance;
@@ -12,11 +9,11 @@ import util.linalg.Matrix;
 public class PCARobotTest {
     
     public static void main(String[] args) {
-    	Instance[] instances =  MLAssignmentUtils.initializeRobotDataSet(5400);
+    	Instance[] instances =  MLAssignmentUtils.initializeRobotDataSet(20);
         DataSet set = new DataSet(instances);
         System.out.println("Before PCA: the data set");
-        //System.out.println(set);
-        PrincipalComponentAnalysis filter = new PrincipalComponentAnalysis(set, 3);
+        System.out.println(set);
+        PrincipalComponentAnalysis filter = new PrincipalComponentAnalysis(set, 7);
         
         System.out.println("===============================================");
         System.out.println("Eigenvalues");
@@ -30,7 +27,7 @@ public class PCARobotTest {
         filter.filter(set);
         System.out.println("===============================================");
         System.out.println("After PCA: the data set");
-        //System.out.println(set);
+        System.out.println(set);
         
         Matrix reverse = filter.getProjection().transpose();
         for (int i = 0; i < set.size(); i++) {
@@ -39,7 +36,7 @@ public class PCARobotTest {
         }
         System.out.println("===============================================");
         System.out.println("After reconstructing");
-        //System.out.println(set);
+        System.out.println(set);
      
         //TODO - compute the overall error after reconstruction
     }

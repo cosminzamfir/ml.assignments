@@ -60,6 +60,8 @@ public class ScatterChartGeneratedDataSet extends AbstractAnalysis {
 		}
 
 		Scatter scatter = new Scatter(points, colors);
+		scatter.setWidth(4);
+
 		chart = AWTChartComponentFactory.chart(Quality.Advanced, "newt");
 		chart.getScene().add(scatter);
 		AnalysisLauncher.open(this);

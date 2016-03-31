@@ -1,0 +1,1 @@
+java -cp ml.jar:ml_lib:datasets ml.assignments.assignment1.PerformanceComparison -dataSet robot-moves.arff -initialSize 100 -runs 100 -stepSize 43 -testSize 1000 -pruning false -baseLearner dt -hiddenUnits 11 -momentum 0 -learningRate 0.2 -kernel Cubic -kn 8 -distanceWeight 2
